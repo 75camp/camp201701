@@ -1,7 +1,5 @@
 # 作业
 
----
-
 ## 阅读
 
 * [如何阅读W3C规范](http://www.chinaw3c.org/how-to-read-spec-wxx.html)
