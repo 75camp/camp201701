@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广发银行信用卡注册改进</title>
+</head>
+<body>
+    <form action="###" method="post">
+        <p>
+            <span>*</span>
+            <label>
+                中文姓名 : <input required type="text" name="chinese-name" id="chinese-name">
+            </label>
+        </p>
+        <p>
+            <span>*</span>
+            <label>
+                身份证号 : <input required pattern="[1-9]\d{16}[\dxX]" placeholder="18位有效身份证号码" type="text" name="code" id="code">
+            </label>
+        </p>
+        <p>
+            <label>
+                证件有效期至 :
+                <input placeholder="留空代表有效期到永久" type="text">
+            </label>
+        </p>
+        <p>
+            已有广发银行信用卡 :
+            <label>是 <input type="radio" name="had" value="1"></label>
+            <label>否 <input type="radio" name="had" value="0"></label>
+        </p>
+        <p>
+            <span>*</span>
+            所在城市 :
+            <select required name="province" id="province">
+                <option value="1">北京</option>
+                <option value="2">黑龙江</option>
+                <option value="3">浙江</option>
+            </select>
+            <select required name="city" id="city">
+                <option value="1">北京</option>
+                <option value="2">哈尔滨</option>
+                <option value="3">杭州</option>
+            </select>
+        </p>
+        <p>
+            <label>
+                单位电话 :
+                <input required placeholder="区号" name="cityID" type="text">
+                -
+                <input required placeholder="座机号" name="phone" type="text">
+            </label>
+        </p>
+        <p>
+            <span>*</span>
+            <label>
+                手机号码 :
+                <input required placeholder="11位有效手机号" pattern="1/d{10}" type="text">
+            </label>
+        </p>
+        <p>
+            <span>*</span>
+            <label>
+                验证码 :
+                <input required type="text">
+            </label>
+        </p>
+        <p>
+            <span>*</span>
+            <label>
+                手机短信验证码 :
+                <input required placeholder="四位验证数字" type="text">
+            </label>
+        </p>
+        <p>*代表必填</p>
+        <p>
+            <label>
+                <input required type="checkbox">
+                本人已确认阅读<a href="###">《广发银行信用卡用户协议(个人卡)》</a>并同意该协议内容
+            </label>
+        </p>
+        <button>提交</button>
+    </form>
+</body>
+</html>
