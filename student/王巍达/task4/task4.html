@@ -2,9 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>工作表</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            line-height: 1.3em;
+        }
+        caption {
+            font-size: 24px;
+            color: greenyellow;
+        }
+        td {
+            padding: 10px;
+            max-width: 300px;
+        }
+        b {
+            color: yellow;
+        }
+        .important {
+            color: red;
+        }
+        .happy {
+            color: deepskyblue;
+        }
+        .summary {
+            color: greenyellow;
+        }
+        figure {
+            border: 1px dashed #fff;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1>很对不起，已经不能在大学里上课了/(ㄒoㄒ)/~~</h1>
+    <table border="1">
+        <caption>看看这一周都干嘛啦</caption>
+        <thead>
+            <tr>
+                <th>工作表</th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>干了点什么</th>
+                <td>上周五临下班拿到了编辑专题页的项目与psd设计图，只切了一点图，还得继续切图...</td>
+                <td>第一页遇到了一点点困难，ie7始终罢工，尝试了好多种方法，最终采取了个依然不是特别满意的方案</td>
+                <td>
+                    已经做到第三页了，没碰到特别大的困难，但是被<em class="happy">雷哥</em>指导了一番 <q class="important">光写页面写js大家都一样，你要写个假数据结构，在前端把数据灌倒模板里，让模板生成每一小块的内容，这样其实就相当于一个一个小组件，虽然写的时候麻烦点，
+                    但是与提数据的人合作的时候<b>她</b>会很方便,也不会像上次一样不知道改到哪里把结构弄乱让css不好使了！虽然写起来比直接写复杂点，但是站的高度不一样！</q>，膜拜！！！
+                </td>
+                <td>第三页完成了，重新整理代码，开始写数据结构灌到模板里。以前虽然也这样干过几次，但是都是循环列表页，没有这么麻烦，这次灌数据的时候总是灌错显示不出来</td>
+                <td>待续...</td>
+            </tr>
+            <tr>
+                <th>想了点什么</th>
+                <td>感觉应该跟设计好好学学PS，人家简直在飞一样的操作，相比之下我好像手残...</td>
+                <td>
+                    <section>
+                        <p>1.尝试方案以后要多commit，好几次没commit，结果导致回不到之前的版本了...</p>
+                    </section>
+                    <section>
+                        <p>2.见参考图</p>
+                        <p>1) 踏雪逢春（as logo）与阳光(as sunlight)本来当做背景图全切了，结果做起来才发现这样阳光不能盖住黑色的遮罩层---- <em class="summary">没有大局观啊</em></p>
+                        <p>2) 把logo与sunlight分别切了出来，出现了一点点问题，层级来说 logo &gt; sunlight &gt; 中间的黑色遮罩(as blackArea)，但是 blackArea 中的标题(as title)需要大于 sunlight
+                            最后形成了如下关系
+                        </p>
+                        <p><em class="important">logo &gt; title &gt; sunlight &gt; blackArea(title的爸爸)</em></p>
+                        <p>但是title是在blackArea内部的，在父元素的层级小于sunlight时，父元素中的子元素层级却需要大于sunlight，没碰到过这种情况，继续工作后 <em class="happy">欣喜</em> 的发现IE8以上及现代浏览器可以，不幸的是，我们要求兼容到IE7<em class="important">/(ㄒoㄒ)/~~</em></p>
+                        <p>3) 最后解决方案，给title换了爸爸，让他与sunlight跟logo共享一个爸爸，但是无奈title的位置就不准确了，而且随着屏幕尺寸的变化不准确的情况都不一样，为此多写了好多js...--- <em class="summary">很low的方式，无奈没发现更好的解决办法</em></p>
+                        <p>4) <em class="summary">写到此处感慨当时为什么我没给sunlight与logo切到一张图里</em></p>
+                    </section>
+                </td>
+                <td>
+                    以前看react与vue一直提到MV分离，听了雷哥的话再想了想突然才好像有点理解，<em class="summary">这样写前端只关心view，
+                    后端只关心model，model与view自己变化根本不用关注对方，并且模板生成的是一小块一小块的内容类似组件，无形之中react的组件化思想就体现了出来，
+                    忽然感觉自己逼格高了那么一点点...</em>
+                </td>
+                <td>我要这么做一直做到熟练为止</td>
+                <td>待续...</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <figure>
+        <figcaption>附件</figcaption>
+        <img src="./screenshot.png" alt="">
+    </figure>
 
 </body>
 </html>
