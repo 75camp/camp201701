@@ -7,10 +7,12 @@
 如：
 ![img](http://upload-images.jianshu.io/upload_images/3416759-5737e89da89ce078.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 可以改成
-         <header id="header">
+  ```
+<header id="header">
           <div id="search-box"></div>
           <nav></nav>
-        </header>
+</header>
+```
 1. `img`标签里没有`alt`属性
 ![img](http://upload-images.jianshu.io/upload_images/3416759-57f730598213a069.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 必须加上 `alt`属性
