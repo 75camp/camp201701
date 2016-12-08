@@ -6,6 +6,7 @@
 好；
 如：
 ![img](http://upload-images.jianshu.io/upload_images/3416759-5737e89da89ce078.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 可以改成
 
   ```
