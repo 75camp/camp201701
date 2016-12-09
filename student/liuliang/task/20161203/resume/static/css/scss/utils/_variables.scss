@@ -1,0 +1,11 @@
+/* base/typography */
+
+$typography-line: 24;
+$typography-column: 100% / 18;
+$typography-font-size: 16;
+$typography-em: $typography-font-size * 1;
+$typography-base: ($typography-line/$typography-font-size*1em);
+
+/* utils/function */
+$baseFontSize: 10px !default;
+

@@ -1,0 +1,25 @@
+/*
+Title:	IE patches
+Author: jordancooperman@gmail.com, based on Dan Cederholm's ie
+CSS, from the book: "Handcrafted CSS".
+*/
+
+/* PNG fix */
+
+*html .sprite,
+*html .icon { /* for IE<6 */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='img/image.png'); 
+	background-image: none;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* self-clear floats */
+
+*html .group { /* IE6 */
+	height: 1%;
+}
+
+*:first-child+html .group { /* IE7 */
+	min-height: 1px;
+}

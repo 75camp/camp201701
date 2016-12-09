@@ -1,0 +1,103 @@
+// positioning
+@mixin inline-block( $vertical-align: middle ) {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: $vertical-align;
+}
+
+// css triangles
+@mixin triangle( $size: 7px, $position: "bottom", $color: #999 ) {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: $size;
+    @if $position == "bottom" {
+        border-color : transparent transparent $color transparent;
+    }
+    @if $position == "top" {
+        border-color :  $color transparent transparent transparent;
+    }
+    @if $position == "left" {
+        border-color : transparent transparent transparent $color;
+    }
+    @if $position == "right" {
+        border-color : transparent $color transparent transparent;
+    }
+}
+
+@mixin dotted-x($position: top) {
+    background-image: url('../img/dotted-x.png');
+    background-position: $position;
+    background-repeat: repeat-x;
+}
+
+@mixin dotted-y($position: left) {
+    background-image: url('../img/dotted-y.png');
+    background-position: $position;
+    background-repeat: repeat-y;
+}
+
+// css3
+@mixin box-sizing( $property: "border-box" ) {
+    -webkit-box-sizing: $property;
+    -moz-box-sizing: $property;
+    box-sizing: $property;
+}
+
+@mixin linear-gradient($start-color: #222, $end-color: #000 ) {
+   background-color: $end-color;
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start-color), to($end-color));
+   background-image: -webkit-linear-gradient(top, $start-color, $end-color);
+   background-image: -moz-linear-gradient(top, $start-color, $end-color);
+   background-image: -ms-linear-gradient(top, $start-color, $end-color);
+   background-image: -o-linear-gradient(top, $start-color, $end-color);
+}
+
+@mixin rounded( $radius: 5px ) {
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin rounded-side($horizontal, $vertical, $magnitude) {
+  border-#{$vertical}-#{$horizontal}-radius: $magnitude;
+  -moz-border-radius-#{$vertical}#{$horizontal}: $magnitude;
+  -webkit-border-#{$vertical}-#{$horizontal}-radius: $magnitude;
+}
+
+@mixin text-shadow($horizontal: 1px, $vertical: 1px, $magnitude: 1px, $color: #888) {
+   text-shadow: $horizontal $vertical $magnitude $color;
+}
+
+@mixin transition($property, $time: 0.25s) {
+    -webkit-transition: $property $time ease-in-out;
+    -moz-transition: $property $time ease-in-out;
+    -o-transition: $property $time ease-in-out;
+    -ms-transition: $property $time ease-in-out;
+    transition: $property $time ease-in-out;
+}
+
+@mixin inner-shadow($horizontal: 5px, $vertical: 5px, $magnitude: 5px, $color: #888) {
+    -moz-box-shadow: inset $horizontal $vertical $magnitude $color;
+    -webkit-box-shadow: inset $horizontal $vertical $magnitude $color;
+    box-shadow: inset $horizontal $vertical $magnitude $color;
+}
+
+@mixin box-shadow($horizontal: 5px, $vertical: 5px, $magnitude: 5px, $color: #888) {
+    -moz-box-shadow: $horizontal $vertical $magnitude $color;
+    -webkit-box-shadow: $horizontal $vertical $magnitude $color;
+    box-shadow: $horizontal $vertical $magnitude $color;
+}
+
+@mixin max-screen($res){
+  @media only screen and ( max-width: $res )
+  {
+    @content;
+  }
+}
+@mixin min-screen($res){
+  @media only screen and ( min-width: $res )
+  {
+    @content;
+  }
+}
