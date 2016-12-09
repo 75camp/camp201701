@@ -5,5 +5,6 @@
 There are deficiencies also asked the teacher to help correct me:pray:
 
 * 1-Find-html-fault
+* 2-Resume
 * 3-Form-design-optimization
 * 4-Class-schedule
