@@ -16,7 +16,7 @@
 			display: flex;
 			justify-content: space-between;
 			width: 300px;
-			background-color: #eee;
+			/*background-color: #eee;*/
 			text-align: right;
 		}
 		.-input{
@@ -44,12 +44,12 @@
 		<fieldset>
 			<legend>基本信息</legend>
 			<p class="row">
-				<label class="-lable">学号<input class="-input" type="number"></label>
-				<label class="-lable">姓名<input class="-input" type="text"></label>
+				<label class="-lable">学号<input required placeholder="必填" class="-input" type="number"></label>
+				<label class="-lable">姓名<input required placeholder="必填" class="-input" type="text"></label>
 			</p>
 			<p class="row">
-				<label class="-lable">曾用名<input class="-input" type="text"></label>
-				<label class="-lable">姓名拼音<input class="-input" type="text"></label>
+				<label class="-lable">曾用名<input placeholder="选填" class="-input" type="text"></label>
+				<label class="-lable">姓名拼音<input required placeholder="必填" class="-input" type="text"></label>
 			</p>
 			<p class="row">
 				<label class="-lable">性别
@@ -68,7 +68,7 @@
 				</label>
 			</p>
 			<p class="row">
-				<label class="-lable">身份证号<input class="-input" type="text"></label>
+				<label class="-lable">身份证号<input required placeholder="必填" class="-input" type="text"></label>
 				<label class="-lable">身份证类型
 					<select name="idcardtype">
 					  <option value="1">居民身份证</option>
@@ -94,48 +94,100 @@
 				</label>
 			</p>
 			<p class="row">
-				<label class="-lable">出生日期<input class="-input" type="text"></label>
-				<label class="-lable">血型<input class="-input" type="text"></label>
+				<label class="-lable">出生日期<input required placeholder="必填" class="-input" type="date"></label>
+				<label class="-lable">血型
+					<select name="bloodtype">
+					  <option value="1">AB</option>
+					  <option value="2">A</option>
+					  <option value="3">B</option>
+					  <option value="4">O</option>
+					</select>
+				</label>
 			</p>
 		</fieldset>
 
 		<fieldset>
 			<legend>学籍信息</legend>
 			<p class="row">
-				<label class="-lable">学历<input class="-input" type="text"></label>
-				<label class="-lable">院系<input class="-input" type="text"></label>
+				<label class="-lable">学历
+					<select name="eductionbackground">
+					  <option value="1">博士</option>
+					  <option value="2">研究生</option>
+					  <option value="3">本科</option>
+					</select>
+				</label>
+				<label class="-lable">院系
+					<select name="department">
+					  <option value="1">计算机与控制工程</option>
+					  <option value="2">化学</option>
+					  <option value="3">物理</option>
+					</select>
+				</label>
 			</p>
 			<p class="row">
-				<label class="-lable">专业<input class="-input" type="text"></label>
-				<label class="-lable">学制<input class="-input" type="text"></label>
+				<label class="-lable">专业
+					<select name="major">
+					  <option value="1">计算机科学</option>
+					  <option value="2">化学</option>
+					  <option value="3">物理</option>
+					</select>
+				</label>
+				<label class="-lable">学制
+					<select name="lengthofschooling">
+					  <option value="1">三年</option>
+					  <option value="2">四年</option>
+					  <option value="3">五年</option>
+					</select>
+				</label>
 			</p>
 			<p class="row">
-				<label class="-lable">班级<input class="-input" type="text"></label>
-				<label class="-lable">学位<input class="-input" type="text"></label>
+				<label class="-lable">班级<input required placeholder="必填" class="-input" type="text"></label>
+				<label class="-lable">学位
+					<select name="degree">
+					  <option value="1">博士</option>
+					  <option value="2">硕士</option>
+					  <option value="3">学士</option>
+					</select>
+				</label>
 			</p>
 			<p class="row">
-				<label class="-lable">是否在校<input class="-input" type="text"></label>
-				<label class="-lable">是否预科<input class="-input" type="text"></label>
+				<label class="-lable">是否在校
+					<span>
+						<input class="-radio" type="radio" name="inschool" value="0"> 是
+    					<input class="-radio" type="radio" name="inschool" value="1"> 否
+					</span>
+				</label>
+				<label class="-lable">是否预科
+					<span>
+						<input class="-radio" type="radio" name="yuke" value="0"> 是
+    					<input class="-radio" type="radio" name="yuke" value="1"> 否
+					</span>
+				</label>
 			</p>
 		</fieldset>
 
 		<fieldset>
 			<legend>联系信息</legend>
 			<p class="row">
-				<label class="-lable">校区<input class="-input" type="text"></label>
-				<label class="-lable">邮编<input class="-input" type="text"></label>
+				<label class="-lable">校区
+					<select name="campus">
+					  <option value="1">新校区</option>
+					  <option value="2">老校区</option>
+					</select>
+				</label>
+				<label class="-lable">邮编<input required placeholder="必填" class="-input" type="number"></label>
 			</p>
 			<p class="row">
-				<label class="-lable">电话<input class="-input" type="text"></label>
-				<label class="-lable">QQ<input class="-input" type="text"></label>
+				<label class="-lable">电话<input required placeholder="必填" class="-input" type="phonenumber"></label>
+				<label class="-lable">QQ<input required placeholder="必填" class="-input" type="number"></label>
 			</p>
 			<p class="row">
-				<label class="-lable">邮箱<input class="-input" type="text"></label>
-				<label class="-lable">个人主页<input class="-input" type="text"></label>
+				<label class="-lable">邮箱<input required placeholder="必填" class="-input" type="email"></label>
+				<label class="-lable">个人主页<input placeholder="选填" class="-input" type="url"></label>
 			</p>
 			<p class="row">
-				<label class="-lable">家庭电话<input class="-input" type="text"></label>
-				<label class="-lable">家庭住址<input class="-input" type="text"></label>
+				<label class="-lable">家庭电话<input required placeholder="必填" class="-input" type="text"></label>
+				<label class="-lable">家庭住址<input required placeholder="必填" class="-input" type="text"></label>
 			</p>
 		</fieldset>
 		<p class="btn-wrap">
