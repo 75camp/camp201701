@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kechengbiao</title>
+</head>
+<body>
+  
+
+
+
+
+
+
+
+
+
+<html>
+  <head>
+   <link href="/css/newcss/project.css" rel="stylesheet" type="text/css">
+    <title>历年学期课表查询</title>
+    <script language="javascript">
+    function sylnkcCX(){
+      document.form.action='lnkbcxAction.do';
+      document.form.submit();
+    }
+    
+       function beforePrint(){
+       document.getElementById("kclb").style.display="none";
+        document.getElementById("tblHead").style.display="none";
+       document.getElementById("temp").style.display="none";
+   }
+   function afterPrint(){
+       document.getElementById("kclb").style.display="block";
+       document.getElementById("tblHead").style.display="block";
+       document.getElementById("temp").style.display="block";
+   }
+    
+    // 打印
+function printkb(){
+  beforePrint()
+  window.print(); 
+  afterPrint()
+
+}
+  </script>
+  </head>
+  
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow:auto;">
+  <form action="" name="form" method="post">  
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr><td class="Linetop"></td>
+</tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="title" id="tblHead">
+ <tr>
+  <td width="50%" >
+   <table border="0" align="left" cellpadding="0" cellspacing="0" >
+    <tr>
+     <td>&nbsp;</td>
+   <td valign="middle">&nbsp;<b>历年学期课</b>&nbsp;</td>
+    </tr>
+   </table>
+   </td>
+            <td width="50%" >
+          
+            <table border="0" align="left" cellpadding="0" cellspacing="0" width="100%" >
+            <tr>
+            <td>&nbsp;</td>
+            <td width="3">&nbsp;</td>
+                             <td width="10" align="center">
+<!--
+                             <img  src="/img/icon/print.gif" title="打印"
+                              onClick="printkb();" style="cursor:hand" id="btprint">
+-->
+</td>
+                             <td width="3">&nbsp;  </td> 
+                       
+            <td width="5"></td>
+            
+            </tr>
+            </table>
+          
+          </td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"  >
+ <tr>
+  <td class="Linetop"></td>
+ </tr>
+</table> 
+  <table border="0" cellpadding="0" cellspacing="0" class="titleTop1" >
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="fieldName">学年学期:</td>
+          <td>&nbsp;</td>
+          <td>
+          <select name="zxjxjhh">
+      
+          <option value="2013-2014-1-1" >2013-2014学年秋(两学期)</option>
+      
+          <option value="2013-2014-2-1" >2013-2014学年春(两学期)</option>
+      
+          <option value="2014-2015-1-1" >2014-2015学年秋(两学期)</option>
+      
+          <option value="2014-2015-2-1" >2014-2015学年春(两学期)</option>
+      
+          <option value="2015-2016-1-1" >2015-2016学年秋(两学期)</option>
+      
+          <option value="2015-2016-2-1" >2015-2016学年春(两学期)</option>
+      
+          <option value="2016-2017-1-1" >2016-2017学年秋(两学期)</option>
+      
+          <option value="2016-2017-2-1" >2016-2017学年春(两学期)</option>
+      
+      </select> 
+          </td>
+           <td width="100">&nbsp;</td>
+           <td>
+         
+          </td>
+        </tr>             
+    </table>
+    </td>
+    </tr>
+    </table>
+  
+          <!-- 分割线 -->
+          <table width="99%" border="0" align="center" cellpadding="0"
+            cellspacing="0">
+            <tr>
+              <td class="Line"></td>
+            </tr>
+          </table> 
+          
+          
+          
+           
+      
+      <span id="dayin">
+  <table width="100%" border="1" cellpadding="0" cellspacing="0" class="titleTop2">
+           <tr>
+            <td class="pageAlign">
+             <table cellpadding="0" width="100%" class="displayTag" cellspacing="0" border="1" id="user">
+              <thead>
+              <tr>
+            <td width="4%" class="sortable">&nbsp;</td>
+            <td width="12%" class="sortable">&nbsp;</td>        
+        
+        <td width="12%" class="sortable"><div align="center">
+        
+      星期一
+      
+      </div></td>
+        
+        <td width="12%" class="sortable"><div align="center">
+        
+      星期二
+      
+      </div></td>
+        
+        <td width="12%" class="sortable"><div align="center">
+        
+      星期三
+      
+      </div></td>
+        
+        <td width="12%" class="sortable"><div align="center">
+        
+      星期四
+      
+      </div></td>
+        
+        <td width="12%" class="sortable"><div align="center">
+        
+      星期五
+      
+      </div></td>
+        
+        <td width="12%" class="sortable"><div align="center">
+        
+      星期六
+      
+      </div></td>
+        
+        <td width="12%" class="sortable"><div align="center">
+        
+      星期日
+      
+      </div></td>
+        
+    <tr>
+
+    
+    <tr bgcolor="#FFFFFF">
+    
+    <td width="3%" rowspan="5">&nbsp;<p class="style4">上午</p></td>
+    
+    
+    <td width="11%">第1节(0800-0840)</td>
+    
+      
+          <td>&nbsp;
+    
+    
+        思想道德修养与法律基础_17(良乡校区良乡综合楼1105j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        高等数学1_2(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        高等数学1_2(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        大学英语一级_23(良乡校区良乡综合楼1225)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        心理学导论_01(良乡校区良乡综合楼1105j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第2节(0850-0930)</td>
+    
+      
+          <td>&nbsp;
+    
+    
+        思想道德修养与法律基础_17(良乡校区良乡综合楼1105j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        高等数学1_2(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        高等数学1_2(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        大学英语一级_23(良乡校区良乡综合楼1225)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        心理学导论_01(良乡校区良乡综合楼1105j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第3节(0940-1020)</td>
+    
+      
+          <td>&nbsp;
+    
+    
+        思想道德修养与法律基础_17(良乡校区良乡综合楼1105j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        高等数学1_2(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        高等数学1_2(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        大学英语一级_23(良乡校区良乡综合楼1225)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第4节(1040-1120)</td>
+    
+      
+          <td>&nbsp;
+    
+    
+        大学英语一级_23(良乡校区良乡综合楼1415y)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        线性代数_4(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        线性代数_4(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        信息化思维_01(良乡校区良乡综合楼1219)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第5节(1130-1210)</td>
+    
+      
+          <td>&nbsp;
+    
+    
+        大学英语一级_23(良乡校区良乡综合楼1415y)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        线性代数_4(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        线性代数_4(良乡校区良乡综合楼1201j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        信息化思维_01(良乡校区良乡综合楼1219)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+      <tr bgcolor="#FFFFFF">
+          <td colspan="9">&nbsp;<p align="center" class="td2 style5"><strong>午 休</strong></p></td>
+      </tr>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    <td width="3%" rowspan="5">&nbsp;<p class="style4">下午</p></td>
+    
+    
+    <td width="11%">第6节(1330-1410)</td>
+    
+      
+          <td>&nbsp;
+    
+    
+        科技发展与世界现代化进程_01(良乡校区良乡综合楼1219)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        马克思主义基本原理概论_22(良乡校区良乡综合楼1205j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        信息技术基础_01(良乡校区良乡综合楼1311)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第7节(1420-1500)</td>
+    
+      
+          <td>&nbsp;
+    
+    
+        科技发展与世界现代化进程_01(良乡校区良乡综合楼1219)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        马克思主义基本原理概论_22(良乡校区良乡综合楼1205j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        信息技术基础_01(良乡校区良乡综合楼1311)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第8节(1510-1550)</td>
+    
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        马克思主义基本原理概论_22(良乡校区良乡综合楼1205j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        体育1_602(良乡校区体育部良乡操场)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        信息技术基础_01(良乡校区良乡综合楼1311)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第9节(1600-1640)</td>
+    
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        大学生心理适应与发展_15(良乡校区良乡综合楼1304j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        体育1_602(良乡校区体育部良乡操场)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        信息技术基础实验_01(良乡校区良乡综合楼1302c)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第10节(1650-1730)</td>
+    
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        大学生心理适应与发展_15(良乡校区良乡综合楼1304j)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+    
+        信息技术基础实验_01(良乡校区良乡综合楼1302c)<br>
+    
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+      <tr bgcolor="#FFFFFF">
+          <td colspan="9">&nbsp;<p align="center" class="td2 style5"><strong>晚饭</strong></p></td>
+      </tr>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    <td width="3%" rowspan="3">&nbsp;<p class="style4">晚上</p></td>
+    
+    
+    <td width="11%">第11节(1830-1910)</td>
+    
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+    <tr bgcolor="#FFFFFF">
+    
+    
+    <td width="11%">第12节(1920-2000)</td>
+    
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+          <td>&nbsp;
+    
+      &nbsp;
+      
+      </td>
+      
+  
+</table>
+</td>
+</tr>
+</table>
+</span>
+  </form>
+
+  
+  </body>
+</html>
+
+</body>
+</html>
