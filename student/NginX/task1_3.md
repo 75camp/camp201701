@@ -1,4 +1,4 @@
-![train](assets/tarin.png)
+![train](assets/train.png)
 #12306注册页面表单优化:bullettrain_side::bullettrain_side::bullettrain_side:
 ####上图中表单对应的的HTML结构如下图所示
 ![train_form_code](assets/train_form_code.png)
