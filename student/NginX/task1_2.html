@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My resume</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		.badge{
+			float: left;
+		}
+		.avatar{
+			float: right;
+		}
+		nav{
+			overflow: hidden;
+		}
+		nav ul{
+			overflow: hidden;
+		}
+		nav ul li{
+			list-style: none;
+			float: left;
+			cursor: pointer;
+		}
+		#english-edition{
+			display: block;
+		}
+		#chinese-edition{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li id="english">English</li>
+			<li>|</li>
+			<li id="chinese">中文</li>
+		</ul>
+	</nav>
+	<div id="english-edition">
+		<header>
+			<figure>
+				<img src="assets/school_badge.png" alt="school badge" class="badge" height="50" />
+			</figure>
+			<h1>My Resume</h1><hr />
+		</header>
+		<article>
+			<section class="overview">
+				<figure>
+					<img src="assets/avatar.jpg" alt="avatar" class="avatar" height="100" />
+				</figure>
+				<h2>NginX | Tsinghua University</h2>
+				<h3>Gender: male</h3>
+				<h3>Birth: Jau. 01, 1993</h3>
+				<h3>Tel: 1XXXXXXXXXX</h3>
+				<h3>E-mail: XXXXXXXXXX@gmail.com</h3>
+			</section>
+			<hr />
+			<section class="education experience">
+				<h2>Education Experience</h2>
+				<h3>2011.9 - 2015.7 I have got my bachelor's degree of Technology of Measuring and Control and Instrument at Beijing University of Posts and Telecommunications.</h3>
+				<h3>2015.9 - now I am working for my master degree of Biomedical Engineering at Tsinghua University.</h3>
+			</section>
+			<hr />
+			<section class="intern information">
+				<h2>Intern Information</h2>
+				<h3>2016.7 - 2016.10 I acted as a front-end engineer at a start-up company.</h3>
+			</section>
+			<hr />
+			<section class="project experience">
+				<h2>Project Experience</h2>
+				<h3>I am familiar with <code>HTML</code> <code>CSS</code> <code>JavaScript</code> basic principles, and have build some projects with frame such as <code>React</code>.</h3>
+				<h3>I am familiar with code editors such as Sublime Text and Atom.</h3>
+				<h3>I Built the official website of the start-up company on my own.</h3>
+			</section>
+			<hr />
+		</article>
+		<footer>
+			<h3>Copyright&copy;NginX</h3>
+		</footer>
+	</div>
+	<div id="chinese-edition">
+		<header>
+			<figure>
+				<img src="assets/school_badge.png" alt="school badge" class="badge" height="50" />
+			</figure>
+			<h1>我的简历</h1><hr />
+		</header>
+		<article>
+			<section class="overview">
+				<figure>
+					<img src="assets/avatar.jpg" alt="avatar" class="avatar" height="100" />
+				</figure>
+				<h2>NginX | 清华大学</h2>
+				<h3>性别：男</h3>
+				<h3>生日：1993.01.01</h3>
+				<h3>电话：1XXXXXXXXXX</h3>
+				<h3>邮箱: XXXXXXXXXX@gmail.com</h3>
+			</section>
+			<hr />
+			<section class="education experience">
+				<h2>教育经历</h2>
+				<h3>2011.9 - 2015.7 就读于北京邮电大学测控技术与仪器专业</h3>
+				<h3>2015.9 至今 就读于清华大学生物医学工程专业(2018年毕业)</h3>
+			</section>
+			<hr />
+			<section class="intern information">
+				<h2>实习信息</h2>
+				<h3>2016.7 - 2016.10 在一家创业公司从事前端开发实习，主要负责该公司企业网站搭建和借助<code>React</code>框架进行产品的web端应用搭建。</h3>
+			</section>
+			<hr />
+			<section class="project experience">
+				<h2>项目经历</h2>
+				<h3>掌握<code>HTML</code> <code>CSS</code> <code>JavaScript</code>的基本知识，使用过诸如<code>React</code>等框架进行项目搭建。</h3>
+				<h3>熟练使用Sublime Text、Atom等代码编辑器。</h3>
+				<h3>了解W3C标准，对结构、表现、行为分离，<code>HTML</code>语义化等有一定理解，有一定的编程基础。</h3>
+			</section>
+			<hr />
+		</article>
+		<footer>
+			<h3>版权所有&copy;NginX</h3>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		var English = document.getElementById('english'), Chinese = document.getElementById('chinese');
+		var EnglishEdition = document.getElementById('english-edition'), ChineseEdition = document.getElementById('chinese-edition');
+		English.onclick = function(){
+			EnglishEdition.style.display = "block";
+			ChineseEdition.style.display = "none";
+		};
+		Chinese.onclick = function(){
+			EnglishEdition.style.display = "none";
+			ChineseEdition.style.display = "block";
+		};
+	</script>
+</body>
+</html>
