@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>注册表单</title>
+</head>
+<body>
+  <!-- 优化前 -->
+  <!-- 该网站的表单设计存在很多不合理的地方
+  1.在填写组织和昵称时，并未及时告诉用户是否重复，不能帮助用户不出错
+  2.再输入手机号码时，即时只输入一位也不会报错，没有尽早提示错误
+  3.在表单结构设计上把默认提示当作标签
+   -->
+  <form class="register_items" id="register_items" style="display: block;" novalidate="novalidate">
+				<label class="input_val checkRight">
+          <input class="input valid" name="COMPANY" value="" autocomplete="off" id="VALIDATION-0C6-25D-7148">
+          <span style="display: none;">组织名</span>
+          <div class="error_img"></div>
+        </label>
+				<label class="input_val checkRight">
+          <input class="input valid" name="NICKNAME" value="" autocomplete="off" id="VALIDATION-606-001-81EA">
+          <span style="display: none;">昵称</span>
+          <div class="error_img"></div>
+        </label>
+				<label class="input_val checkRight">
+          <input class="input valid" name="PHONE" value="" autocomplete="off" id="VALIDATION-13B-FC6-5E9B">
+          <span style="display: none;">手机号</span>
+          <div class="error_img"></div>
+        </label>
+				<label class="input_val checkRight">
+          <input class="input valid" name="EMAIL" value="" autocomplete="off" id="VALIDATION-77F-B60-6A31">
+          <span style="display: none;">登录邮箱</span>
+          <div class="error_img"></div>
+        </label>
+				<label class="input_val checkRight">
+          <input class="input valid" name="PASSWORD" value="" type="password" autocomplete="off" id="VALIDATION-1CF-3E3-6F1D">
+          <span style="display: none;">密码</span>
+          <div class="error_img"></div>
+        </label>
+				<div class="remeber">
+					点击注册表示您接受
+					<a id="treaty">《麦客CRM免费版用户协议》</a>
+				</div>
+				<a class="login_btn submit">免&nbsp;&nbsp;费&nbsp;&nbsp;注&nbsp;&nbsp;册</a>
+		</form>
+
+    <!-- 优化后 -->
+    <form class="register_items" action="/echo" method="post " novalidate>
+  				<p>
+            <p>组织名</p>
+            <input class="input valid" name="COMPANY" type="text" autocomplete="off" placeholder="组织名" autofocus>
+            <div class="error_img"></div>
+          </p>
+  				<p>
+            <p>昵称</p>
+            <input class="input valid" name="NICKNAME" type="text" autocomplete="off" placeholder="昵称">
+            <div class="error_img"></div>
+          </p>
+  				<p>
+            <p>手机号</p>
+            <input class="input valid" name="PHONE" type="text" autocomplete="off" required minlength="2" maxlength="10" placeholder="手机号">
+            <div class="error_img"></div>
+          </p>
+  				<p>
+            <p>登录邮箱</p>
+            <input class="input valid" name="EMAIL" type="text" autocomplete="off" placeholder="登录邮箱">
+            <div class="error_img"></div>
+          </p>
+  				<p>
+            <p>密码</p>
+            <input class="input valid" name="PASSWORD" type="password" autocomplete="off" placeholder="密码">
+            <div class="error_img"></div>
+          </p>
+  				<div class="remeber">
+  					点击注册表示您接受
+  					<a href="/protocol" target="_blank">《麦客CRM免费版用户协议》</a>
+  				</div>
+          <button type="submit">免费注册</button>
+  		</form>
+</body>
+</html>

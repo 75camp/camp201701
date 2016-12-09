@@ -22,10 +22,14 @@
 
 ## IE 兼容模式
 * 用 <meta> 标签指定页面用什么版本的IE来渲染，有一些网站并没有写此项
- `<meta http-equiv="X-UA-Compatible" content="IE=Edge">`
+ `<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">`
 
 ## 引入 CSS, JS
 * 根据 HTML5 规范，引入 CSS 和 JS 时不需要指明 type（因为 text/css 和 text/javascript 分别是他们的默认值）
+
+## 样式结构
+* 样式结构未分离，代码混乱，命名规则存在一定的问题
+* 大多数网站并没有做到语义化，结构布局的元素命名不规范
 
 ## 属性顺序（网上搜集）
 ### 属性应该按照特定的顺序出现以保证易读性：
@@ -39,4 +43,7 @@
 * required, readonly, disabled
 
 ## 标签数量
-* 有一些网站上存在多余的父节点，存在代码冗余，应尽量减少标签
+* 有一些网站上存在多余的父节点，存在代码冗余（多div，多span），应尽量减少标签
+
+## 找茬网站如下
+沪江网校、站长工具-站长之家、新浪汽车、腾讯网、阳光高考、凤凰资讯等其他小网站
