@@ -9,7 +9,7 @@
       * 相关换行使用`</br>`标签
 * bbs.360.cn
  	* 网页代码存在错误
- 		* <span class="news-cols1"><a href="http://bbs.360.cn/forum-7076-1.html" target="_blank"" >360手机N4S</a> </span>  
- 		*  <span class="news-cols1"><a href="http://bbs.360.cn/forum-5168-1.html" target="_blank"">粉丝杂谈</a> </span>
+ 		* `<span class="news-cols1"><a href="http://bbs.360.cn/forum-7076-1.html" target="_blank"" >360手机N4S</a> </span> ` 
+ 		*  `<span class="news-cols1"><a href="http://bbs.360.cn/forum-5168-1.html" target="_blank"">粉丝杂谈</a> </span>`
  	* 网站相关的`<img>	 `标签内没有ALT属性
  	* button标签没有设置type属性
