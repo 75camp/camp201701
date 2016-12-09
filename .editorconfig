@@ -1,0 +1,101 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+
+[*]
+# Stick to UTF-8
+charset = utf-8
+
+# Finally TABs win the war!
+# Do not specify indent_size/tab_width here, because TAB is not SPACE :)
+indent_style = tab
+
+# Unix-style newlines with a newline ending every file
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Some properties may not supported by all editors/plugins
+max_line_length = 120
+
+
+[package.json]
+# To be consistent with the output of npm cli, surrender to evil SPACEs
+indent_style = space
+indent_size = 2
+# Anyway, JSON is too evil that even SPACEs can not add more!
+
+
+[*.{yaml,yml}]
+# YAML is far better than JSON, but they choose the dark side...
+indent_style = space
+indent_size = 2
+
+
+# Deprecated .eslintrc may be in YAML format
+[.eslintrc]
+indent_style = space
+indent_size = 2
+
+
+[*.{markdown,md}]
+# Trailing whitespaces is part of the syntax of old-style Markdown, Jesus!
+# But GFM is not follow that syntax. And some editors such as Atom always trim
+# trailing whitespaces.
+# So please use `<br>` instead of illegible trailing spaces if you really want
+# one hard line break.
+; trim_trailing_whitespace = true
+
+# Markdown treat 4 spaces like 1 tab
+indent_size = 4
+
+# But we still prefer TABs :)
+; indent_style = tab
+
+
+[*.{php,phpt,phtml,hh,hphp,php3,php4,php5,php7,inc,shtml,wtfext_for_php}]
+# There are some misunderstandings that insert_final_newline can cause unwanted
+# output effects in PHP scripts therefore should be disabled.
+#
+# The fact is:
+# 1. insert_final_newline is a Unix convention, and most Unix tools such as Vim
+#    always do that
+# 2. If you follow good coding style, you can rarely go wrong
+# 3. In case insert_final_newline introduce extra newlines in buffer output,
+#    they are usually harmless
+#
+# Here details:
+#
+# If a file is pure PHP code, PHP closing tag `?>` can be omitted at the end
+# of the file so that insert_final_newline will never make any difference.
+# That's the style PHP official documentation recommend.
+#
+# Even a file ends with closing tag, PHP ignores one newline immediately after
+# the closing tag, which means append a newline will also make no difference.
+# And note that insert_final_newline will not add extra newline if the file
+# already end with newline.
+#
+# But if a file ends with normal content (everything outside of a pair of
+# opening and closing tags), add included/required by other PHP files,
+# insert_final_newline may introduce a extra newline. In typical cases, we
+# include some html fragments, and normally there are html end tags as
+# boundary, so extra whitespaces are not significant for final effect.
+# In case of whitespaces are significant, you should not rely on unsound
+# include/require, but use the precise output methods like `echo`.
+#
+# The worst case is trailing whitespaces being treat as normal content, aka
+# space or multiple newlines after the PHP closing tag. It's very easy to be
+# neglected and if cause problem it's very hard to discover. That's a design
+# flaw of PHP from its first day, though far from serious to PHP standards :)
+#
+# As I noted earlier, insert_final_newline has no relation with this case,
+# but use trim_trailing_whitespace could prevent the former (trailing space).
+# Some editors (eg. Atom) support a stricter form of insert_final_newline,
+# ensure the file end with ONEE (one and only one) newline, such feature can
+# prevent latter (multiple newlines)... Yes, EditorConfig is awesome, but not
+# awesome enough to save PHP :P
+#
+; insert_final_newline = true
+; trim_trailing_whitespace = true
