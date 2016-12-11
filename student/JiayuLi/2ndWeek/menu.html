@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+<style>
+	html,body,h4,ul,li{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		font-family: 微软雅黑;
+	}
+	.dropbutton{
+		display: inline-block;
+    padding: .4em .8em;
+    margin-left: 10px;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    border-radius: .3em;
+    border: none;
+    background: #1987e2;
+    color: #ede5e5;
+
+	}
+	ul{
+		list-style: none;
+		display: none;
+		margin-left: 10px;
+		background: #dfe1e2;
+		line-height: 1.5;
+		width: 7em;
+		border-radius: .3em;
+	}
+	li{
+		padding: .2em 0em;
+	}
+	section{
+		width: 100px;
+	}
+	section:hover ul{
+		display:inline-block;;
+	}
+	li:hover{
+		background: rgb(183, 186, 195);
+		color: rgb(255, 255, 255);
+	}
+</style>
+</head>
+<body>
+	<header>
+		<h4>CSS下拉菜单</h4>
+	</header>
+	<section>
+		<button type='button' class='dropbutton'>前端内容</button>
+		<div class="dropdown">
+		    <ul>
+		    	<li>HTML</li>
+		    	<li>CSS</li>
+		    	<li>JavaScript</li>
+		    </ul>
+  		</div>
+	</section>
+</body>
+</html>
