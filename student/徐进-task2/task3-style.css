@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Tahoma,Arial,"Helvetica Neue","Hiragino Sans GB",Simsun,sans-self;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+}
+
+/*header*/
+header{
+    background-color: #2398F2;
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+}
+nav .logo{
+    background-image: url(http://cdn.iciba.com/www/top/logo-white.png);
+    width: 50px;
+    height: 16px;
+    float: left;
+    margin: 3px 20px 0 20px; 
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    margin: 0 10px;
+}
+nav a,a:visited,a:link{
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+}
+nav a:hover{
+    cursor: pointer;
+}
+nav div{
+    float: right;
+}
+nav div a{
+    line-height: 25px;
+    padding-right: 10px;
+}
+nav div img{
+    border-radius: 50%;
+    max-width: 25px;
+    max-height: 25px;
+    cursor: pointer;
+}
+nav div ul li a.rightline{
+    border-right: 1px solid #fff;
+}
