@@ -1,0 +1,306 @@
+@import '../main';
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+%height-auto-full-parent {
+	height: 100%;
+}
+html {
+	box-sizing: border-box;
+	@extend %height-auto-full-parent;
+	@at-root (without:rule) {
+		body {
+			background-color: #e0e0e0;
+			color: #333;
+			@extend %height-auto-full-parent;
+		}
+	}
+}
+
+nav {
+    &#navigation {
+        right: 0;
+        z-index: 100;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+section {
+    &#basic-info {
+        background-color: #333;
+        padding: 30px 45px;
+        color: #fff;
+        a {
+            color: #fff;
+        }
+        dl {
+            &#author-brief-intro {
+                text-align: right;
+                line-height: 58px;
+            }
+            h1 {
+                font: normal bold 72px/1 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            }
+        }
+    }
+    &#education-project-skill-info {
+		background-color: #fff;
+        padding: 30px 45px;
+		%color-teal {
+            color: #008080;
+		}
+        em {
+            font-weight: bold;
+			@extend %color-teal;
+            font-style: normal;
+        }
+        h2 {
+            font-size: 0;
+            height: 47px;
+        }
+        dl {
+            dt {
+				&.dt {
+					font-size: 32px;
+					font-weight: 700;
+					margin: 10px 0 5px 0;
+					line-height: 45px;
+				}
+				&.dt-sm {
+					line-height: 25px;
+					font-size: 18px;
+					font-weight: 700;
+					margin-bottom: 5px;
+					span {
+						@extend %color-teal;
+					}
+				}
+            }
+            dd {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                i {
+                    width: 28px;
+                    height: 22px;
+                }
+            }
+        }
+		%background-color-teal {
+			background-color: #008080;
+		}
+        .title-cn {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 28px;
+            @include inline-block;
+        }
+        .title-en {
+            font-size: 16px;
+			@extend %color-teal;
+            font-weight: bold;
+            line-height: 19px;
+            @include inline-block;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+        .font-awesome {
+            &::before {
+                background-color: #333;
+                color: #fff;
+                border-radius: 100%;
+                width: 32px;
+                height: 32px;
+                padding: 3px;
+                text-align: center;
+                line-height: 32px;
+                font-size: 26px;
+                margin: 3px auto;
+                display: block;
+                z-index: 100;
+                position: relative;
+            }
+        }
+		.font-awesome-lg {
+			&::before {
+				width: 44px;
+				height: 44px;
+				line-height: 44px;
+				margin: 1.5px auto;
+				padding: 0;
+			}
+		}
+		.teal {
+            &::before {
+                @extend %background-color-teal;
+            }
+        }
+        .line {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 98%;
+                left: 8%;
+                top: 1%;
+                border-left: 4px solid #333;
+                z-index: 1;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 6.8%;
+				top: 99%;
+                background-color: #333;
+                border-radius: 100%;
+                width: 14px;
+                height: 14px;
+            }
+        }
+        .time {
+            color: #fff;
+            background-color: #333;
+            border-radius: 3px;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 11.5px 0;
+        }
+		.h3 {
+			@extend .time;
+			%float-left {
+				float: left;
+			}
+			a {
+				@extend %float-left;
+				color: #fff;
+			}
+			span {
+				@extend %float-left;
+			}
+			time {
+				float: right;
+			}
+		}
+		#language-rank {
+			padding-top: 20px;
+			%height-25 {
+				height: 25px;
+			}
+			%padding-bottom-5 {
+				padding-bottom: 5px;
+			}
+			%padding-bottom-10 {
+				padding-bottom: 10px;
+			}
+			.language-rank-title {
+				@extend %padding-bottom-10;
+			}
+			.language-rank-details {
+				@extend %padding-bottom-5;
+			}
+			.language-rank-details-name {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 25px;
+					@extend %height-25;
+					text-transform: uppercase;
+					text-align: right;
+					text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			.cet-4 {
+				@extend %height-25;
+				&::-webkit-progress-value {
+                	@extend %background-color-teal;
+				}
+				&::after {
+					content: "524";
+					left: 74%;
+				}
+			}
+			.cet-6 {
+				@extend %height-25;
+				&::-webkit-progress-value {
+                	@extend %background-color-teal;
+				}
+				&::after {
+					content: "452";
+					left: 64%;
+				}
+			}
+			.javascript {
+				@extend %height-25;
+				&::-webkit-progress-value {
+					@extend %background-color-teal;
+				}
+				&::after {
+					content: "熟练";
+					font-size: 12px;
+					left: 80%;
+				}
+			}
+			.html {
+				@extend %height-25;
+				&::-webkit-progress-value {
+                	@extend %background-color-teal;
+				}
+				&::after {
+					content: "熟悉";
+					font-size: 12px;
+					left: 75%;
+				}
+			}
+			.css {
+				@extend %height-25;
+				&::-webkit-progress-value {
+					@extend %background-color-teal;
+				}
+				&::after {
+					content: "熟悉";
+					font-size: 12px;
+					left: 75%;
+				}
+			}
+			.java {
+				@extend %height-25;
+				&::-webkit-progress-value {
+					@extend %background-color-teal;
+				}
+				&::after {
+					content: "写过";
+					font-size: 12px;
+					left: 73%;
+				}
+			}
+			.php {
+				@extend %height-25;
+				&::-webkit-progress-value {
+					@extend %background-color-teal;
+				}
+				&::after {
+					content: "写过";
+					font-size: 12px;
+					left: 70%;
+				}
+			}
+		}
+    }
+}
+@include max-screen(768px) {
+    nav {
+        &#navigation {
+            position: relative;
+            display: table;
+            width: 100%;
+            right: auto;
+            top: 0;
+            transform: none;
+            overflow-y: hidden;
+            zoom: 1;
+        }
+    }
+}
