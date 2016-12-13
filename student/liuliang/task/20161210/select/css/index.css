@@ -1,0 +1,100 @@
+@charset "UTF-8";
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: #fff;
+    min-width: 1280px;
+    overflow: auto;
+    font-family: "微软雅黑", sans-serif;
+}
+.map-container {
+    background: transparent url(../images/map.png) no-repeat top left;
+    background-size: 100% auto;
+    min-height: 340px;
+    position: relative;
+}
+.map-container form {
+    position: absolute;
+    z-index: 200;
+    top: 172px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1030px;
+}
+.map-container form fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.map-container form label {
+    display: inline-block;
+    margin-right: 28px;
+    width: 236px;
+    position: relative;
+}
+.map-container form input:not(.form-submit) {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-indent: 12px;
+    background: #fff url(../images/checked.png) no-repeat calc(100% - 8px) 8px;
+}
+.map-container form input:not(.form-submit):focus ~ ul {
+    display: inline-block;
+}
+.map-container form input.form-submit {
+    width: 235px;
+    height: 35px;
+    background-color: #be4f48;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 25px;
+}
+.map-container form select {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.map-container select option {
+    display: inline-block;
+    text-indent: 32px;
+    font-size: 12px;
+    color: #333333;
+    height: 46px;
+    padiing-top: 10px;
+    padding-bottom: 10px;
+    line-height: 46px;
+    cursor: pointer;
+}
+.map-container form ul {
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #e3e3e4;
+    display: none;
+    z-index: 9999;
+}
+.map-container ul li {
+    display: block;
+    text-indent: 32px;
+    font-size: 12px;
+    color: #333333;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+}
+.map-container ul li:hover {
+    color: #fff;
+    background: #be4f48 url(../images/right.png) no-repeat 9px 9px;
+}
+
