@@ -4,7 +4,14 @@
 
 There are deficiencies also asked the teacher to help correct me:pray:
 
-* 1-Find-html-fault
-* 2-Resume
-* 3-Form-design-optimization
-* 4-Class-schedule
+## task-one
+
+* 1-FIND.md
+* 2-my_resume.html
+* 3-form_design.html
+* 3-FORM.md
+* 4-class_schedule.html
+
+## task-two
+
+To be continued:blush:
