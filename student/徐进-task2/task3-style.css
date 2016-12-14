@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font-family: Tahoma,Arial,"Helvetica Neue","Hiragino Sans GB",Simsun,sans-self;
+    font-family: "Microsoft Yahei", sans-serif, Arial, Verdana;
 }
 .clearfix::after{
     content: "";
@@ -12,47 +12,216 @@ body{
     clear: both;
     height: 0;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul li{
+    list-style: none;
+}
+.soundIcon,{
+    background-image: url(http://www.iciba.com/images/index.png);
+    width: 17px;
+    height: 16px;
+    display: inline-block;
+}
+.soundIcon{
+    background-position: -430px -372px;
+}
+.zanIcon,.shareIcon{
+    background-image: url(http://www.iciba.com/images/index.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+.zanIcon{
+    background-position: -270px -372px;
+}
+.shareIcon{
+    background-position: -390px -372px;
+}
 
 /*header*/
 header{
     background-color: #2398F2;
     padding-top: 10px;
     width: 100%;
-    height: 200px;
+    height: 380px;
 }
-nav .logo{
+header nav .logo{
     background-image: url(http://cdn.iciba.com/www/top/logo-white.png);
     width: 50px;
     height: 16px;
     float: left;
     margin: 3px 20px 0 20px; 
 }
-nav ul li{
+header nav ul li{
     list-style: none;
     float: left;
     margin: 0 10px;
 }
-nav a,a:visited,a:link{
+header nav a,header nav a:visited,header nav a:link{
     color: white;
-    text-decoration: none;
     font-size: .9em;
 }
-nav a:hover{
+header nav a:hover{
     cursor: pointer;
 }
-nav div{
+header nav div{
     float: right;
 }
-nav div a{
+header nav div a{
     line-height: 25px;
     padding-right: 10px;
 }
-nav div img{
+header nav div img{
     border-radius: 50%;
     max-width: 25px;
     max-height: 25px;
     cursor: pointer;
 }
-nav div ul li a.rightline{
+header nav div ul li a.rightline{
     border-right: 1px solid #fff;
+}
+header div.topLogo{
+    background-image: url(http://www.iciba.com/images/index.png);
+    background-position: -230px -280px;
+    width: 151px;
+    height: 70px;
+    display: block;
+    margin: 100px auto 0;
+}
+header .searchBar{
+    margin: 8px auto 0;
+    background: #fff;
+    border-radius: 5px;
+    width: 700px;
+    height: 44px;
+    position: relative;
+}
+header .searchBar input{
+    line-height: 24px;
+    width: 610px;
+    padding: 10px 13px;
+    border-radius: 5px 0 0 5px; 
+    border: none;
+    outline: none;
+    float: left;
+    box-sizing: border-box;
+}
+header .searchBar div.submit{
+    width: 90px;
+    height: 44px;
+    background-color: #97d800;
+    border-radius: 0 5px 5px 0;
+    float: right;
+}
+header .searchBar div.submit:hover{
+    background-color: #a9e434;
+    cursor: pointer;
+}
+header .searchBar div.submit .submitIcon{
+    background-image: url(http://www.iciba.com/images/index.png);
+    background-position: -339px -350px;
+    width: 21px;
+    height: 21px;
+    margin: 12px auto 0;
+}
+
+/*mainNav*/
+nav#mainNav{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e9e9e9;
+}
+nav#mainNav ul{
+    width: 75%;
+    margin: 0 auto;
+}
+nav#mainNav ul li{
+    float: left;
+    font-size: 14px;
+    width: 140px;
+    text-align: center;
+}
+nav#mainNav ul li.active{
+    background-color: #e7f4fd;
+    color: #1596f5;
+}
+nav#mainNav ul li:hover{
+    cursor: pointer;
+    color:#1596f5;
+}
+
+/*main*/
+main{
+    width: 75%;
+    margin: 10px auto 0;
+}
+main article{
+    display: block;
+    width: 69%;
+    /*background-color: lightblue;*/
+    float: left;
+    height: 200px;
+}
+main aside{
+    display: block;
+    width: 30%;
+    background-color: lightcoral;
+    float: right;
+    height: 200px;
+}
+
+/*recommend*/
+main#recommend{
+
+}
+main#recommend section.everydayShare{
+    padding: 13px 19px;
+    line-height: 28px;
+    border: 1px solid #e9e9e9;
+}
+main#recommend section.everydayShare .en{
+    font-size: 20px;
+}
+main#recommend section.everydayShare .zh{
+    font-size: 14px;
+    margin-top: 4px;
+}
+main#recommend section.everydayShare .numbers{
+    margin-top: 18px;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-left: -6px;
+    color: #999;
+    font-size: 12px;
+}
+main#recommend section.everydayShare .tags{
+    line-height: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 18px;
+    font-size: 12px;
+}
+main#recommend section.everydayShare .tags a{
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 1px;
+    padding: 0 10px;
+    background-color: #e9e9e9;
+    font-size: 12px;
+    min-width: 30px;
+    margin: 0 5px;
+}
+
+
+/*onlineCourse*/
+main#onlineCourse{
+
 }

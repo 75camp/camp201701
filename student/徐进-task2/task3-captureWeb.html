@@ -12,9 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="task3-style.css">
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav class="clearfix">
             <i class="logo"></i>
             <ul>
                 <li><a href="#" target="anotherWeb">查词</a></li>
@@ -34,9 +35,51 @@
                     <li><a href="#" target="anotherWeb">专栏平台</a></li>
                     <li><img src="http://p1.bpimg.com/567571/af43062018ec2e1a.png" alt="avatar"></li>
                 </ul>
-                
             </div>
         </nav>
+        <div class="topLogo"></div>
+        <div class="searchBar clearfix">
+            <input type="text" placeholder="单词和句子都交给小词" name="search" autofocus>
+            <div class="submit">
+                <div class="submitIcon"></div>
+            </div>
+        </div>
     </header>
+    <nav id="mainNav">
+        <ul>
+            <li class="active">精彩推荐</li>
+            <li>在线课堂</li>
+        </ul>
+    </nav>
+    <main id="recommend">
+        <article>
+            <section class="everydayShare clearfix">
+                <p class="en">
+                    <a href="#" title="everydayShare">l learned everyone dies alone,but if you mean something to someone,if you helped someone,if even a single person remembers you,then you never really die.</a>
+                    <i class="soundIcon"></i>
+                </p>
+                <p class="zh">
+                    <a href="#" title="everydayShare">我学到了每个人都会孤独地死去，但是如果你的存在对某个人意义非凡，或者你帮助过某个人，哪怕有一个人能够想起你，你就不会真的死去。</a>
+                </p>
+                <div class="numbers">
+                    <span><i class="zanIcon"></i>283</span>
+                    <i class="shareIcon"></i>
+                </div>
+                <div class="tags">
+                    <a href="#" title="tags">图文</a>
+                </div>
+            </section>
+            
+        </article>
+        <aside></aside>
+    </main>
+    <main id="onlineCourse" class="clearfix">
+        <article>
+            <section></section>
+            
+        </article>
+        <aside></aside>
+    </main>
 </body>
+
 </html>
