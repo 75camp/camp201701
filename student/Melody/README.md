@@ -14,4 +14,7 @@ There are deficiencies also asked the teacher to help correct me:pray:
 
 ## task-two
 
-To be continued:blush:
+* 1-my_resume.html
+* 1-resume.css
+* 2-drop_menu.html
+* 2-menu.css
