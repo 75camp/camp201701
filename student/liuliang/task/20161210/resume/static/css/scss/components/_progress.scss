@@ -82,13 +82,13 @@ progress[value] {
 	height:20px;
 }
 .progress-bar span {
-	background-color: royalblue;
+    background-color: royalblue;
 	border-radius: 3px;
 	display: block;
 	text-indent: -9999px;
 }
 p[data-value] {
-  position: relative;
+    position: relative;
 }
 /* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
 p[data-value]:after {
