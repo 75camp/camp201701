@@ -1,0 +1,859 @@
+@rem: 75rem;
+body,html {
+    position: relative;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrapper {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background: url("../images/wrapper-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#gb-player {
+    position: relative;
+    z-index: 10;
+    width: 427/@rem;
+    height: 658/@rem;
+    margin: 270/@rem auto;
+    background: url("../images/gb-box.png") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.gb-player-bg {
+    position: absolute;
+    top: 67/@rem;
+    left: 80/@rem;
+    width: 268/@rem;
+    height: 235/@rem;
+    background: url("../images/gb-player-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+#xuehua-box {
+    position: absolute;
+    top: 319/@rem;
+    left: (220 + 25)/@rem;
+    width: 268/@rem;
+    height: 264/@rem;
+    overflow: hidden;
+}
+#xuehua {
+    position: relative;
+    height: 1202/@rem;
+    background: url("../images/xuehua.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: 5s linear;
+}
+#xuehua.to-top {
+    transform: translate3d(0, -800/@rem, 0);
+}
+#gb-solid {
+    position: absolute;
+    z-index: 10;
+    top: 284/@rem;
+    left: 175/@rem;
+    width: 400/@rem;
+    height: 603/@rem;
+    background-size: 100% 100%;
+}
+.solid-flash {
+    animation: solid-flash 1s infinite step-start;
+}
+@keyframes solid-flash {
+    0%, 100% {
+        background: url("../images/gb-xian1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    33% {
+        background: url("../images/gb-xian2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    66% {
+        background: url("../images/gb-xian3.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.talk-solid-flash {
+    animation: talk-solid-flash 1s infinite step-start;
+}
+@keyframes talk-solid-flash {
+    0%, 100% {
+        background: url("../images/gb-xian4.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    33% {
+        background: url("../images/gb-xian5.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    66% {
+        background: url("../images/gb-xian6.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+#game-card {
+    position: absolute;
+    z-index: -1;
+    top: 42/@rem;
+    left: 271/@rem;
+    width: 219/@rem;
+    height: 226/@rem;
+    transition: 1s cubic-bezier(.52,.21,.83,.42);
+    background: url("../images/youxidie.png") no-repeat;
+    background-size: 100% 100%;
+}
+#game-card.to-bot {
+    transform: translate3d(0, 277/@rem, 0);
+}
+#music-btn {
+    position: absolute;
+    z-index: 100;
+    top: 490/@rem;
+    left: 29/@rem;
+    width: 142/@rem;
+    height: 122/@rem;
+    background: url("../images/close-music.png") no-repeat;
+    background-size: 100% 100%;
+}
+#music-btn.close-music {
+    background: url("../images/open-music.png") no-repeat;
+    background-size: 100% 100%;
+}
+.music-solid {
+    position: absolute;
+    left: 34/@rem;
+    width: 78/@rem;
+    height: 66/@rem;
+    background: url("../images/music-xian1.png") no-repeat;
+    background-size: 100% 100%;
+}
+.music-solid.animated {
+    animation: music-solid-flash 1s infinite step-start;
+}
+@keyframes music-solid-flash {
+    0%, 100% {
+        background: url("../images/music-xian1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    33% {
+        background: url("../images/music-xian2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    66% {
+        background: url("../images/music-xian3.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.area-share {
+    position: absolute;
+    z-index: -20;
+    left: 82/@rem;
+    top: 46/@rem;
+    width: 592/@rem;
+    height: 517/@rem;
+    background: url("../images/area-share.png") no-repeat;
+    background-size: 100% 100%;
+}
+.close-share-btn {
+    position: absolute;
+    left: 235/@rem;
+    top: 414/@rem;
+    width: 76/@rem;
+    height: 68/@rem;
+    background: url("../images/close-share-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+#insert-card {
+    position: absolute;
+    right: 131/@rem;
+    top: 131/@rem;
+    width: 110/@rem;
+    height: 131/@rem;
+    background: url("../images/chaka.png") no-repeat;
+    background-size: 100% 100%;
+    animation-duration: 2s;
+}
+#insert-card.fadeOut {
+    animation-duration: 0.5s;
+}
+#water {
+    position: absolute;
+    left: 277/@rem;
+    top: 319/@rem;
+    width: 244/@rem;
+    height: 100/@rem;
+    background: url("../images/water.png") no-repeat;
+    background-size: 100% 100%;
+    transition: .3s ease;
+}
+#water.to-top {
+    transform: translate3d(0, -159/@rem, 0);
+}
+.football {
+    position: absolute;
+    top: 319/@rem;
+    left: 220/@rem;
+    width: 109/@rem;
+    height: 75/@rem;
+    background: url("../images/football.png") no-repeat;
+    background-size: 100% 100%;
+    transition: .3s ease;
+}
+.football.to-top {
+    transform: translate3d(325/@rem, -115/@rem, 0);
+}
+.volleyball {
+    position: absolute;
+    top: 319/@rem;
+    left: (217 + 317 - 87)/@rem;
+    width: 87/@rem;
+    height: 93/@rem;
+    background: url("../images/volleyball.png") no-repeat;
+    background-size: 100% 100%;
+    transition: .3s ease;
+}
+.volleyball.to-top {
+    transform: translate3d(-179/@rem, -254/@rem, 0);
+}
+.tennis {
+    position: absolute;
+    top: 319/@rem;
+    left: 283/@rem;
+    width: 181/@rem;
+    height: 149/@rem;
+    background: url("../images/tennis.png") no-repeat;
+    background-size: 100% 100%;
+    transition: .3s ease;
+}
+.tennis.to-top{
+    transform: translate3d(127/@rem, -290/@rem, 0);
+}
+.text {
+    position: absolute;
+    top: 440/@rem;
+    right: 52/@rem;
+    width: 124/@rem;
+    height: 102/@rem;
+    opacity: 0;
+    transform: scale(1.3);
+    background: url("../images/bi.png") no-repeat;
+    background-size: 100% 100%;
+}
+.pulse {
+    animation: pulse 1s infinite step-start;
+}
+@keyframes pulse {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.3, 1.3, 1.3);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+#cover-area {
+    position: absolute;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+}
+#cover-area.cover-flash {
+    animation: cover-flash 2s 2;
+}
+@keyframes cover-flash {
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+
+    25%, 75% {
+        opacity: 0.9;
+    }
+}
+#game-card-box {
+    position: relative;
+    top: 42/@rem;
+    left: 271/@rem;
+    width: 219/@rem;
+    height: 226/@rem;
+}
+#content-gb-wrapper {
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: url("../images/content-wrapper.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#content-gb-player {
+    position: relative;
+    margin: 5/@rem auto;
+    width: 698/@rem;
+    height: 1192/@rem;
+    background: url("../images/content-gb-box.png") no-repeat;
+    background-size: 100% 100%;
+}
+.screen {
+    position: absolute;
+    top: 41/@rem;
+    left: 56/@rem;
+    width: 590/@rem;
+    height: 517/@rem;
+}
+.screen>div {
+    position: absolute;
+}
+.direction-btn {
+    position: absolute;
+    top: 697/@rem;
+    left: 57/@rem;
+    width: 174/@rem;
+    height: 174/@rem;
+    background: url("../images/direction.png") no-repeat;
+    background-size: 100% 100%;
+}
+.arrow-btn {
+    position: absolute;
+    width: 38/@rem;
+    height: 38/@rem;
+}
+#top-btn {
+    top: 5/@rem;
+    left: 68/@rem;
+}
+#top-btn.default {
+    background: url("../images/top-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+#top-btn.active {
+    background: url("../images/top-btn-active.png") no-repeat;
+    background-size: 100% 100%;
+}
+#bot-btn {
+    bottom: 6/@rem;
+    left: 68/@rem;
+}
+#bot-btn.default {
+    background: url("../images/bot-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+#bot-btn.active {
+    background: url("../images/bot-btn-active.png") no-repeat;
+    background-size: 100% 100%;
+}
+#left-btn {
+    top: 68/@rem;
+    left: 5/@rem;
+}
+#left-btn.default {
+    background: url("../images/left-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+#left-btn.active {
+    background: url("../images/left-btn-active.png") no-repeat;
+    background-size: 100% 100%;
+}
+#right-btn {
+    top: 68/@rem;
+    right: 5/@rem;
+}
+#right-btn.default {
+    background: url("../images/right-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+#right-btn.active {
+    background: url("../images/right-btn-active.png") no-repeat;
+    background-size: 100% 100%;
+}
+#a-btn {
+    position: absolute;
+    top: 727/@rem;
+    left: 557/@rem;
+    width: 85/@rem;
+    height: 85/@rem;
+}
+#a-btn.default {
+    background: url("../images/a-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+#a-btn.active {
+    background: url("../images/a-btn-active.png") no-repeat;
+    background-size: 100% 100%;
+}
+#b-btn {
+    position: absolute;
+    top: 765/@rem;
+    left: 425/@rem;
+    width: 85/@rem;
+    height: 85/@rem;
+}
+#b-btn.default {
+    background: url("../images/b-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+#b-btn.active {
+    background: url("../images/b-btn-active.png") no-repeat;
+    background-size: 100% 100%;
+}
+#nav {
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+}
+#nav>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#nav .title {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/title.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.title-h1 {
+    position: absolute;
+    top: 33/@rem;
+    left: 121/@rem;
+    width: 355/@rem;
+    height: 90/@rem;
+    background: url("../images/quanjingfengsuo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.title-h1 {
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+}
+.person1, .person2, .person3, .person4 {
+    position: absolute;
+    width: 44/@rem;
+    height: 56/@rem;
+    background: url("../images/test1.jpg") no-repeat;
+    background-size: 100% 100%;
+    animation: person-flash .75s infinite;
+}
+.person1 {
+    top: 360/@rem;
+    left: 100/@rem;
+}
+.person2 {
+    top: 380/@rem;
+    left: 430/@rem;
+}
+.person3 {
+    top: 370/@rem;
+    left: 500/@rem;
+}
+.person4 {
+    top: 300/@rem;
+    left: 430/@rem;
+}
+@keyframes person-flash {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+        height: 56/@rem;
+        background: url("../images/test1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    50% {
+        height: 67/@rem;
+        transform: translate3d(0, -30/@rem, 0);
+        background: url("../images/test2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.guide {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/guide-page.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#content {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+}
+#content>div {
+    position: absolute;
+}
+#content>div.animated {
+    animation-duration: .3s;
+}
+.content-music-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 590/@rem;
+    height: 91/@rem;
+    background: url("../images/content-close-music.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content-music-btn.close-music {
+    background: url("../images/content-open-music.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page1 {
+    width: 590/@rem;
+    height: 456/@rem;
+    background: url("../images/page1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.page1-football {
+    position: absolute;
+    left: 262/@rem;
+    top: 108/@rem;
+    width: 49/@rem;
+    height: 29/@rem;
+    background: url("../images/page1-footaball.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page1-football.page1-animation {
+    animation: get-scroll 1s forwards;
+}
+@keyframes get-scroll {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    25%, 75% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: translate3d(245/@rem , 175/@rem, 0) scale(1);
+    }
+}
+.football-player {
+    position: absolute;
+    top: 141/@rem;
+    left: 427/@rem;
+    width: 62/@rem;
+    height: 91/@rem;
+    background: url("../images/football-player.png") no-repeat;
+    background-size: 100% 100%;
+}
+.football-player.page1-animation {
+    animation: footballplayer 1s infinite forwards;
+}
+@keyframes footballplayer {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 100/@rem, 0);
+    }
+}
+.football-player.fly {
+    animation: fly 1s 1 forwards;
+}
+@keyframes fly {
+    0% {
+       transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(200/@rem, -200/@rem, 0) rotate(480deg);
+    }
+}
+.page2 {
+    opacity: 0;
+    width: 590/@rem;
+    height: 517/@rem;
+    background: url("../images/page2.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.guandao {
+    position: absolute;
+    z-index: 10;
+    left: 227/@rem;
+    top: 319/@rem;
+    width: 94/@rem;
+    height: 93/@rem;
+    background: url("../images/mario-guandao.png") no-repeat;
+    background-size: 100% 100%;
+}
+.mario {
+    position: absolute;
+    top: (319 - 91)/@rem;
+    left: 253/@rem;
+    width: 48/@rem;
+    height: 91/@rem;
+    background: url("../images/super-mario.png") no-repeat;
+    background-size: 100% 100%;
+}
+.mario.page2-animation {
+    animation: drop 1s forwards;
+}
+@keyframes drop {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    40% {
+        transform: translate3d(0, -75/@rem, 0);
+    }
+    100% {
+        transform: translate3d(0, 95/@rem, 0);
+    }
+}
+.page3 {
+    opacity: 0;
+    width: 590/@rem;
+    height: 517/@rem;
+    background: url("../images/page3.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.page3-volleyball {
+    position: absolute;
+    left: 155/@rem;
+    top: 304/@rem;
+    width: 23/@rem;
+    height: 23/@rem;
+    background: url("../images/page3-volleyball.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page3-volleyball.page3-animation {
+    animation: volleyball 3s infinite;
+}
+@keyframes volleyball {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    25%, 75% {
+        transform: translate3d(172/@rem, -143/@rem, 0) scale(1.5);
+    }
+    50% {
+        transform: translate3d(346/@rem, -73/@rem, 0) scale(1);
+    }
+}
+.page4 {
+    opacity: 0;
+    width: 590/@rem;
+    height: 487/@rem;
+    background: url("../images/page4.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.attack-ball {
+    position: absolute;
+    left: 138/@rem;
+    top: 369/@rem;
+    width: 73/@rem;
+    height: 46/@rem;
+    background: url("../images/page4-attack-ball.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page4-animation {
+    animation: attack-ball 1.3s infinite
+}
+
+@keyframes attack-ball {
+    0% {
+        transform: translate3d(0,0,0) scale(0.3);
+    }
+
+    90% {
+        transform: translate3d(2.28rem,0,0) scale(1);
+    }
+
+    100% {
+        transform: translate3d(2.28rem,0,0) scale(0);
+    }
+}
+.page5 {
+    opacity: 0;
+    width: 590/@rem;
+    height: 507/@rem;
+    background: url("../images/page5.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.zoushiming {
+    position: absolute;
+    width: 435/@rem;
+    height: 340/@rem;
+    left: 107/@rem;
+    top: 136/@rem;
+    transform: scale(0);
+    background: url("../images/zoushiming.png") no-repeat;
+    background-size: 100% 100%;
+}
+.zoushiming.appear {
+    animation: appear .5s 1 forwards;
+}
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.sprite-ball {
+    position: absolute;
+    left: -60/@rem;
+    top: 360/@rem;
+    z-index: 20;
+    width: 60/@rem;
+    height: 60/@rem;
+    background: url("../images/sprite-ball.png") no-repeat;
+    background-size: 100% 100%;
+}
+.sprite-ball.page5-animation {
+    animation: sprite-ball .5s 1 forwards;
+}
+@keyframes sprite-ball {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+        transform: translate3d(202/@rem, 27/@rem, 0) scale(1);
+    }
+    60% {
+        transform: translate3d(192/@rem, 27/@rem, 0) scale(1);
+    }
+    70% {
+        transform: translate3d(212/@rem, 27/@rem, 0) scale(1);
+    }
+    80% {
+        transform: translate3d(192/@rem, 27/@rem, 0) scale(1);
+    }
+    100% {
+        transform: translate3d(202/@rem, 27/@rem, 0) scale(0);
+    }
+}
+.page6 {
+    opacity: 0;
+    width: 590/@rem;
+    height: 517/@rem;
+    background: url("../images/page6.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.page6 .page-children {
+    opacity: 1;
+    width: 590/@rem;
+    height: 517/@rem;
+    background: url("../images/page6-plane.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.page6 .page-children.page6-animation {
+    animation: page6-flash 2s 2;
+}
+@keyframes page6-flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+.page7 {
+    opacity: 0;
+    width: 590/@rem;
+    height: 517/@rem;
+    background: url("../images/page7.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.continued {
+    position: absolute;
+    left: 58/@rem;
+    top: 51/@rem;
+    width: 492/@rem;
+    height: 46/@rem;
+    background: url("../images/page7-txt.png") no-repeat;
+    background-size: 100% 100%;
+}
+.share {
+    position: absolute;
+    left: 102/@rem;
+    top: 158/@rem;
+    width: 152/@rem;
+    height: 153/@rem;
+    background: url("../images/share.png") no-repeat;
+    background-size: 100% 100%;
+}
+.home {
+    position: absolute;
+    left: 332/@rem;
+    top: 158/@rem;
+    width: 152/@rem;
+    height: 153/@rem;
+    background: url("../images/home.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page7 .page-children.page7-animation {
+    animation: page7-flash 2s infinite;
+}
+@keyframes page7-flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+h2 {
+    font-size: 32px;
+}
+#detail {
+    z-index: 10;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+#detail img {
+    width: 100%;
+    display: block;
+    margin: 25/@rem 0 50/@rem 0;
+}
+.content {
+    font-size: 18px;
+}
+#detail>section {
+    position: absolute;
+    padding: 20/@rem 10/@rem;
+    opacity: 0;
+    transition: .3s ease;
+}
+#detail>section:first-child {
+    opacity: 1;
+}
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+code {
+    padding: 3/@rem 5/@rem;
+    background: #f8f8f8;
+    color: #e96900;
+}
+
+
+
+
+
+
+
+
+
+
+

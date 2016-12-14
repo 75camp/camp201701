@@ -1,0 +1,38 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,button{margin:0;padding:0;}
+
+body{font-size:12px;}
+
+img{border:none;}
+
+li{list-style:none;}
+
+input,button,select,textarea{outline:none; border: none;}
+
+textarea{resize:none;}
+
+a{text-decoration:none;}
+
+a,input,button {
+    -webkit-tap-highlight-color: rgba(0, 0 ,0 ,0);
+}
+
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+/* 公用 */
+body {
+    font: 12px Helvetica;
+}
+body * {
+    -webkit-text-size-adjust: 100%;
+    -webkit-user-select: none;
+}
+.clearfix:after,.clearfix:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
