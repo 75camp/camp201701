@@ -1,0 +1,97 @@
+/************
+ * 页面样式
+ ************／
+
+
+/* =========
+    基本默认值
+    ========= */
+
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* =============
+    自定义页面样式
+   ============= */
+
+.container ul ul {
+    display: none;
+}
+
+.container ul li:hover > ul {
+    display: block;
+}
+
+.container ul {
+    position: relative;
+    background: #efefef;
+    background: -moz-radial-gradient(#efefef 0%, #aaa 100%);
+    background: -o-radial-gradient(#efefef 0%, #aaa 100%);
+    background: -webkit-radial-gradient(#efefef 0%, #aaa 100%);
+    background: radial-gradient(#efefef 0%, #aaa 100%);
+    box-shadow: 0 0 9px rgba(0,0,0,0.15);
+    display: inline-block;
+}
+
+.container>ul>li + li {
+    border-left: .1rem solid #999;
+}
+
+.container ul li {
+    float: left;
+}
+.container ul li:hover {
+    background: #777;
+    background: -moz-radial-gradient(#777 0%, #444 40%);
+    background: -o-radial-gradient(#777 0%, #444 40%);
+    background: -webkit-radial-gradient(#777 0%, #444 40%);
+    background: radial-gradient(#777 0%, #444 40%);
+
+}
+.container ul li:hover a {
+    color: #fff;
+}
+
+.container ul li a {
+    display: block;
+    padding: 2.5rem 4rem;
+    color: #777;
+    text-decoration: none;
+}
+
+
+.container ul ul {
+    background: #5f6f7f;
+    position: absolute;
+    top: 100%;
+}
+.container ul ul li {
+    float: none;
+    border-bottom: .1rem solid #777;
+    position: relative;
+}
+.container ul ul li a {
+    padding: 1.5rem 4rem;
+    color: #fff;
+}
+
+
+.container ul ul li a:hover {
+    background: #3f4f5f;
+}
+
+.container ul ul ul {
+    position: absolute;
+    left: 100%;
+    top:0;
+}
