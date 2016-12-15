@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二级菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        aside {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            margin: 30px auto;
+            line-height: 50px;
+            text-align: center;
+        }
+        aside:before {
+            position: absolute;
+            content: "";
+            left: 120px;
+            top: 22px;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-top: 5px solid #000;
+        }
+        ul {
+            position: relative;
+            top: -2px;
+            left: -1px;
+            width: 200px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            border-top: 1px solid transparent;
+            display: none;
+        }
+        aside:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        导航
+        <ul>
+            <li>我是二级菜单</li>
+            <li>我是二级菜单</li>
+            <li>我是二级菜单</li>
+            <li>我是二级菜单</li>
+            <li>我是二级菜单</li>
+        </ul>
+    </aside>
+</body>
+</html>
