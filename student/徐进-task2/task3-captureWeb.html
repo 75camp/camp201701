@@ -11,6 +11,8 @@
     <meta name="viewport" content="initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="task3-style.css">
+    <script src="task3-script.js"></script>
+    
 </head>
 
 <body>
@@ -47,11 +49,11 @@
     </header>
     <nav id="mainNav">
         <ul>
-            <li class="active">精彩推荐</li>
-            <li>在线课堂</li>
+            <li class="active" id="recommendButton">精彩推荐</li>
+            <li id="onlineCourseButton">在线课堂</li>
         </ul>
     </nav>
-    <main id="recommend" class="clearfix">
+    <main id="recommend" class="clearfix" style="display:block;">
         <article>
             <section class="everydayShare clearfix">
                 <p class="en">
@@ -206,7 +208,7 @@
         </article>
         <aside>
             <h4 class="hotTitle">热门词汇</h4>
-            <div class="hotList">
+            <div class="hotList clearfix">
                 <a href="#" target="anotherWeb" class="hotItem">火锅</a>
                 <a href="#" target="anotherWeb" class="hotItem">evaporation</a>
                 <a href="#" target="anotherWeb" class="hotItem">diagram</a>
@@ -220,16 +222,16 @@
             </div>
         </aside>
     </main>
-    <main id="onlineCourse" class="clearfix">
+    <main id="onlineCourse" class="clearfix" style="display:none;">
         <article>
             <section class="course">
                 <div class="courseTitle clearfix">
                     <b>英语</b>
-                    <span class="on">语法</span>
-                    <span>电影</span>
+                    <span class="on" id="grammerButton">语法</span>
+                    <span id="movieButton">电影</span>
                     <a href="#" target="anotherWeb">查看更多</a>
                 </div>
-                <ul id="grammer" class="courseList">
+                <ul id="grammer" style="display:block;" class="courseList clearfix">
                     <li class="courseItem">
                         <a class="courseItemImg" href="#" target="anotherWeb">
                             <img src="http://course.cache.iciba.com/image/2016-11-15/1479198403d41d8cd98f00b204e9800998ecf8427e.jpg">
@@ -351,7 +353,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul id="movie" class="courseList">
+                <ul id="movie" style="display:none;" class="courseList clearfix">
                     <li class="courseItem">
                         <a class="courseItemImg" href="#" target="anotherWeb">
                             <img src="http://course.cache.iciba.com/image/2016-11-15/1479198133d41d8cd98f00b204e9800998ecf8427e.jpg">
@@ -474,11 +476,12 @@
                     </li>
                 </ul>
             </section>
-            
+
         </article>
     </main>
     <footer>
-        <p> 京 ICP 证 100054号 备案 新出网证 <京> 字 011 号 京网文【2011】0509-172 号 京 ICP 备 06025896 号 京公网安备 </p>
+        <p> 京 ICP 证 100054号 备案 新出网证
+            <京> 字 011 号 京网文【2011】0509-172 号 京 ICP 备 06025896 号 京公网安备 </p>
     </footer>
 </body>
 

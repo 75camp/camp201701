@@ -11,7 +11,6 @@ body{
     overflow: hidden;
     clear: both;
     height: 0;
-    /*border: 1px solid #000;*/
 }
 a{
     text-decoration: none;
@@ -176,9 +175,6 @@ main#onlineCourse article{
 }
 
 /*recommend*/
-main#recommend{
-    display: none;
-}
 main#recommend section.everydayShare{
     padding: 13px 19px;
     line-height: 28px;
@@ -283,9 +279,6 @@ main#recommend section.everydayShare .tags{
 }
 
 /*onlineCourse*/
-main#onlineCourse{
-
-}
 .course{
     margin-bottom: 70px;
 }
@@ -423,17 +416,6 @@ main#onlineCourse{
     color: #999;
     font-size: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
 footer{
     height: 40px;
     line-height: 40px;
