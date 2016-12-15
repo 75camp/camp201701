@@ -11,6 +11,7 @@ body{
     overflow: hidden;
     clear: both;
     height: 0;
+    /*border: 1px solid #000;*/
 }
 a{
     text-decoration: none;
@@ -19,7 +20,7 @@ a{
 ul li{
     list-style: none;
 }
-.soundIcon,{
+.soundIcon{
     background-image: url(http://www.iciba.com/images/index.png);
     width: 17px;
     height: 16px;
@@ -137,7 +138,7 @@ nav#mainNav{
     border-bottom: 1px solid #e9e9e9;
 }
 nav#mainNav ul{
-    width: 75%;
+    width: 1000px;
     margin: 0 auto;
 }
 nav#mainNav ul li{
@@ -157,27 +158,26 @@ nav#mainNav ul li:hover{
 
 /*main*/
 main{
-    width: 75%;
+    width: 1000px;
     margin: 10px auto 0;
 }
 main article{
     display: block;
-    width: 69%;
-    /*background-color: lightblue;*/
+    width: 680px;
     float: left;
-    height: 200px;
 }
 main aside{
     display: block;
-    width: 30%;
-    background-color: lightcoral;
+    width: 300px;
     float: right;
-    height: 200px;
+}
+main#onlineCourse article{
+    width: 1000px;
 }
 
 /*recommend*/
 main#recommend{
-
+    display: none;
 }
 main#recommend section.everydayShare{
     padding: 13px 19px;
@@ -207,7 +207,7 @@ main#recommend section.everydayShare .tags{
     margin-top: 18px;
     font-size: 12px;
 }
-main#recommend section.everydayShare .tags a{
+.tags a{
     height: 20px;
     display: inline-block;
     text-align: center;
@@ -219,9 +219,225 @@ main#recommend section.everydayShare .tags a{
     min-width: 30px;
     margin: 0 5px;
 }
-
+.listItem{
+    width: 218px;
+    height: 218px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    line-height: 22px;
+    position: relative;
+    border: 1px solid #e9e9e9;
+    background-color: #fff;
+}
+.listItemRight {
+    margin-right: 0;
+}
+.listItem img{
+    width: 100%;
+    height: 135px;
+    opacity: .9px;
+    display: block;
+}
+.listTitle{
+    margin: 4px 10px 0;
+    font-size: 100%;
+    font-weight: 500;
+}
+.listTags {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    height: 20px;
+    overflow: hidden;
+}
+.listItemBig{
+    width: 448px;
+    height: 448px;
+}
+.listItemBig img{
+    height: 280px;
+}
+.listDesc{
+    color: #666;
+    margin: 4px 10px 0;
+    font-size: 0.85em;
+}
+.hotTitle{
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ddd;
+}
+.hotItem{
+    display: block;
+    float: left;
+    padding: 0 15px;
+    line-height: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    margin: 10px 10px 0 0;
+    background-color: #f6f6f6;
+    font-size: 14px;
+}
 
 /*onlineCourse*/
 main#onlineCourse{
 
+}
+.course{
+    margin-bottom: 70px;
+}
+.courseTitle{
+    height: 22px;
+    line-height: 22px;
+    margin: 30px -30px 30px 0;
+    overflow: hidden;
+}
+.courseTitle b{
+    float: left;
+    border-left: 3px solid #1596f5;
+    padding-left: 10px;
+    margin-right: 34px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.courseTitle span{
+    float: left;
+    margin-top: 3px;
+    margin-right: 30px;
+    font-size: 16px;
+}
+.courseTitle span:hover,.courseTitle a:hover{
+    color: #1596f5;
+    cursor: pointer;
+}
+.courseTitle span.on{
+    color: #1596f5;
+}
+.courseTitle a{
+    float: right;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #999;
+}
+.courseList{
+    margin-right: -50px;
+    margin-bottom: -30px;
+    list-style: none;
+}
+.courseItem{
+    float: left;
+    width: 330px;
+    height: 340px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.courseItemImg{
+    display: block;
+    width: 330px;
+    height: 210px;
+    position: relative;
+}
+.courseItemImg img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+.courseItemImg span{
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.courseItemImg span i{
+    background-image: url(http://www.iciba.com/images/index.png);
+    background-position: -381px -280px;
+    width: 68px;
+    height: 68px;
+    margin-top: -34px;
+    margin-left: -34px;
+    opacity: .75;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-style: normal;
+}
+.courseItem div{
+    height: 129px;
+    padding: 0 10px;
+    border: 1px solid #eee;
+    border-top: none;
+    background-color: #fff;
+}
+.courseItem h3{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.courseItem h4{
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+    height: 46px;
+}
+.courseItem p{
+    border-top: 1px solid #e9e9e9;
+    height: 49px;
+    line-height: 49px;
+}
+.courseItem p span{
+    float: left;
+    font-size: 22px;
+    color: #e95f44;
+}
+.courseItem p span i{
+    background-position: -292px -392px;
+    width: 10px;
+    height: 12px;
+}
+.courseItem p span i,.courseItem p span b{
+    display: inline-block;
+    vertical-align: middle;
+    top: -2px;
+    background-image: url(http://www.iciba.com/images/index.png);
+    position: relative;
+}
+.courseItem p span b{
+    background-position: -440px -350px;
+    width: 7px;
+    height: 18px;
+}
+.courseItem p a{
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
 }
