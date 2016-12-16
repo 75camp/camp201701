@@ -1,0 +1,196 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: regular;
+  src: url('//lib.baomitu.com/fonts/Roboto/Roboto-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Normal'),
+       url('//lib.baomitu.com/fonts/Roboto/Roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/Roboto/Roboto-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/Roboto/Roboto-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/Roboto/Roboto-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/Roboto/Roboto-v15-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color: #3d3d3d;
+}
+header{
+	width: 100%;
+	height: 344px;
+	background: rgb(74,72,71);
+}
+header section.container{
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+header section.container figure{
+	position: absolute;
+	top: 97px;
+	width: 150px;
+	height: 150px;
+	background: url(../img/avatar_bg.png) no-repeat;
+	background-size: contain;
+	text-align: center;
+}
+header section.container figure img{
+	width: 125px;
+	border-radius: 63px;
+	margin: 11px;
+}
+header section.container section{
+	position: absolute;
+	top: 130px;
+	left: 235px;
+	width: 900px;
+	height: 120px;
+}
+header section.container section h1{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+header section.container section h1,header section.container section .occupation{
+	color: #fff;
+}
+header section.container section .tel,header section.container section .mail,header section.container section .github{
+	position: absolute;
+	padding-left: 40px;
+	color: #838383;
+}
+header section.container section .tel,header section.container section .mail{
+	top: 10px;
+}
+header section.container section .tel{
+	left: 330px;
+	background: url(../img/phone.png) no-repeat;
+	background-size: contain;
+}
+header section.container section .mail{
+	left: 590px;
+	background: url(../img/paperplane.png) no-repeat;
+	background-size: contain;
+}
+header section.container section .github{
+	top: 70px;
+	left: 325px;
+	background: url(../img/globe.png) no-repeat;
+	background-size: contain;
+}
+header section.container section .github a:link,header section.container section .github a:visited{
+	color: #838383;
+}
+header section.container section .github a:hover,header section.container section .github a:focus,header section.container section .github a:active{
+	text-decoration: underline;
+}
+article{
+	width: 1200px;
+	margin: 10px auto 60px;
+	font-size: 22px;
+	overflow: hidden;
+}
+article>section{
+	width: 535px;
+	margin-top: 50px;
+}
+article>section.education,article>section.awards{
+	float: left;
+	clear: left;
+}
+article>section.intern,article>section.professional-skills{
+	float: right;
+}
+article>section.professional-skills{
+	margin-top: -80px;
+}
+article>section h3{
+	font-size: 25px;
+	padding-bottom: 8px;
+}
+article>section section{
+	margin-top: 20px;
+}
+article>section section p:nth-child(2){
+	color: #b2b2b1;
+}
+article>section section p span{
+	color: #b2b2b1;
+}
+article>section.education section{
+	padding-left: 55px;
+	background: url(../img/dot.png) no-repeat 0 10px;
+	background-size: 15px 15px;
+}
+/*article>section.education section:before{
+	content: "\f007";
+	font-family: FontAwesome;
+}*/
+article>section.awards section{
+	padding-left: 55px;
+	background: url(../img/medal.png) no-repeat;
+	background-size: contain;
+}
+article>section.intern section{
+	padding-left: 55px;
+	background: url(../img/dot.png) no-repeat 0 10px;
+	background-size: 15px 15px;
+}
+article>section.professional-skills>section>section{
+	position: relative;
+	height: 27px;
+	background: url(../img/professional_bg.png) no-repeat right;
+	background-size: contain;
+}
+article>section.professional-skills>section>section>p:nth-child(2){
+	position: absolute;
+	width: 320px;
+	height: 27px;
+	top: 0;
+	left: 220px;
+}
+article>section.professional-skills>section>section:nth-child(1)>p:nth-child(2){
+	background: url(../img/html.png) no-repeat;
+	background-size: contain;
+}
+article>section.professional-skills>section>section:nth-child(2)>p:nth-child(2){
+	background: url(../img/javascript.png) no-repeat;
+	background-size: contain;
+}
+article>section.professional-skills>section>section:nth-child(3)>p:nth-child(2){
+	background: url(../img/react.png) no-repeat;
+	background-size: contain;
+}
+article>section.professional-skills>section>section:nth-child(4)>p:nth-child(2){
+	background: url(../img/react.png) no-repeat;
+	background-size: contain;
+}
+article>section.professional-skills>section>section:nth-child(5)>p:nth-child(2){
+	background: url(../img/react.png) no-repeat;
+	background-size: contain;
+}
+article>section.professional-skills>section>section:nth-child(6)>p:nth-child(2){
+	background: url(../img/sublime.png) no-repeat;
+	background-size: contain;
+}
+article>section.professional-skills>section>section:nth-child(7)>p:nth-child(2){
+	background: url(../img/sublime.png) no-repeat;
+	background-size: contain;
+}
+footer{
+	width: 100%;
+	text-align: center;
+	background: rgb(74,72,71);
+	line-height: 100px;
+	color: #838383;
+}
