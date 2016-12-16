@@ -9,7 +9,7 @@
 		width: 100%;
 		font-family: 微软雅黑,sans-serif;
     line-height: 1.5;
-		height: 100%;
+		height: 650px;
 	}
 	body,ul,li,ol,h1,h2,h3,h4,h5,h6,p,div{
 		margin: 0px;
@@ -28,13 +28,13 @@
 		color: rgb(213, 211, 204);
 	}
 	.name{
-		width: 3em;
+		width: 5em;
 	  margin: 10px auto 70px auto;
 	}
 	header{
 	line-height: 2.5;
-	width: 330px;
-  margin: 10px auto 70px auto;
+	width: 25em;
+  margin: 0px 0px 100px 3em;
 	}
 	header p::after{
 		clear: both;
@@ -51,10 +51,48 @@
 
 		}
 		section p{
-			margin: 0 auto;
+			margin-left: 3em;
 			max-width: 20em;
 			text-indent: 2em;
 			/*white-space: pre;*/
+		}
+		h4{
+			width: 4em;
+			color: rgb(83, 212, 235);
+			margin: 40px 0px 0px 0px;
+			padding-left: 50px;
+		}
+		p.ptitle{
+			margin-left: 50px;
+			text-indent:0px;
+			line-height: 2;
+			float: left;
+		}
+		.content{
+			font-family:cursive;
+			color: rgb(136, 139, 134);
+		}
+		.clear{
+			clear:both;
+		}
+		.ability{
+			width: 50%;
+			float: left;
+			color: rgb(255, 255, 255);
+		}
+		.skill{
+			float: left;
+			width: 50%;
+		}
+		.skill dl{
+			padding-left: 40px;
+		}
+		dd{
+			color: rgb(185, 186, 183)
+		}
+		.education dt{
+			padding-left: 40px;
+			color:rgb(83, 212, 235);
 		}
 	</style>
 </head>
@@ -65,11 +103,12 @@
 	<header>
 		<address>手机</address><p>1338******</p>
 		<address>邮箱</address><p>10671988*****</p>
-		<address>GitHub</address><p>github.com/geekling</p>
+		<address>GitHub</address><p>github.com/geekleeing</p>
 		<p></p>
 	</header>
 		<section>
-			<p><strong>大家好!</strong>我是李佳瑜，一名普通的在校大学生，成绩一般，喜欢钻研学习新技术，还有玩开源。最开始喜欢喝咖啡，玩过蛇，拍过片，也吃过“草莓派”。期间发现前端是个好东西，之后转行当编辑，现在还在路上。</p>
+			<p><strong>大家好!</strong>我是李佳瑜，一名普通的在校大学生，成绩一般，喜欢钻研学习新技术，还有玩开源。
+				最开始喜欢喝咖啡，玩过蛇，拍过片，也吃过“草莓派”。期间发现前端是个好东西，之后转行当编辑，现在还在路上。</p>
 		</section>
 <footer></footer>
 </div>
@@ -77,16 +116,50 @@
 	<h4>项目经历</h4>
 	<section>
 <div class="experience">
-	<p><strong>项目</strong><strong>负责</strong></p>
-	<p></p>
-	<p></p>
-	<p></p>
-	<p></p>
-	<p></p>
+		<p class="ptitle">国家中医药管理局</p>	<p class="ptitle">网站管理维护，以及相关专题栏目制作</p>
+		<div class="clear"></div>
+		<p class="ptitle content">2016.09-至今</p>	<p class="ptitle content">网站管理维护，以及相关专题栏目制作</p>
+		<div class="clear"></div>
+		<p class="ptitle">北大青鸟OA系统</p>	<p class="ptitle">网站管理维护，以及相关专题栏目制作</p>
+		<div class="clear"></div>
+		<p class="ptitle content">2016.7-2016.9</p>	<p class="ptitle content">网站管理维护，以及相关专题栏目制作</p>
+		<div class="clear"></div>
+		<p class="ptitle">清华大学出版社第六事业部官网</p>	<p class="ptitle">网站管理维护，以及相关专题栏目制作</p>
+		<div class="clear"></div>
+		<p class="ptitle content">2016.4-2016.6</p>	<p class="ptitle content">网站管理维护，以及相关专题栏目制作</p>
+		<div class="clear"></div>
+		<p class="ptitle">北京翌特视讯科技有限公司</p>	<p class="ptitle">网站管理维护，以及相关专题栏目制作</p>
+		<div class="clear"></div>
+		<p class="ptitle content">2015.07-2015.09</p>	<p class="ptitle content">网站管理维护，以及相关专题栏目制作</p>
 </div>
+<div class="clear"></div>
+
 	</section>
 	<div class="rfooter">
-
+		<div class="ability">
+				<dl class="education">
+					<dt>学校</dt>
+						<dd>首都师范大学</dd>
+						<dd>信息管理与信息系统2013级</dd>
+					<dt>兴趣</dt>
+						<dd>喜欢开源以及新技术，最初从事后端程序开发，一不小心入错行，开始学习前端设计，刚刚起步。不过平时偶尔还会玩玩爬虫和数据分析。</dd>
+				</dl>
+		</div>
+		<div class="skill">
+			<h4>技能</h4>
+			<dl>
+				<dt>HTML</dt>
+				<dd><progress value="0.3" max="100">80%</progress></dd>
+				<dt>CSS</dt>
+				<dd><progress value="0.8" max="100">80%</progress></dd>
+				<dt>JavaScript</dt>
+				<dd><progress value="0.8" max="100">80%</progress></dd>
+				<dt>JQuery</dt>
+				<dd><progress value="0.8" max="100">80%</progress></dd>
+				<dt>Angular/vue</dt>
+				<dd><progress value="0.8" max="100">80%</progress></dd>
+			</dl>
+		</div>
 	</div>
 </div>
 </body>
