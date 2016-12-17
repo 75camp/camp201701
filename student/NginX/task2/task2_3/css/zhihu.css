@@ -1,0 +1,533 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	width: 100%;
+}
+header{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background: linear-gradient(to bottom,#086ed5,#055db5);
+	color: #fff;
+	font-size: 14px;
+}
+header section.container{
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	/*vertical-align: middle;*/
+}
+header section.container figure.logo{
+	float: left;
+	height: 30px;
+	margin: 7px 10px 0 0;
+}
+header section.container figure.logo a{
+	display: block;
+	height: 30px;
+}
+header section.container form.search-form{
+	float: left;
+	position: relative;
+}
+header section.container input.search-box{
+	float: left;
+	width: 340px;
+	height: 30px;
+	border: 1px solid #045bb2;
+	margin-top: 7px;
+	text-indent: 7px;
+	border-radius: 4px;
+	background: #e1eaf2;
+}
+header section.container button.search{
+	position: absolute;
+	right: 0;
+	width: 40px;
+	height: 30px;
+	border: 1px solid #045bb2;
+	box-sizing: content-box;
+	margin-top: 7px;
+	cursor: pointer;
+	background: linear-gradient(to bottom,#0e7bef,#0d73da);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+header section.container button.search span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 15px;
+	height: 15px;
+	background: url(../img/sprites.png) no-repeat;
+	background-position: -82px 0;
+}
+header section.container nav.navigation{
+	float: left;
+	margin-left: 18px;
+}
+header section.container nav.navigation ul{
+	overflow: hidden;
+}
+header section.container nav.navigation ul li{
+	float: left;
+	width: 54px;
+	text-align: center;
+	box-sizing: border-box;
+}
+header section.container nav.navigation ul li.current{
+	background: linear-gradient(to bottom,#055fb8,#095fb3);
+	border-left: 1px solid #045bb2;
+	border-right: 1px solid #045bb2;
+}
+header section.container nav.navigation ul li a{
+	display: block;
+}
+header section.container nav.navigation ul li a:link,header section.container nav.navigation ul li a:visited{
+	color: #eee;
+}
+header section.container nav.navigation ul li a:hover,header section.container nav.navigation ul li a:focus,header section.container nav.navigation ul li a:active{
+	color: #fff;
+}
+header section.container button.ask{
+	float: left;
+	width: 64px;
+	height: 30px;
+	box-sizing: content-box;
+	border: 1px solid #045bb2;
+	border-radius: 4px;
+	background: linear-gradient(to bottom,#0e7bef,#0d73da);
+	margin: 7px 0 0 100px; 
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+}
+header section.container figure.avatar{
+	height: 25px;
+	float: left;
+	margin: 9px 10px 0 30px;
+	display: inline-block;
+}
+header section.container figure.avatar a{
+	display: block;
+	height: 25px;
+}
+header section.container p.user{
+	float: left;
+}
+header section.container p.user a{
+	color: #fff;
+	display: block;
+}
+article.content{
+	width: 960px;
+	margin: 70px auto 0;
+	overflow: hidden;
+}
+article.content article.main-content{
+	width: 632px;
+	float: left;
+	overflow: hidden;
+}
+article.content article.main-content section.shortcuts{
+	width: 100%;
+	height: 50px;
+}
+article.content article.main-content figure.avatar{
+	float: left;
+	width: 38px;
+	height: 38px;
+}
+article.content article.main-content nav{
+	float: right;
+	position: relative;
+	width: 574px;
+	height: 100%;
+	box-sizing: border-box;
+	background: #fafafa;
+	border: 1px solid #f0f0f0;
+	border-radius: 5px;
+}
+/*article.content article.main-content nav span.outer-triangle{
+	position: absolute;
+	top: 9px;
+	left: -13px;
+	width: 0px;
+	height: 0px;
+	border-top: 6px solid #f0f0f0;
+	border-right: 6px solid #f0f0f0;
+	border-bottom: 6px solid #fff;
+	border-left: 6px solid #fff;
+	box-sizing: content-box;
+}
+article.content article.main-content nav span.inner-triangle{
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0px;
+	height: 0px;
+	border-top: 5px solid #fafafa;
+	border-right: 5px solid #fafafa;
+	border-bottom: 5px solid #f0f0f0;
+	border-left: 5px solid #f0f0f0;
+	box-sizing: content-box;
+}*/
+article.content article.main-content nav ul{
+	float: left;
+	position: relative;
+}
+article.content article.main-content nav li{
+	float: left;
+	padding: 0 30px;
+	line-height: 48px;
+	text-align: right;
+}
+article.content article.main-content nav ul>span{
+	position: absolute;
+	top: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 1px;
+	height: 20px;
+	background: #f0f0f0;
+}
+article.content article.main-content nav li a{
+	display: inline-block;
+	color: #6c829f;
+}
+article.content article.main-content nav li a span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+}
+article.content article.main-content nav li:nth-of-type(1) a span{
+	background: url(../img/sprites2.png) no-repeat;
+	background-position: -148px -30px;
+}
+article.content article.main-content nav li:nth-of-type(2) a span{
+	background: url(../img/sprites2.png) no-repeat;
+	background-position: -96px -30px;
+}
+article.content article.main-content nav li:nth-of-type(3) a span{
+	background: url(../img/sprites2.png) no-repeat;
+	background-position: -122px -56px;
+}
+article.content article.main-content nav p{
+	float: right;
+	margin-right: 20px;
+	line-height: 50px;
+}
+article.content article.main-content nav p a{
+	color: #999;
+	font-size: 13px;
+}
+article.content article.main-content section.trend{
+	width: 100%;
+	margin-top:40px;
+	overflow: hidden;
+}
+article.content article.main-content section.trend>p:nth-of-type(1){
+	float: left;
+	margin-bottom: 10px; 
+	font-weight: bold;
+	color: #666;
+}
+article.content article.main-content section.trend>p:nth-of-type(2){
+	float: right;
+	margin-bottom: 10px;
+	font-size: 13px;
+	/*background: url(../img/sprites3.png) no-repeat;
+	background-position: -71px -88px;*/
+}
+article.content article.main-content section.trend p>span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 15px;
+	margin-right: 5px;
+}
+article.content article.main-content section.trend>p:nth-of-type(1)>span{
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -71px -88px;
+}
+article.content article.main-content section.trend>p:nth-of-type(2)>span{
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -88px -148px;
+}
+article.content article.main-content section.trend>p:nth-of-type(2) a{
+	color: #999;
+}
+article.content article.main-content section.trend hr{
+	clear: both;
+}
+article.content article.main-content section.trend section.trends-list{
+	width: 100%;
+	margin-top: 30px;
+}
+article.content article.main-content section.trend section.trends-item{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
+}
+article.content article.main-content section.trend section.trends-item .overview{
+	float: left;
+	width: 38px;
+}
+article.content article.main-content section.trend section.trends-item figure.avatar{
+	width: 38px;
+	height: 38px;
+}
+article.content article.main-content section.trend section.trends-item figure.avatar a{
+	display: block;
+}
+article.content article.main-content section.trend section.trends-item figure.avatar img{
+	border-radius: 4px;
+}
+article.content article.main-content section.trend section.trends-item span.vote{
+	display: block;
+	float: left;
+	width: 38px;
+	margin-top: 5px;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 3px;
+	background: #eff6fa;
+}
+article.content article.main-content section.trend section.trends-item span.vote:hover{
+	background: #698ebf;
+}
+article.content article.main-content section.trend section.trends-item span.vote a{
+	display: inline-block;
+	vertical-align: middle;
+	color: #698ebf;
+}
+article.content article.main-content section.trend section.trends-item span.vote a:hover{
+	color: #fff;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail{
+	float: left;
+	width: 584px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: #999;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.intro{
+	float: left;
+	font-size: 13px;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.intro a{
+	color: #999;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.intro a:hover{
+	color: #259;
+	text-decoration: underline;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.date{
+	float: right;
+	font-size: 13px;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail h4.title{
+	float: left;
+	clear: both;
+	margin-top: 5px;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail h4.title a{
+	color: #259
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail h4.title a:hover{
+	text-decoration: underline;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.answer{
+	float: left;
+	margin-top: 5px;
+	color: #000;
+	font-size: 13px;
+	line-height: 1.6;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.subscribe{
+	float: left;
+	font-size: 13px;
+	margin-top: 10px;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.subscribe span{
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -97px -23px;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.comment span{
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -28px -22px;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.subscribe a{
+	color: #999;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.subscribe a:hover{
+	color: #259;
+	text-decoration: underline;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.comment{
+	float: left;
+	font-size: 13px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.comment a{
+	color: #999;
+}
+article.content article.main-content section.trend section.trends-item section.trends-detail p.comment a:hover{
+	color: #259;
+	text-decoration: underline;
+}
+article.content aside.side-content{
+	width: 270px;
+	float: right;
+	overflow: hidden;
+	font-size: 13px;
+}
+article.content aside.side-content section{
+	padding-bottom: 15px;
+}
+article.content aside.side-content section hr{
+	margin-top: 10px;
+}
+article.content aside.side-content a{
+	color: #999;
+}
+article.content aside.side-content a:hover{
+	color: #259;
+}
+article.content aside.side-content li{
+	border-radius: 4px;
+}
+article.content aside.side-content li:hover{
+	background: #eff6fa;
+}
+article.content aside.side-content .mine{
+	width: 100%;
+}
+article.content aside.side-content .mine li{
+	line-height: 28px;
+}
+article.content aside.side-content .mine li:nth-of-type(1)>span{
+	width: 15px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -167px -3px;
+}
+article.content aside.side-content .mine li:nth-of-type(2)>span{
+	width: 15px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -183px -4px;
+}
+article.content aside.side-content .mine li:nth-of-type(3)>span{
+	width: 15px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -200px -4px;
+}
+article.content aside.side-content .service-center{
+	width: 100%;
+}
+article.content aside.side-content .service-center li{
+	line-height: 28px;
+}
+article.content aside.side-content .service-center li:nth-of-type(1)>span{
+	width: 15px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/sprites3.png) no-repeat;
+	background-position: -269px -4px;
+}
+article.content aside.side-content .service-center li:nth-of-type(2)>span{
+	width: 15px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/sprites4.png) no-repeat;
+	background-position: -24px -38px;
+}
+article.content aside.side-content .service-center li:nth-of-type(3)>span{
+	width: 15px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/copyright.svg) no-repeat;
+	background-position: left center;
+}
+article.content aside.side-content .channel p,article.content aside.side-content .live p,
+article.content aside.side-content .table p,article.content aside.side-content .book p,
+article.content aside.side-content .download p{
+	clear: both;
+	line-height: 34px;
+	border-radius: 4px;
+}
+article.content aside.side-content .channel>h3,article.content aside.side-content .live>h3,
+article.content aside.side-content .table>h3,article.content aside.side-content .book>h3,
+article.content aside.side-content .download>h3{
+	float: left;
+	margin-bottom: 10px;
+}
+article.content aside.side-content .channel>span,article.content aside.side-content .live>span,
+article.content aside.side-content .table>span,article.content aside.side-content .book>span,
+article.content aside.side-content .download>span{
+	float: right;
+}
+article.content aside.side-content .channel p:hover,article.content aside.side-content .live p:hover,
+article.content aside.side-content .table p:hover,article.content aside.side-content .book p:hover,
+article.content aside.side-content .download p:hover{
+	background: #eff6fa;
+}
+article.content aside.side-content .channel p>span,article.content aside.side-content .live p>span,
+article.content aside.side-content .table p>span,article.content aside.side-content .book p>span,
+article.content aside.side-content .download p>span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 26px;
+	background: url(../img/sprites5.png) no-repeat;
+	background-position: 3px 0;
+	margin-right: 5px;
+}
+article.content aside.side-content .copyright{
+	color: #999;
+}
+hr{
+	display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
