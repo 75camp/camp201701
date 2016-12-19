@@ -28,16 +28,16 @@ img {
   border-bottom: 1px solid #ccc;
   position: relative;
 }
-#resume .wrap .header .head-left {
+#resume .wrap .header .head-info {
   width: 40%;
   float: left;
   line-height: 1.5;
 }
-#resume .wrap .header .head-left>h1 {
+#resume .wrap .header .head-info>h1 {
   font-size: 48px;
   letter-spacing: 2px;
 }
-#resume .wrap .header .head-right {
+#resume .wrap .header .head-personal {
   line-height: 3;
 }
 #resume .wrap .header .photo {
@@ -80,13 +80,13 @@ img {
   margin-bottom: 3em;
   border-bottom: 1px solid #ccc;
 }
-.main-left {
+.main-title {
   float: left;
   width: 18%;
   font-weight: bold;
   font-size: 22px;
 }
-.main-right {
+.main-intro {
   float: right;
   width: 75%;
 }
