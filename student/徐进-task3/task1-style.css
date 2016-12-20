@@ -4,18 +4,7 @@
 }
 html{
     font-size: calc(16px + (24 - 16)*(100vw-400px)/(800-400));
-    /*font-size: calc(1em + 1vw);*/
 }
-/*@media screen and (min-width: 50em) {
-    html {
-        font-size: 2vw;
-    }
-}
-@media screen and (min-width: 75em) {
-    html {
-        font-size: 1.5em;
-    }
-}*/
 body{
     margin: 3%;
     padding: 3%;
@@ -235,7 +224,7 @@ header nav li a{
 #contact ul li{
     list-style: none;
     display: inline-block;
-    margin: 1% 3%;
+    margin: 1% 7%;
 } 
 @media screen and (max-width:600px){
     #contact ul{
@@ -244,7 +233,7 @@ header nav li a{
         margin: 1% 5% 3% 5%;
     }
     #contact ul li{
-        margin: 1% 3%;
+        margin: 3% 7%;
     }
 }
 

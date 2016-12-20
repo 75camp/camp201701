@@ -5,6 +5,9 @@
 body{
     font-family: "Microsoft Yahei", sans-serif, Arial, Verdana;
 }
+html{
+    font-size: calc(16px + (24 - 16)*(100vw-400px)/(800-400));
+}
 .clearfix::after{
     content: "";
     display: block;
@@ -57,9 +60,16 @@ header nav .logo{
     float: left;
     margin: 3px 20px 0 20px; 
 }
-header nav ul li{
-    list-style: none;
+
+/*header flex layout */
+header nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     float: left;
+    line-height: 20px;
+}
+header nav ul li{
     margin: 0 10px;
 }
 header nav a,header nav a:visited,header nav a:link{
@@ -70,13 +80,15 @@ header nav a:hover{
     cursor: pointer;
 }
 header nav div{
-    float: right;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
 }
 header nav div a{
     line-height: 25px;
     padding-right: 10px;
 }
-header nav div img{
+header nav img{
     border-radius: 50%;
     max-width: 25px;
     max-height: 25px;
@@ -84,6 +96,9 @@ header nav div img{
 }
 header nav div ul li a.rightline{
     border-right: 1px solid #fff;
+}
+header nav ul a:hover{
+    color: #eee;
 }
 header div.topLogo{
     background-image: url(http://www.iciba.com/images/index.png);
@@ -422,4 +437,38 @@ footer{
     color: #999;
     font-size: 12px;
     text-align: center;
+}
+
+@media screen and (max-width:1012px){
+    header nav ul li{
+        display: none;
+    }
+    header nav ul:hover{
+        flex-flow: column nowrap;
+        max-height: 21px; 
+    }
+    header nav ul.setting li a.rightline{
+        border: none;
+    }
+    header nav ul a:hover{
+        color: #eee;
+    }
+    header nav ul.meun:hover li{
+        display: inline-block;
+    }
+    header nav ul li.current{
+        display: inline-block;
+    }
+    header nav ul.setting:hover li{
+        display: inline-block;
+    }
+    header .searchBar div.submit{
+        width: 20%;
+    }
+    header .searchBar{
+        width: 80%;
+    }
+    header .searchBar input{
+        width: 80%;
+    }
 }
