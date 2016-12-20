@@ -1,45 +1,45 @@
 %microsoft-series {
 	font-family: 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
 }
 
 body {
-    /* 16px / 24px */
-    font-size: $typography-font-size / 16 * 1em;
-    line-height: #{$typography-line / $typography-em}em;
-		@extend %microsoft-series;
+  /* 16px / 24px */
+  font-size: $typography-font-size / 16 * 1em;
+  line-height: #{$typography-line / $typography-em}em;
+  @extend %microsoft-series;
 }
 
 .tiny {
-    /* 11px / 12px */
-    font-size: #{($typography-font-size*0.6875) / $typography-em}em;
-    line-height: ($typography-line*0.5) / ($typography-font-size*0.6875) * 1em;
+  /* 11px / 12px */
+  font-size: #{($typography-font-size*0.6875) / $typography-em}em;
+  line-height: ($typography-line*0.5) / ($typography-font-size*0.6875) * 1em;
 }
 
 .mini {
-    /* 12px / 12px */
-    font-size: #{($typography-font-size*0.75) / $typography-em}em;
-    line-height: ($typography-line*0.5) / ($typography-font-size*0.75) * 1em;
+  /* 12px / 12px */
+  font-size: #{($typography-font-size*0.75) / $typography-em}em;
+  line-height: ($typography-line*0.5) / ($typography-font-size*0.75) * 1em;
 }
 
 .small {
-    /* 14px / 18px */
-    font-size: #{($typography-font-size*0.875) / $typography-em}em;
-    line-height: ($typography-line*0.75) / ($typography-font-size*0.875) * 1em;
+  /* 14px / 18px */
+  font-size: #{($typography-font-size*0.875) / $typography-em}em;
+  line-height: ($typography-line*0.75) / ($typography-font-size*0.875) * 1em;
 }
 
 .normal {
-    /* 16px / 24px */
-    font-size: #{$typography-font-size / $typography-em}em;
-    line-height: #{$typography-line / $typography-em}em; /* 24 */
+  /* 16px / 24px */
+  font-size: #{$typography-font-size / $typography-em}em;
+  line-height: #{$typography-line / $typography-em}em; /* 24 */
 }
 
 .big {
-    /* 18px / 24px */
-    font-size: #{$typography-font-size*1.125 / $typography-em}em;
-    line-height: ($typography-line*1) / ($typography-font-size*1.125) * 1em;
+  /* 18px / 24px */
+  font-size: #{$typography-font-size*1.125 / $typography-em}em;
+  line-height: ($typography-line*1) / ($typography-font-size*1.125) * 1em;
 }
 
 .plump {

@@ -1,4 +1,4 @@
 // pixels to rems
 @function pxToRem($px) {
-    @return $px / $baseFontSize * 1rem;
+  @return $px / $baseFontSize * 1rem;
 }

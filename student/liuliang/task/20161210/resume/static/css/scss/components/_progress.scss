@@ -46,16 +46,16 @@ progress[value] {
 		border-radius:3px;
 		background-size: 40px 40px;
 		background-repeat: repeat-x;
-        background-image:
+    background-image:
 		-webkit-linear-gradient(
 			135deg,
-		  rgba(255,255,255,.15) 25%,
-		    transparent 25%,
-		    transparent 50%,
-		  rgba(255,255,255,.15) 50%,
-		  rgba(255,255,255,.15) 75%,
-		    transparent 75%,
-		    transparent
+		rgba(255,255,255,.15) 25%,
+		  transparent 25%,
+		  transparent 50%,
+		rgba(255,255,255,.15) 50%,
+		rgba(255,255,255,.15) 75%,
+		  transparent 75%,
+		  transparent
 		);
 	}
 	&::after {
@@ -82,13 +82,13 @@ progress[value] {
 	height:20px;
 }
 .progress-bar span {
-    background-color: royalblue;
+  background-color: royalblue;
 	border-radius: 3px;
 	display: block;
 	text-indent: -9999px;
 }
 p[data-value] {
-    position: relative;
+  position: relative;
 }
 /* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
 p[data-value]:after {
