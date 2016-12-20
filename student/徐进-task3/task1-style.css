@@ -2,6 +2,20 @@
     padding: 0;
     margin: 0;
 }
+html{
+    font-size: calc(16px + (24 - 16)*(100vw-400px)/(800-400));
+    /*font-size: calc(1em + 1vw);*/
+}
+/*@media screen and (min-width: 50em) {
+    html {
+        font-size: 2vw;
+    }
+}
+@media screen and (min-width: 75em) {
+    html {
+        font-size: 1.5em;
+    }
+}*/
 body{
     margin: 3%;
     padding: 3%;
@@ -202,15 +216,36 @@ header nav li a{
 }
 
 /*contact*/
+/*use flex to layout*/
 #contact ul{
-    width: 100%;
-    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: space-around;
     margin: 1% 5% 3% 5%;
 }
 #contact ul li{
-    float: left;
     list-style: none;
-    width: 16%;
+    display: inline-block;
+    margin: 1% 3%;
+} 
+@media screen and (max-width:600px){
+    #contact ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1% 5% 3% 5%;
+    }
+    #contact ul li{
+        margin: 1% 3%;
+    }
 }
 
 /*summerize*/
