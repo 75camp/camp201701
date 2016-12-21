@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    visibility: hidden;
+    display: block;
+  }
+}
+
+.content {
+  width: 968px;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+.header {
+  height: 125px;
+  background-color: #3ac3e7;
+  span {
+    font-size: 64px;
+    color: #ffffff;
+    float: right;
+    margin: 20px 20px 0 0;
+  }
+}
+
+.leftbox, .rightbox {
+  float: left;
+  dl {
+    dt {
+      font-size: 24px;
+      line-height: 2;
+      color: #3ac3e7;
+      border-bottom: 2px solid #3ac3e7;
+      text-indent: 50px;
+
+    }
+    dd {
+      color: #fff;
+      font-size: 18px;
+      line-height: 2;
+      span {
+        color: #c1c0bd;
+      }
+    }
+  }
+}
+
+.rightbox {
+  width: 558px;
+  height: 829px;
+  background: #50505a;
+  padding: 20px;
+  .title {
+    p {
+      font-size: 36px;
+      line-height: 2;
+      color: #3ac3e7;
+    }
+    .text {
+      color: #ffffff;
+      font-size: 24px;
+    }
+  }
+  .introlist {
+    dL {
+      &:first-child {
+        dt {
+          background: url("../image/icon/Synagogue.png") no-repeat;
+          background-size: 40px 40px;
+        }
+      }
+      &:nth-child(2) {
+        dt {
+          background: url("../image/icon/公司.png") no-repeat;
+          background-size: 40px 40px;
+        }
+      }
+      &:nth-child(3) {
+        dt {
+          background: url("../image/icon/pc.png") no-repeat;
+          background-size: 40px 40px;
+        }
+      }
+    }
+  }
+
+}
+
+.leftbox {
+  background-color: #444349;
+  width: 410px;
+  height: 829px;
+  padding: 0 10px;
+  .logo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 20px auto;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .pinfo {
+    padding: 10px 30px;
+    background: #525159;
+    dt {
+      text-indent: 50px;
+      background: url("../image/icon/JS.png") no-repeat;
+      background-size: 40px 40px;
+    }
+  }
+  .introbox {
+    padding: 10px;
+    .title {
+      color: #3ac3e7;
+      font-size: 24px;
+      line-height: 2;
+      border-bottom: 2px solid #3ac3e7;
+      text-indent: 50px;
+      background: url("../image/icon/ic_talk.png") no-repeat;
+      background-size: 40px 40px;
+    }
+    .intro {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 2;
+      overflow: hidden;
+      margin-top: 1px;
+    }
+  }
+}
+
+@media (max-width: 968px)and (min-width: 642px) {
+  .content {
+    width: auto;
+    overflow: hidden;
+  }
+
+  .leftbox {
+    width: 45%;
+    height: 925px;
+  }
+
+  .rightbox {
+    width: 55%;
+    height: 925px;
+  }
+}
+
+@media (max-width: 642px) and (min-width: 476px) {
+  .content {
+    width: auto;
+    overflow: hidden;
+  }
+  .leftbox {
+    width: 50%;
+  }
+
+  .rightbox {
+    width: 50%;
+  }
+}
+
+@media (max-width: 476px) {
+  .content {
+      width: auto;
+    }
+
+  .leftbox, .rightbox {
+    float: none;
+    width: auto;
+    height: auto;
+  }
+
+  .leftbox .logo {
+    margin-top: 0;
+  }
+
+  .leftbox {
+    padding-top: 20px;
+  }
+
+  .rightbox .title {
+    display: none;
+  }
+}
