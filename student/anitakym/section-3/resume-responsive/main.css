@@ -1,0 +1,469 @@
+/************
+ * 页面样式
+ ************／
+
+
+/* =========
+    基本默认值
+    ========= */
+
+html {
+    font-size: 30%;
+    color: #222;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    padding: 12px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    margin: 2rem auto;
+}
+
+
+
+
+/* =========
+    工具样式
+    ========= */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* =========
+    浏览器更新提示
+    ========= */
+
+.browsehappy {
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+
+/* =============
+    自定义页面样式
+   ============= */
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+header {
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav {
+    background: transparent;
+    line-height: 3rem;
+    padding: 0;
+}
+
+nav .logo {
+    float: left;
+    padding: 1rem 1.5rem 0;
+}
+
+nav ul li.logo {
+    float: left;
+    padding: 1rem 1.5rem 0;
+}
+
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 2.5rem;
+    line-height: 5.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a.active {
+    color: rgba(255,255,255,.6);
+    background-color: rgba(0,0,0,.3);
+}
+
+
+@media only screen and (max-width: 50em) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    nav ul li {
+        line-height: 3rem;
+    }
+
+    nav ul li a {
+        font-weight: normal;
+        padding: 0 1.2rem;
+    }
+
+}
+
+/*网站主要内容*/
+
+.banner {
+    background: transparent;
+    height: 40rem;
+    color: #eee;
+    font-size: 3rem;
+}
+
+.banner .inner {
+    max-width: 25%;
+    text-align: center;
+    margin:0 auto;
+    position: relative;
+    top:12rem;
+}
+
+.banner .inner h1 {
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: #333;
+    color: #eee;
+    padding: 10px;
+}
+
+.banner button {
+    padding: 1rem 3rem;
+    border: 1px solid rgba(0,0,0,.1);
+    background: #252f34 linear-gradient(hsla(0,0%,100%,.2),transparent);
+    border-radius: .3rem;
+    color: #fff;
+}
+
+.banner .inner .sub-heading {
+    margin: 2.5rem;
+}
+
+
+.green-section {
+    background: #089d80;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 0;
+
+}
+.green-section .hr {
+    background: #078494;
+}
+
+.green-section ul li {
+    font-size: 3rem;
+}
+.green-section ul li:nth-child(even) {
+    color: rgba(255,255,255,0.7);
+}
+
+.green-section .icon-group .icon {
+    display: inline-block;
+    width: 7.5rem;
+    height: 7.5rem;
+    background: #0d6f7c;
+    transform: rotate(45deg);
+    margin: 2.5rem;
+}
+.icon-group {
+    margin-top:5rem;
+}
+
+.icon {
+    color: #eee;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.gray-section {
+    background: #252f34;
+    color: #ffffff;
+    margin: -5rem auto 0;
+}
+
+.gray:nth-child(odd) {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.gray:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.gray {
+    display: block;
+    padding: 5rem;
+    text-align: left;
+    font-size: 3.5rem;
+}
+
+.gray:nth-child(even) {
+    margin-left: 40%;
+}
+
+.content {
+    top: 5rem;
+    left: 5rem;
+}
+.content h2 {
+    margin-bottom: 2rem;
+}
+
+
+.purple-section {
+    padding: 6rem;
+    background: #3f3965;
+    color: #fff;
+}
+.purple-section .heading-wrapper {
+    text-align: center;
+}
+.purple-section .hr {
+    background: #373259;
+    width: 60%;
+}
+.card {
+    float:left;
+    width: 50%;
+    min-height: 10rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card:first-child {
+    background: rgba(0,0,0,0.04);
+}
+.card:nth-child(2) {
+    background: rgba(0,0,0,0.08);
+}
+.card:nth-child(3) {
+    background: rgba(0,0,0,0.12);
+}
+.card:nth-child(4) {
+    background: rgba(0,0,0,0.16);
+}
+.card:nth-child(5) {
+    background: rgba(0,0,0,0.20);
+}
+.card:nth-child(6) {
+    background: rgba(0,0,0,0.24);
+}
+
+
+
+/*底部*/
+footer {
+    background: #333;
+    color: #fff;
+    min-height: 7rem;
+    text-align: center;
+}
+
+ul .share-group {
+    width: 100%;
+    margin: auto;
+    padding: 7rem;
+}
+
+.share-group li {
+    display: inline-block;
+    padding: 3rem;
+}
+
+.share-group li a {
+    text-decoration: none;
+    color: #eee;
+}
+.copy {
+    padding-bottom: 2rem;
+}
+.main-wrapper {
+    background: #444 no-repeat fixed center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mask {
+    display: none;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+
+}
+#sidebar {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: -30rem;
+    width: 30rem;
+    background: #333333;
+    padding: 2rem 0;
+    transition:right 0.5s;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    width: 100%;
+    display: inline-block;
+}
+
+#sidebar ul a:hover {
+    background: #444;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    border: 1px solid #888;
+}
+
+.content-wrapper {
+    width: 100%;
+    margin:0 auto;
+}
+
+@media only screen and (max-width: 50em) {
+    .banner .inner {
+        max-width: 40%;
+        top:10rem;
+    }
+    .banner .inner .sub-heading {
+        line-height: 2.5rem;
+        margin: 2.5rem;
+    }
+    .green-section ul li {
+        line-height: 1.5rem;
+        font-size: 2.8rem;
+    }
+    .green-section ul li {
+        margin-bottom: 1rem;
+    }
+
+    .gray:nth-child(even) {
+        margin-left: 20%;
+    }
+    .gray {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    .banner {
+        height: 32rem;
+    }
+    .banner .inner {
+        max-width: 60%;
+        top:8rem;
+    }
+    .banner .inner .sub-heading {
+        line-height: 2rem;
+        margin: 2rem;
+    }
+    .green-section ul li {
+        margin-bottom: 1.8rem;
+        font-size: 2.5rem;
+    }
+    .green-section .icon-group .icon {
+        width: 5rem;
+        height: 5rem;
+        margin: 1.5rem;
+    }
+    .gray:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .gray {
+        font-size: 2.5rem;
+    }
+
+}
