@@ -40,12 +40,33 @@ nav {
     @include media("<=tablet") {
 			position: relative;
 			display: table;
+      table-layout: fixed;
 			width: 100%;
 			right: auto;
 			top: 0;
 			transform: none;
 			overflow-y: hidden;
+      background-color: #333;
+      border-bottom: 6px solid #fff;
 			zoom: 1;
+      ul {
+        display: table-row;
+        li {
+          display: table-cell;
+          a {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            line-height: 42px;
+            height: 42px;
+            color: #fff;
+            font-size: 16px;
+            &:hover {
+              background-color: #5a5a5a;
+            }
+          }
+        }
+      }
     }
 	}
 }
