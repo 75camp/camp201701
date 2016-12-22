@@ -89,15 +89,3 @@
     box-shadow: $horizontal $vertical $magnitude $color;
 }
 
-@mixin max-screen($res){
-  @media only screen and ( max-width: $res )
-  {
-    @content;
-  }
-}
-@mixin min-screen($res){
-  @media only screen and ( min-width: $res )
-  {
-    @content;
-  }
-}

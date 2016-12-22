@@ -16,24 +16,48 @@ $percent-margin: $margin / $layout-margin-width;
     visibility: hidden;
   }
 }
+
 // Grid Container
 .grid-container {
   margin: 0 auto;
   @extend .clearfix;
 }
 
-// Grid Columns
-@for $i from 1 through $cols {
-  .grid-#{$i} {
-    width: ( ($i / $cols) - 2 * $percent-margin) * 100%;
-    padding: 0;
-    margin: 0 $percent-margin * 100%;
-    float: left;
-    min-height: 1px;
-  }
-}
-@include min-screen(769px) {
+@include media(">tablet") {
   .grid-container {
     width: $layout-margin-width + px;
+  }
+  // Grid Columns
+  @for $i from 1 through $cols {
+    .grid-md-#{$i} {
+      width: ( ($i / $cols) - 2 * $percent-margin) * 100%;
+      padding: 0;
+      margin: 0 $percent-margin * 100%;
+      float: left;
+      min-height: 1px;
+    }
+  }
+}
+
+@include media("<=tablet") {
+  .hidden-sm {
+    display: none;
+  }
+  // Grid Columns
+  @for $i from 1 through $cols {
+    .grid-sm-#{$i} {
+      @if $i == 6 {
+        width: 100%;
+      }@else if $i == 2 {
+        max-width: 44px;
+        width: 44px;
+      }@else {
+        width: ( ($i / $cols) - 2 * $percent-margin) * 100%;
+      }
+      padding: 0;
+      margin: 0 $percent-margin * 100%;
+      float: left;
+      min-height: 1px;
+    }
   }
 }

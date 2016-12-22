@@ -7,6 +7,17 @@
 %height-auto-full-parent {
 	height: 100%;
 }
+%text-overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+%padding-auto-fit {
+  padding: 30px 45px;
+  @include media("<=tablet") {
+    padding: 15px 10px;
+  }
+}
 html {
 	box-sizing: border-box;
 	@extend %height-auto-full-parent;
@@ -26,12 +37,22 @@ nav {
 		position: fixed;
 		top: 50%;
 		transform: translateY(-50%);
+    @include media("<=tablet") {
+			position: relative;
+			display: table;
+			width: 100%;
+			right: auto;
+			top: 0;
+			transform: none;
+			overflow-y: hidden;
+			zoom: 1;
+    }
 	}
 }
 section {
 	&#basic-info {
 		background-color: #333;
-		padding: 30px 45px;
+    @extend %padding-auto-fit;
 		color: #fff;
 		a {
 			color: #fff;
@@ -48,7 +69,7 @@ section {
 	}
 	&#education-project-skill-info {
 		background-color: #fff;
-		padding: 30px 45px;
+    @extend %padding-auto-fit;
 		%color-teal {
 			color: #008080;
 		}
@@ -63,6 +84,7 @@ section {
 		}
 		dl {
 			dt {
+				@extend %text-overflow-ellipsis;
 				&.dt {
 					font-size: 32px;
 					font-weight: 700;
@@ -77,9 +99,7 @@ section {
 				}
 			}
 			dd {
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				overflow: hidden;
+				@extend %text-overflow-ellipsis;
 				i {
 					width: 28px;
 					height: 22px;
@@ -142,15 +162,23 @@ section {
 				content: "";
 				position: absolute;
 				height: 98%;
+        width: 4px;
+        background-color: #333;
 				left: 8%;
+        @include media("<=tablet") {
+          left: 25px;
+        }
 				top: 1%;
-				border-left: 4px solid #333;
 				z-index: 1;
 			}
 			&::after {
 				content: "";
 				position: absolute;
 				left: 6.8%;
+        @include media("<=tablet") {
+          left: initial;
+          transform: translateX(150%);
+        }
 				top: 99%;
 				background-color: #333;
 				border-radius: 100%;
@@ -284,20 +312,6 @@ section {
 					left: 70%;
 				}
 			}
-		}
-	}
-}
-@include max-screen(768px) {
-	nav {
-		&#navigation {
-			position: relative;
-			display: table;
-			width: 100%;
-			right: auto;
-			top: 0;
-			transform: none;
-			overflow-y: hidden;
-			zoom: 1;
 		}
 	}
 }
