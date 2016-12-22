@@ -1,0 +1,41 @@
+body{
+	font-size: 1.6rem;
+	padding: 0;
+	box-sizing: border-box;
+	min-width: 300px;
+}
+.baseinfo{
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.name-block{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px 30px;
+	order: 1;
+}
+.info-block{
+	width: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
+	order: 3;
+}
+.info-item{
+	width: 80%;
+	min-width: 200px;
+}
+.head-block{
+	width: 100%;
+	position: static;
+	padding: 0px;
+	max-width: 100%;
+	box-sizing: border-box;
+	height: 300px;
+	order: 2;
+}
+.right{
+	word-break: break-all;
+}
+.timeline{
+	padding: 10px 0px ;
+}

@@ -1,0 +1,19 @@
+body{
+	/*min-width: 500px;*/
+	/*font-size: 1.8rem;*/
+}
+.info-item{
+	width: 90%;
+	min-width: 350px;
+}
+.baseinfo{
+	position: relative;
+}
+.head-block{
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	z-index: 1;
+	width: 180px;
+	height: 220px;
+}
