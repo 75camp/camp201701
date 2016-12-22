@@ -3,12 +3,15 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-size: 16px;
+}
 img {
   border: 0;
 }
 /* resume content */
 #resume {
-  width: 73em;
+  width: 70%;
   margin: 80px auto;
   background: #fff;
   border-left: 1px solid #efefef;
@@ -18,15 +21,15 @@ img {
   text-align: left;
 }
 #resume .wrap {
-  width: 66em;
+  width: 90%;
   margin: 0 auto;
 }
 /* header content */
 #resume .wrap .header {
+  position: relative;
   margin: 1.5em 0 3em 0;
   padding-bottom: 3em;
   border-bottom: 1px solid #ccc;
-  position: relative;
 }
 #resume .wrap .header .head-info {
   width: 40%;
@@ -42,26 +45,26 @@ img {
 }
 #resume .wrap .header .photo {
   position: absolute;
-  top: -13%;
-  right: -14.5%;
+  top: -17%;
+  right: -3%;
 }
 /* main content */
 #resume .wrap .main .education {
-  padding-bottom: 4em;
+  padding-bottom: 5em;
 }
 #resume .wrap .main .skills {
-  padding-bottom: 17em;
+  padding-bottom: 18em;
   line-height: 1.5;
 }
 #resume .wrap .main .internship {
-  padding-bottom: 13em;
+  padding-bottom: 14em;
   line-height: 1.5;
 }
 #resume .wrap .main .internship .experience {
   margin-bottom: 10px;
 }
 #resume .wrap .main .projects {
-  padding-bottom: 35em;
+  padding-bottom: 36em;
 }
 #resume .wrap .main .projects .tasks {
   line-height: 1.5;
@@ -70,7 +73,7 @@ img {
   margin-bottom: 5px;
 }
 #resume .wrap .main .evaluation {
-  padding-bottom: 5em;
+  padding-bottom: 6em;
 }
 #resume .wrap .main i {
   color: red;
@@ -91,6 +94,13 @@ img {
   width: 75%;
 }
 /* other common */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
 .pl-5 {
   padding-left: 5.5em;
 }
@@ -105,4 +115,266 @@ img {
 }
 .boright {
   border-right: 1px solid #ccc;
+}
+/* responsive */
+@media screen and (max-width: 1460px) {
+  #resume .wrap .header {
+    padding-bottom: 1.5em;
+  }
+  #resume .wrap .header .head-personal {
+    display: inline-flex;
+    margin-top: 0.3em;
+  }
+  #resume .wrap .header .photo {
+    display: none;
+  }
+  .pl-5 {
+    padding-left: 2em;
+  }
+  .fa-mobile {
+    padding-left: 2em;
+  }
+  #resume .wrap .main .education {
+    padding-bottom: 8em;
+  }
+  #resume .wrap .main .internship {
+    padding-bottom: 19em;
+  }
+  #resume .wrap .header .head-info {
+    width: 100%;
+  }
+  #resume .wrap .main .projects {
+    padding-bottom: 37em;
+  }
+  .main-intro span {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .pl-10 {
+    padding-left: 0em;
+  }
+  .main-title {
+    float: none;
+    width: 100%;
+  }
+  .boright {
+    border-right-width: 0px;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  #resume .wrap .header {
+    padding-bottom: 1.5em;
+  }
+  #resume .wrap .header .head-personal {
+    display: inline-flex;
+    margin-top: 0.3em;
+  }
+  #resume .wrap .header .photo {
+    display: none;
+  }
+  .pl-5 {
+    padding-left: 2em;
+  }
+  .fa-mobile {
+    padding-left: 2em;
+  }
+  #resume .wrap .main .education {
+    padding-bottom: 8em;
+  }
+  #resume .wrap .main .internship {
+    padding-bottom: 19em;
+  }
+  #resume .wrap .header .head-info {
+    width: 100%;
+  }
+  #resume .wrap .main .projects {
+    padding-bottom: 40em;
+  }
+  .main-intro span {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .pl-10 {
+    padding-left: 0em;
+  }
+  .main-title {
+    float: none;
+    width: 100%;
+  }
+  .boright {
+    border-right-width: 0px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  #resume .wrap .header {
+    padding-bottom: 1.5em;
+  }
+  #resume .wrap .header .head-personal {
+    display: inline-flex;
+    margin-top: 0.3em;
+  }
+  #resume .wrap .header .photo {
+    display: none;
+  }
+  .pl-5 {
+    padding-left: 2em;
+  }
+  .fa-mobile {
+    padding-left: 2em;
+  }
+  #resume .wrap .main .education {
+    padding-bottom: 8em;
+  }
+  #resume .wrap .main .internship {
+    padding-bottom: 19em;
+  }
+  #resume .wrap .header .head-info {
+    width: 100%;
+  }
+  #resume .wrap .main .projects {
+    padding-bottom: 42em;
+  }
+  .main-intro span {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .pl-10 {
+    padding-left: 0em;
+  }
+  .main-title {
+    float: none;
+    width: 100%;
+  }
+  .boright {
+    border-right-width: 0px;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  p {
+    text-align: justify;
+  }
+  #resume .wrap .header {
+    padding-bottom: 1.5em;
+  }
+  #resume .wrap .header .head-personal {
+    display: block;
+    margin-top: 0.3em;
+  }
+  #resume .wrap .header .photo {
+    display: none;
+  }
+  .pl-5 {
+    padding-left: 2em;
+  }
+  .fa-mobile {
+    padding-left: 0em;
+  }
+  .fa-map-marker {
+    padding-left: 5.5em;
+  }
+  #resume .wrap .main .education {
+    padding-bottom: 2em;
+  }
+  #resume .wrap .main .skills {
+    padding-bottom: 3em;
+  }
+  #resume .wrap .main .internship {
+    padding-bottom: 3em;
+  }
+  #resume .wrap .header .head-info {
+    width: 100%;
+  }
+  #resume .wrap .main .projects {
+    padding-bottom: 3em;
+  }
+  #resume .wrap .main .evaluation {
+    padding-bottom: 3em;
+  }
+  .main-intro span {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .pl-10 {
+    padding-left: 0em;
+  }
+  .main-title {
+    float: none;
+    width: 100%;
+  }
+  .main-intro {
+    float: none;
+    width: 100%;
+    margin-top: 2em;
+  }
+  .boright {
+    border-right-width: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #resume .wrap .header {
+    padding-bottom: 1.5em;
+  }
+  #resume .wrap .header .head-personal {
+    display: block;
+    margin-top: 0.3em;
+  }
+  #resume .wrap .header .photo {
+    display: none;
+  }
+  .pl-5 {
+    padding-left: 2em;
+  }
+  .fa-mobile {
+    padding-left: 0em;
+  }
+  .fa-map-marker {
+    padding-left: 0em;
+  }
+  .fa-envelope-open {
+    display: none;
+  }
+  .pl-2 {
+    padding-left: 0;
+  }
+  #resume .wrap .main .education {
+    padding-bottom: 2em;
+  }
+  #resume .wrap .main .skills {
+    padding-bottom: 3em;
+  }
+  #resume .wrap .main .internship {
+    padding-bottom: 3em;
+  }
+  #resume .wrap .header .head-info {
+    width: 100%;
+  }
+  #resume .wrap .main .projects {
+    padding-bottom: 3em;
+  }
+  #resume .wrap .main .evaluation {
+    padding-bottom: 3em;
+  }
+  .main-intro span {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .pl-10 {
+    padding-left: 0em;
+  }
+  .main-title {
+    float: none;
+    width: 100%;
+  }
+  .main-intro {
+    float: none;
+    width: 100%;
+    margin-top: 2em;
+  }
+  .boright {
+    border-right-width: 0px;
+  }
 }
