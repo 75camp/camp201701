@@ -13,7 +13,7 @@ img{
 	border: 0;
 }
 input, button{
-  border: 0;
+	border: 0;
 }
 body{
 	font-size: 14px;
@@ -86,7 +86,7 @@ body{
 	height: 30px;
 	background: #f00;
 	float: left;
-  transition: all .2s;
+	transition: all .2s;
 }
 #header .share .qq {
 	background: url('../img/top_qq.jpg') no-repeat;
@@ -225,10 +225,10 @@ body{
 	margin-right: 0;
 }
 #footer .fllow-app a {
-		width: 37px;
-		height: 35px;
-		float: left;
-		transition: all .2s;
+	width: 37px;
+	height: 35px;
+	float: left;
+	transition: all .2s;
 }
 #footer .fllow-app .qq-large {
 	background: url('../img/db_qq.jpg') no-repeat;

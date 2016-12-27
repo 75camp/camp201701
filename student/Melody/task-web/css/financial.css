@@ -98,8 +98,8 @@
 }
 #intro .service .title-zh a {
 	color: #EA3939;
-  font-size: 14px;
-  font-weight: bold;
+	font-size: 14px;
+	font-weight: bold;
 }
 #intro .service .title-en {
 	color: #826682;
@@ -117,9 +117,9 @@
 	background: url(../img/index/ab_t.jpg) no-repeat;
 }
 #intro .about .about-us p {
-    padding: 20px 10px 10px 10px;
-    color: #5A5A5A;
-    font-size: 14px;
+	padding: 20px 10px 10px 10px;
+	color: #5A5A5A;
+	font-size: 14px;
 }
 #intro .about .invest{
 	width: 236px;
@@ -179,4 +179,5 @@
 }
 #intro .about .job .job-wrap a {
 	color: #EA3939;
+}
 }
