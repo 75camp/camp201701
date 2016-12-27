@@ -21,53 +21,53 @@ body{
 }
 /*common部分*/
 .wrap {
-  width: 1200px;
-  margin: 0 auto;
+	width: 1200px;
+	margin: 0 auto;
 }
 .clearfix::after {
-  content: '';
-  height: 0;
-  display: block;
-  overflow: hidden;
-  clear: both;
+	content: '';
+	height: 0;
+	display: block;
+	overflow: hidden;
+	clear: both;
 }
 /*header部分*/
 #header {
-  height: 100px;
-  position: relative;
+	height: 100px;
+	position: relative;
 }
 #header .finan-logo {
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
 }
 #header .search-box {
-  width: 262px;
+	width: 262px;
 	height: 30px;
 	background: #00f;
-  position: absolute;
-  top: 50%;
+	position: absolute;
+	top: 50%;
 	margin-top: -15px;
 	left: 50%;
 	margin-left: -131px;
 	border: 1px solid #EA3939;
 }
 #header .search-txt {
-  width: 212px;
+	width: 212px;
 	float: left;
 	text-indent: 10px;
 	line-height: 30px;
 	outline: none;
 }
 #header .search-btn {
-  width: 50px;
+	width: 50px;
 	line-height: 30px;
 	float: left;
 	background: #EA3939;
 	color: #fff;
 }
 #header .share {
-  width: 210px;
+	width: 210px;
 	height: 30px;
 	position: absolute;
 	right: 6%;
@@ -75,11 +75,11 @@ body{
 	margin-top: -15px;
 }
 #header .share li {
-  float: left;
+	float: left;
 	margin-right: 60px;
 }
 #header .share li:last-child {
-  margin-right: 0;
+	margin-right: 0;
 }
 #header .share a {
 	width: 30px;
