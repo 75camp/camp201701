@@ -3,7 +3,7 @@
 	margin-top: 20px;
 }
 #intro .news {
-  height: 194px;
+	height: 194px;
 }
 #intro .company-news, .trends {
 	width: 334px;
@@ -179,5 +179,4 @@
 }
 #intro .about .job .job-wrap a {
 	color: #EA3939;
-}
 }
