@@ -18,3 +18,11 @@ There are deficiencies also asked the teacher to help correct me:pray:
 * 1-resume.css
 * 2-drop_menu.html
 * 2-menu.css
+
+## task-web
+
+* 1-index.css
+* 1-financial.html
+* 1-financial.css
+* 1-service.html
+* 1-service.css

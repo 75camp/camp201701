@@ -1,0 +1,182 @@
+/*intro部分*/
+#intro {
+	margin-top: 20px;
+}
+#intro .news {
+  height: 194px;
+}
+#intro .company-news, .trends {
+	width: 334px;
+	height: 187px;
+	float: left;
+	margin-right: 40px;
+}
+#intro .news h3 {
+	height: 30px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	text-indent: 20px;
+	line-height: 30px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#intro .company-news h3 {
+	color: #EA3939;
+	border-bottom-color: #EA3939;
+	background-image: url(../img/index/xw_1.png);
+}
+#intro .trends h3 {
+	color: #000;
+	border-bottom-color: #000;
+	background-image: url(../img/index/xw_2.png);
+}
+#intro .news .title {
+	float: left;
+}
+#intro .news .more {
+	font-size: 14px;
+	float: right;
+	color: #5a5a5a;
+	margin-right: 10px;
+}
+#intro .news .news-list li {
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px dotted #ccc;
+	text-indent: 15px;
+	padding: 5px 0 3px 5px;
+	background: url(../img/article_arrow.gif) no-repeat 5px center;
+}
+#intro .news .news-title {
+	color: #5A5A5A;
+	font-size: 12px;
+	float: left;
+}
+#intro .news .news-date {
+	color: #5A5A5A;
+	font-size: 12px;
+	float: right;
+}
+#intro .service {
+	float: left;
+}
+#intro .service .service-item {
+	width: 100px;
+	height: 45px;
+	padding-top: 125px;
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+	background-repeat: center;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#intro .service .service-item:last-child {
+	margin-right: 0;
+}
+#intro .service .financing {
+	background-image: url(../img/index/sy_tz_1.jpg);
+}
+#intro .service .financing:hover {
+	background-image: url(../img/index/sy_tz_1_h.jpg);
+}
+#intro .service .funds {
+	background-image: url(../img/index/sy_tz_2.jpg);
+}
+#intro .service .funds:hover {
+	background-image: url(../img/index/sy_tz_2_h.jpg);
+}
+#intro .service .equity {
+	background-image: url(../img/index/sy_tz_3.jpg);
+}
+#intro .service .equity:hover {
+	background-image: url(../img/index/sy_tz_3_h.jpg);
+}
+#intro .service .title-zh {
+	margin-top: 10px;
+	height: 25px;
+}
+#intro .service .title-zh a {
+	color: #EA3939;
+  font-size: 14px;
+  font-weight: bold;
+}
+#intro .service .title-en {
+	color: #826682;
+	font-size: 12px;
+}
+#intro .about-us {
+	width: 298px;
+	height: 317px;
+	float: left;
+	margin-right: 10px;
+	border: 1px #ccc solid;
+}
+#intro .about-us .about-img {
+	height: 135px;
+	background: url(../img/index/ab_t.jpg) no-repeat;
+}
+#intro .about .about-us p {
+    padding: 20px 10px 10px 10px;
+    color: #5A5A5A;
+    font-size: 14px;
+}
+#intro .about .invest{
+	width: 236px;
+	height: 278px;
+	background: #F1F1F1 url(../img/index/yw_t.png) no-repeat right 90%;
+	float: left;
+	margin-right: 10px;
+	padding: 20px;
+}
+#intro .about .invest>div {
+	font-size: 15px;
+	line-height: 30px;
+	color: #EA3939;
+	text-align: left;
+}
+#intro .about .invest .invert-con {
+	font-size: 13px;
+	color: #000;
+	line-height: 30px;
+}
+#intro .about .invest a {
+	font-size: 12px;
+	color: #EA3939;
+}
+#intro .about .contact {
+	width: 530px;
+	height: 153px;
+	background: #F5F5F5 url(../img/index/call_t.png) no-repeat 0 10px;
+	float: left;
+	margin-bottom: 10px;
+}
+#intro .about .contact ul {
+	padding: 20px 0px 20px 240px;
+}
+#intro .about .contact ul li {
+	line-height: 30px;
+	font-size: 14px;
+	color: #000;
+}
+#intro .about .job {
+	width: 530px;
+	height: 153px;
+	background: #F5F5F5 url(../img/index/zp_t.png) no-repeat;
+	float: left;
+}
+#intro .about .job .job-wrap {
+	padding: 20px 20px 0 170px;
+	font-size: 12px;
+	line-height: 30px;
+	color: #EA3939;
+}
+#intro .about .job .job-wrap>div {
+	font-size: 14px;
+}
+#intro .about .job .job-wrap .job-con {
+	color: #000;
+}
+#intro .about .job .job-wrap a {
+	color: #EA3939;
+}
