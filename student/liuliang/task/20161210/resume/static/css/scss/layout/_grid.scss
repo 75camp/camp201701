@@ -49,8 +49,8 @@ $percent-margin: $margin / $layout-margin-width;
       @if $i == 6 {
         width: 100%;
       }@else if $i == 2 {
-        max-width: 44px;
-        width: 44px;
+        max-width: 40px;
+        width: 40px;
       }@else {
         width: ( ($i / $cols) - 2 * $percent-margin) * 100%;
       }
