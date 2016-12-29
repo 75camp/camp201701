@@ -1,0 +1,92 @@
+/*board部分*/
+#board {
+  margin: 20px 0 20px;
+}
+#board .mess-txt {
+   border-bottom: 1px solid #EA3939;
+   background: url(../img/index/online.png) no-repeat left center;
+   color: #000;
+   font-size: 14px;
+   line-height: 1.8;
+   font-weight: bold;
+   text-align: left;
+   padding-left: 30px;
+}
+#board .mess-box {
+  padding: 50px 20px;
+}
+#board .mess-nav {
+  float: left;
+}
+#board .mess-nav .mess-info {
+  width: 300px;
+  height: 315px;
+  padding: 20px;
+  background: #EA3939;
+  color: #fff;
+  text-align: left;
+}
+#board .mess-nav .mess-info h3 {
+  font-size: 18px;
+}
+#board .mess-nav .mess-info .mess-con {
+  font-size: 12px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+#board .mess-nav .mess-info a {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 80px;
+}
+#board .mess-nav .mess-info .mess-phone {
+  font-size: 12px;
+}
+#board .mess-form {
+  width: 700px;
+  float: right;
+}
+#board .mess-form .form-box li {
+  margin-bottom: 10px;
+}
+#board .mess-form .form-box li .title {
+  width: 130px;
+  height: 35px;
+  float: left;
+  font-size: 16px;
+  text-align: right;
+  padding-right: 10px;
+}
+#board .mess-form .form-box li .tit-input{
+  width: 450px;
+  height: 35px;
+  font-size: 13px;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  zoom: 1;
+}
+#board .mess-form .form-box li .mess-input {
+  height: 150px;
+}
+#board .mess-form .form-box li .code-input {
+  width: 150px;
+  height: 35px;
+}
+#board .mess-form .form-box li .radio {
+  vertical-align: middle;
+}
+#board .mess-form .form-box .btn {
+  width: 100px;
+  height: 35px;
+  background: #6c6c6c;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #6c6c6c;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
