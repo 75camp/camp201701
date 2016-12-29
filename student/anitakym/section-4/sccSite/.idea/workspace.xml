@@ -38,12 +38,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/prev.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/kym.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sccSite.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
@@ -3104,7 +3098,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -3625,12 +3619,12 @@
       <workItem from="1482997953194" duration="898000" />
       <workItem from="1483001706723" duration="437000" />
       <workItem from="1483002157563" duration="4970000" />
-      <workItem from="1483014367871" duration="61000" />
+      <workItem from="1483014367871" duration="176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91919000" />
+    <option name="totallyTimeSpent" value="92034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="50" width="1247" height="669" extended-state="0" />
@@ -4019,7 +4013,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
         </state>
       </provider>
