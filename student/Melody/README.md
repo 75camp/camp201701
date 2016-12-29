@@ -26,3 +26,5 @@ There are deficiencies also asked the teacher to help correct me:pray:
 * 1-financial.css
 * 1-service.html
 * 1-service.css
+* 1-online.html
+* 1-online.css
