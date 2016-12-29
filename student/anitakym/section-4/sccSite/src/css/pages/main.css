@@ -692,27 +692,6 @@ footer ul li {
     display: inline-block;
 }
 
-/*css sprite,避免很多请求*/
-footer ul li .icon {
-    display: inline-block;
-    text-indent: -999rem;
-    margin-right: 1.5rem;
-    background: url("../../img/cert1.png") no-repeat;
-    background-size: 466px 447px;
-    overflow: hidden;
-}
-
-footer ul li .icon-1 {
-    width: 38px;
-    height: 27px;
-    background-position: -363px -45px;
-}
-
-footer ul li .icon-2 {
-    width: 70px;
-    height: 27px;
-    background-position: -363px -45px;
-}
 
 footer p {
     text-align: center;
