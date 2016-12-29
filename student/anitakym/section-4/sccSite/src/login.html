@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>科普内容推荐-登录</title>
+    <title>template</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--build:css css/combined.css-->
     <link rel="stylesheet" href="css/base/layout.css">
     <link rel="stylesheet" href="css/pages/main.css">
+    <link rel="stylesheet" href="css/pages/login.css">
     <link rel="stylesheet" href="js/vendor/owl.carousel.min.css">
     <link rel="stylesheet" href="js/vendor/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/base/normalize.css">
@@ -25,21 +26,21 @@
     <nav class="top">
         <span class="tel">联系人：123456</span>
         <ul>
-            <li><a href="#">登录</a></li>
-            <li><a href="#">快速注册</a></li>
-            <li><a href="#">关于</a></li>
-            <li><a href="#">帮助</a></li>
-            <li><a href="#">APP下载</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">快速注册</a></li>
+            <li><a href="template.html">关于</a></li>
+            <li><a href="template.html">帮助</a></li>
+            <li><a href="template.html">APP下载</a></li>
         </ul>
     </nav>
     <nav class="main">
         <a href="#" class="logo"><img src="img/logo-m.gif" alt="back to index"></a>
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">推荐</a></li>
-            <li><a href="#">学习</a></li>
-            <li><a href="#">热点</a></li>
-            <li><a href="#">用户空间</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="template.html">推荐</a></li>
+            <li><a href="template.html">学习</a></li>
+            <li><a href="template.html">热点</a></li>
+            <li><a href="template.html">用户空间</a></li>
         </ul>
     </nav>
 </header>
@@ -59,156 +60,38 @@
             <div class="vis-report"><a href="#">查看系统报告</a></div>
         </div>
     </div>
-    <div class="ad">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <picture>
-                    <source srcset="img/ad001-l.png" media="(min-width:50em)">
-                    <source srcset="img/ad001-m.png" media="(min-width:30em)">
-                    <img srcset="img/ad001.png">
-                </picture>
-            </div>
-            <div class="item">
-                <picture>
-                    <source srcset="img/ad002-l.png" media="(min-width:50em)">
-                    <source srcset="img/ad002-m.png" media="(min-width:30em)">
-                    <img srcset="img/ad002.png">
-                </picture>
-            </div>
-            <div class="item">
-                <picture>
-                    <source srcset="img/ad003-l.png" media="(min-width:50em)">
-                    <source srcset="img/ad003-m.png" media="(min-width:30em)">
-                    <img srcset="img/ad003.png">
-                </picture>
-            </div>
-        </div>
 
+
+    <div class="container_demo" >
+        <div id="wrapper">
+
+            <div id="login" class="animate form">
+                <form  action="#" autocomplete="on">
+                    <h1>Log in</h1>
+                    <p>
+                        <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                        <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                    </p>
+                    <p>
+                        <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                        <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    </p>
+                    <p class="keeplogin">
+                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                        <label for="loginkeeping">Keep me logged in</label>
+                    </p>
+                    <p class="login button">
+                        <input type="submit" value="Login" />
+                    </p>
+                    <p class="change_link">
+                        Not a member yet ?
+                        <a href="#toregister" class="to_register">Join us</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
     </div>
-
-    <section class="feature">
-        <div class="item">
-            <h3>推荐</h3>
-            <p>aaa<br>bbb<br>ccc</p>
-        </div>
-        <div class="item">
-            <h3>学习</h3>
-            <p>aaa<br>bbb<br>ccc</p>
-        </div>
-        <div class="item">
-            <h3>LBS</h3>
-            <p>aaa<br>bbb<br>ccc</p>
-        </div>
-
-
-    </section>
-
-    <div class="notice clearfix">
-        <a href="#"><span>2016-11-11</span>自然博物馆特展通知</a>
-        <a href="#" class="more">更多公告</a>
-    </div>
-
-
-    <section class="recommend clearfix">
-        <h2>
-            基于位置推荐
-            <em>LBS</em>
-            <em>个人信息</em>
-        </h2>
-
-        <div class="recommend-content">
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="recommend clearfix">
-        <h2>
-            基于位置推荐
-            <em>LBS</em>
-            <em>个人信息</em>
-        </h2>
-
-        <div class="recommend-content">
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <nav class="footer">
@@ -266,3 +149,4 @@
 <!-- endbuild-->
 </body>
 </html>
+

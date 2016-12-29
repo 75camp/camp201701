@@ -8,6 +8,7 @@
     <!--build:css css/combined.css-->
     <link rel="stylesheet" href="css/base/layout.css">
     <link rel="stylesheet" href="css/pages/main.css">
+    <link rel="stylesheet" href="css/pages/login.css">
     <link rel="stylesheet" href="js/vendor/owl.carousel.min.css">
     <link rel="stylesheet" href="js/vendor/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/base/normalize.css">
@@ -60,129 +61,41 @@
         </div>
     </div>
 
-    <section class="feature">
-        <div class="item">
-            <h3>推荐</h3>
-            <p>aaa<br>bbb<br>ccc</p>
-        </div>
-        <div class="item">
-            <h3>学习</h3>
-            <p>aaa<br>bbb<br>ccc</p>
-        </div>
-        <div class="item">
-            <h3>LBS</h3>
-            <p>aaa<br>bbb<br>ccc</p>
-        </div>
 
+    <div id="container_demo" >
 
-    </section>
+        <div id="wrapper">
 
-    <div class="notice clearfix">
-        <a href="#"><span>2016-11-11</span>自然博物馆特展通知</a>
-        <a href="#" class="more">更多公告</a>
+            <div id="register" class="animate form">
+                <form  action="#" autocomplete="on">
+                    <h1> Sign up </h1>
+                    <p>
+                        <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                    </p>
+                    <p>
+                        <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
+                    </p>
+                    <p>
+                        <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p>
+                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p class="signin button">
+                        <input type="submit" value="Sign up"/>
+                    </p>
+                    <p class="change_link">
+                        Already a member ?
+                        <a href="#tologin" class="to_register"> Go and log in </a>
+                    </p>
+                </form>
+            </div>
+        </div>
     </div>
-
-
-    <section class="recommend clearfix">
-        <h2>
-            基于位置推荐
-            <em>LBS</em>
-            <em>个人信息</em>
-        </h2>
-
-        <div class="recommend-content">
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="recommend clearfix">
-        <h2>
-            基于位置推荐
-            <em>LBS</em>
-            <em>个人信息</em>
-        </h2>
-
-        <div class="recommend-content">
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3>1<em>bbb</em></h3>
-                <div class="info">
-                    <p>aaa<span class="">2</span></p>
-                    <p>aaa<span class="">2</span></p>
-                </div>
-                <div class="collect">
-                    <a href="#">收藏</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <nav class="footer">
