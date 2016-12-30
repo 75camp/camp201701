@@ -1,0 +1,105 @@
+header .title{
+  clear: both;
+  width: 400px;
+  margin: 150px auto 0;
+  text-align: center;
+  color: #fff;
+}
+header .title h1{
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+.wrap main .article{
+  width: 100%;
+  margin: 20px 0;
+}
+.wrap main .article .article__title{
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.wrap main .article .article__subtitle{
+  margin-bottom: 10px;
+}
+.wrap main .article .article__title a:link,.wrap main .article .article__title a:visited,
+.wrap main .article .article__subtitle a:link,.wrap main .article .article__subtitle a:visited{
+  color: #000;
+}
+.wrap main .article .article__title a:hover,.wrap main .article .article__title a:focus,.wrap main .article .article__title a:active,
+.wrap main .article .article__subtitle a:hover,.wrap main .article .article__subtitle a:focus,.wrap main .article .article__subtitle a:active{
+  color: #0085a1;
+}
+.wrap main .article .article__preview{
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.wrap main .article hr{
+  margin-top: 20px;
+}
+.wrap aside{
+  width: 25%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 5%;
+  margin-bottom: 20px;
+  float: left;
+  font-size: 14px;
+  color: #808080;
+}
+.wrap aside hr{
+  margin: 20px 0;
+}
+.wrap aside .tags,.wrap aside .profile{
+  overflow: hidden;
+}
+.wrap aside .tags .tags__title{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.wrap aside .tags .tags__item{
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 1.3em;
+  border: 1px solid #bfbfbf;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  color: #bfbfbf;
+}
+.wrap aside .profile .profile__title{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.wrap aside .profile .profile__avatar img{
+  display: block;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+.wrap aside .profile .profile__intro{
+  margin-top: 10px; 
+}
+.wrap aside .profile .profile__social{
+  margin: 20px 0;
+  overflow: hidden;
+}
+.wrap aside .profile .profile__social__item{
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../../img/facebook.png);
+  cursor: pointer;
+}
+.wrap aside .profile .profile__social__item:nth-child(2){
+  background-image: url(../../img/github.png);
+}
+.wrap aside .profile .profile__social__item:nth-child(3){
+  background-image: url(../../img/weibo.png);
+  background-position: 0 2px;
+}
+.wrap aside .profile .profile__social__item:last-child{
+  background-image: url(../../img/tencent_weibo.png);
+  background-position: 0 2px;
+  margin-right: 0;
+}

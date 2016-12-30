@@ -1,0 +1,46 @@
+header .title{
+  clear: both;
+  width: 80%;
+  margin: 80px auto 0;
+  text-align: center;
+  color: #fff;
+}
+header .title .title__tags{
+	overflow: hidden;
+}
+header .title .title__tags .title__tags__item{
+	display: inline-block;
+	padding: 5px 10px;
+  border-radius: 1.3em;
+  border: 1px solid #bfbfbf;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  color: #bfbfbf;
+  font-size: 14px;
+}
+header .title .title__title{
+	font-size: 55px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+header .title .title__subtitle{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+header .title .title__date{
+	font-size: 20px;
+	font-style: italic;
+}
+.wrap main{
+	color: #404040;
+	line-height: 1.7;
+	width: 100%;
+	margin: 0 5%;
+}
+.wrap main h1,.wrap main h2{
+	color: #404040;
+	margin: 40px 0;
+}
+.wrap main p{
+	margin: 30px 0;
+}
