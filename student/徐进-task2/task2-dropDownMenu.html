@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>task2-dropDdowMenu</title>
+    <meta name="author" content="Jackie">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta name="keywords" content="task2-dropDdowMenu">
+    <meta name="description" content="dropDownMenu with pure CSS">
+    <meta name="viewport" content="initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        body {
+            background-color: #ECFFE0;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+            overflow: hidden;
+            height: 0;
+        }
+        
+        #menu,
+        #menu ul {
+            font-family: Tahoma, Arial, ”Helvetica Neue“, ”Hiragino Sans GB”, Simsun, sans-self;
+            background-color: #9AA4FF;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #menu li ul li {
+            width: 100%;
+        }
+        
+        #menu li {
+            width: 19%;
+            text-align: center;
+            line-height: 2.5;
+            list-style: none;
+            float: left;
+        }
+        
+        #menu li a {
+            display: block;
+            text-decoration: none;
+            border-right: 1px solid #fff;
+            color: #fff;
+        }
+        
+        #menu li ul li {
+            float: none;
+        }
+        
+        #menu li ul li a {
+            border-top: 1px solid #fff;
+        }
+        
+        #menu li a:hover {
+            cursor: pointer;
+            background: #EA77FF;
+        }
+        
+        #menu li:hover ul {
+            display: block;
+        }
+        
+        #menu li ul {
+            position: absolute;
+            width: 19%;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="menu" class="clearfix">
+            <li>
+                <a href="#">menu1</a>
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">menu2</a>
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">menu3</a>
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">menu4</a>
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">menu5</a>
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+
+</html>

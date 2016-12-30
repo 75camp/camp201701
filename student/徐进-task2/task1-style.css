@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 3%;
+    padding: 3%;
+    font-family: Tahoma,Arial,"Helvetica Neue","Hiragino Sans GB",Simsun,sans-self;
+    background-image: url(http://i1.piimg.com/567571/bfca712bf731c79e.png);
+    background-repeat: repeat;border: 1px solid #ccc;
+    box-shadow: 0px 0px 15px #888888;
+    border-radius: 5px;
+}
+a:visited,a:link,a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+}
+hr{
+    margin: 3% 0;
+}
+.title{
+    display: inline-block;
+    line-height: 2em;
+}
+.para{
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+/*hearder*/
+header{
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+header nav li{
+    list-style: none;
+    float: left; 
+    text-align: center;
+    width: 16.6%;
+}
+header nav li a{
+    text-decoration: none;
+}
+
+/*profile*/
+#profile{
+    text-align: center;
+}
+#profile>img{
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #666;
+    margin-bottom: 2%;
+    transition: 500ms;
+}
+#profile>img:hover{
+    animation: profile-img-hover 1000ms ease-out 100ms infinite forwards;
+	cursor: -webkit-grab;
+}
+@keyframes profile-img-hover {
+	0% {
+		-webkit-transform: rotate(0);
+	}
+	23% { 
+		-webkit-transform: rotate(18deg);
+	}
+	25% { 
+		-webkit-transform: rotate(20deg);
+	}
+	50% { 
+		-webkit-transform: rotate(0);
+	}
+	73% { 
+		-webkit-transform: rotate(-18deg);
+	}
+	75% { 
+		-webkit-transform: rotate(-20deg);
+	}
+	100% { 
+		-webkit-transform: rotate(0);
+	}
+}
+#profile h1,h3{
+    margin: 0 0 1%;
+}
+#profile section{
+    text-align: left;
+}
+
+/*skills*/
+#skills ul li{
+    list-style: none;
+}
+
+/*intership*/
+#intership p:first-child::before{
+    content: "▶ ";
+}
+#intership p:first-child{
+    font-weight: bold;
+}
+#intership p:nth-child(2){
+    font-style: italic;
+    text-decoration: underline;
+}
+#intership dl dd{
+    margin-left: 2em;
+}
+#intership dl dd::before{
+    content: "● ";
+}
+
+/*experience*/
+#experience .project p:nth-child(2){
+    margin-left: 2em;
+    margin-bottom: .5em;
+}
+#experience .project p:first-child::before{
+    content: "▶ ";
+}
+
+/*contact*/
+#contact ul{
+    width: 100%;
+    text-align: center;
+    margin: 1% 5% 3% 5%;
+}
+#contact ul li{
+    float: left;
+    list-style: none;
+    width: 16%;
+}
+
+/*summerize*/
+.summerize{
+    text-align: center;
+}

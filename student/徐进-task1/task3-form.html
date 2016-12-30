@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task3-form</title>
+    <meta name="author" content="Jackie">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta name="keywords" content="Task3-form">
+    <meta name="description" content="a questionnaire with form">
+    <meta name="viewport" content="initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <h1>关于<abbr title="通俗来说，“互联网+”就是“互联网+各个传统行业”，但这并不是简单的两者相加，而是利用信息通信技术以及互联网平台，让互联网与传统行业进行深度融合，创造新的发展生态．">互联网+</abbr>的调查问卷</h1>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>请填写您的个人信息，感谢！</legend>
+            <p>
+                <label>姓名：<input type="text" placeholder="name" name="name" required autofocus></label>
+            </p>
+            <p>性别：
+                <label><input type="radio" name="sex" checked>男</label>
+                <label><input type="radio" name="sex">女</label>
+            </p>
+            <p>您的年龄段：
+                <label><input type="radio" name="age">小于18岁</label>
+                <label><input type="radio" name="age" checked>18~25</label>
+                <label><input type="radio" name="age">26~30</label>
+                <label><input type="radio" name="age">31~40</label>
+                <label><input type="radio" name="age">41~50</label>
+                <label><input type="radio" name="age">50~60</label>
+                <label><input type="radio" name="age">60以上</label>
+            </p>
+            <p>
+                <label>手机号：<input type="text" name="phone" pattern="1\d{10}" placeholder="please enter your phonenumber"></label>
+            </p>
+            <p>
+                <label>所在地：
+                        <select name="add">
+                            <option value="1">北京</option>
+                            <option value="2">上海</option>
+                            <option value="3">深圳</option>
+                            <option value="4">广州</option>
+                            <option value="5">杭州</option>
+                        </select>
+                    </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>问卷内容</legend>
+            <p>您是否了解互联网+的概念？
+                <label><input type="radio" checked name="q1">是</label>
+                <label><input type="radio" name="q1">否</label>
+            </p>
+            <p>您认为互联网+是风潮还是发展导致的必然趋势？
+                <label><input type="radio" checked name="q2">风潮</label>
+                <label><input type="radio" name="q2">趋势</label>
+            </p>
+            <p>以下各项重点工程中，您最看好哪几项？
+                <label><input type="checkbox" checked name="q3">互联网+现代农业</label>
+                <label><input type="checkbox" name="q3">互联网+智慧能源</label>
+                <label><input type="checkbox" name="q3">益民服务</label>
+                <label><input type="checkbox" name="q3">高效物流</label>
+                <label><input type="checkbox" name="q3">电子商务</label>
+                <label><input type="checkbox" name="q3">绿色生态</label>
+                <label><input type="checkbox" name="q3">人工智能</label>
+            </p>
+            <p>您经常网购么？
+                <label><input type="radio" checked name="q4">是</label>
+                <label><input type="radio" name="q4">否</label>
+            </p>
+            <p>对于双十一这类的大型促销活动，您有什么看法呢？
+                <label><input type="radio" checked name="q5">很好，迎合当代市场</label>
+                <label><input type="radio" name="q5">不好，引起盲目购物，物流混乱</label>
+                <label><input type="radio" name="q5">没有关心过</label>
+            </p>
+            <p>您感觉电商应该在哪些方面进一步改善？
+                <label><input type="radio" checked name="q6">物流</label>
+                <label><input type="radio" name="q6">质量监督</label>
+                <label><input type="radio" name="q6">承办错事</label>
+                <label><input type="radio" name="q6">其他</label>
+            </p>
+            <p>如果您是电商，您会关注哪些方面？
+                <label><input type="text" name="q7"></label>
+            </p>
+            <p>您对互联网+有什么看法？
+                <label><textarea cols="20" rows="5" name="q8"></textarea></label>
+            </p>
+        </fieldset>
+        <button type="submit">确认</button>
+        <button type="button">取消</button>
+        <button type="reset">重置</button>
+    </form>
+</body>
+
+</html>

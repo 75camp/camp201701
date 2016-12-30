@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>task1-resumeWithCss</title>
+    <meta name="author" content="Jackie">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta name="keywords" content="task2-resume">
+    <meta name="description" content="my simple resume">
+    <meta name="viewport" content="initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="task1-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <nav>
+            <ul>
+                <li class="current"><a href="#profile">基本信息</a></li>
+                <li><a href="#education">教育信息</a></li>
+                <li><a href="#skills">专业技能</a></li>
+                <li><a href="#intership">实习</a></li>
+                <li><a href="#experience">项目经验</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="profile">
+            <img src="http://p1.bpimg.com/567571/af43062018ec2e1a.png" alt="my avatar">
+            <h1>Jackie</h1>
+            <h3>To be a Front-end engineer</h3>
+            <section>
+                <h2 class="title">About me:</h2>
+                <p class="para">Hi，我是Jackie，目前奋斗在前端工程师的道路上，在校拥有一年的编程经验，帮老师做过些校内的前端项目，致力于写出语义化良好的HTML/H5页面，能用CSS3和JavaScript实现基本交互效果，在前端编码总是让我乐此不疲。</p>
+            </section>
+        </article>
+        <hr>
+        <article id="education">
+            <h2 class="title">教育经历</h2>
+            <p class="para">北京林业大学软件工程硕士在读<span>（2018年毕业）</span></p>
+        </article>
+        <hr>
+        <article id="skills">
+            <h2 class="title">专业技能</h2>
+            <ul class="para">
+                <li>掌握HTML/CSS，能写出语义合理，兼容性良好的页面文档结构</li>
+                <li>熟练使用原生JavaScript写组件，也会用jQuery写插件</li>
+                <li>熟练使用Bootstrap前端框架</li>
+                <li>了解HTTP协议，以及熟悉运用Ajax通过JSON数据接口与后台数据接口进行数据交互</li>
+            </ul>
+        </article>
+        <hr>
+        <article id="intership">
+            <h2 class="title">实习</h2>
+            <div class="para">
+                <p>2016.08-2016.09 北京天云智汇有限公司</p>
+                <p>前端工程师（实习）</p>
+                <dl>
+                    <dt>主要工作：</dt>
+                    <dd>通过node-webkit构建桌面应用程序，通过HTML/CSS编写系统内界面，并通过jQuery和JS实现软件的前端交互。</dd>
+                    <dd>用bootstrap框架对公司官网主页进行维护和更新</dd>
+                </dl>
+            </div>
+            <div class="para">
+                <p>2016.4-2016-7 北京好乐通科技有限公司</p>
+                <p>前端工程师（实习）</p>
+                <dl>
+                    <dt>主要工作：</dt>
+                    <dd>通过HTML/CSS对公司官网的页面进行布局和样式实现。</dd>
+                    <dd>使用Bootstrap框架，jQuery以及JavaScript实现界面交互和基本功能。</dd>
+                </dl>
+            </div>
+        </article>
+        <hr>
+        <article id="experience">
+            <h2 class="title">项目经验：</h2>
+            <div class="project para">
+                <p><strong>北京林业大学林木分子设计育种高精尖创新中心主页</strong></p>
+                <p>采用织梦内容管理系统作为后台，前端用bootstrap框架进行布局。Javascript实现页面基本的交互和特效。</p>
+            </div>
+            <div class="project para">
+                <p><strong>好乐通PC客户端（OKTEL）</strong></p>
+                <p>在好乐通实习时加入的一个项目，该项目是一个桌面端程序，采用嵌入式的 HTML/CSS/脚本引擎Sciter，通过HTML/CSS，以及Tiscript对软件的前台页面布局及用户交互进行实现。在该项目中主要承担了用html/css写客户端页面，并用jquery实现部分交互和特效。</p>
+            </div>
+            <div class="project para">
+                <p><strong>北京林业大学森林人团队官网</strong></p>
+                <p>该项目是帮学校一个团队做的官方网站，采用织梦CMS作为后台，前台采用了Bootstrap和jquery进行布局和实现，并且用Javascript实现页面的基本交互。</p>
+            </div>
+        </article>
+        <hr>
+    </main>
+    <footer id="contact">
+        <h2 class="title">联系方式</h2>
+        <ul>
+            <li>
+                <a href="mailto:winar1994@outlook.com">
+                    <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/winar-jin" target="anotherPage" title="github link">
+                    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/WinarJin" target="anotherPage" title="twitter link">
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/winar.jin" target="anotherPage" title="facebook link">
+                    <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://weibo.com/winarjin" target="anotherPage" title="weibo link">
+                    <i class="fa fa-weibo fa-3x" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <p class="summerize">热爱互联网行业，工作认真，有责任心、乐观自信、性格开朗、有毅力！</p>
+    </footer>
+</body>
+
+</html>
