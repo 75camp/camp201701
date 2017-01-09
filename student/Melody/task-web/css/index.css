@@ -17,7 +17,7 @@ input, button{
 }
 body{
 	font-size: 14px;
-	font-family: "Microsoft YaHei";
+	font-family: Helvetica, sans-serif;
 }
 /*common部分*/
 .wrap {
@@ -111,13 +111,9 @@ body{
 	height: 50px;
 	background: #f00;
 }
-#nav ul {
-	height: 50px;
-}
 #nav li {
 	float: left;
 	width: 171px;
-	height: 50px;
 }
 #nav a {
 	display: block;
