@@ -17,7 +17,7 @@ input, button{
 }
 body{
 	font-size: 14px;
-	font-family: Helvetica, sans-serif;
+	font-family: "Microsoft Yahei", Helvetica, STHeiTi, Arial, sans-serif;
 }
 /*common部分*/
 .wrap {
