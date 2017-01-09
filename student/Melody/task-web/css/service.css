@@ -1,0 +1,52 @@
+/*service部分*/
+#service {
+  padding-top: 40px;
+}
+#service .tab-head {
+  width: 480px;
+  height: 52px;
+  margin: 0 auto;
+  background: #F1F1F1;
+  padding-left: 20px;
+}
+#service .tab-head li {
+  width: 154px;
+  height: 52px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  line-height: 52px;
+}
+#service .tab-head .current {
+  color: #fff;
+  background: #EA3939;
+}
+#service .tab-content {
+  height: 400px;
+  padding-top: 50px;
+  padding-left: 300px;
+}
+#service .tab-content li {
+  width: 267px;
+  height: 366px;
+  float: left;
+  border: 1px red solid;
+  text-align: center;
+  padding-top: 10px;
+  margin-right: 47px;
+}
+#service .tab-content li:last-child {
+  margin-right: 0;
+}
+#service .tab-content li span {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+#service .tab-content li span a {
+  color: #000;
+}
