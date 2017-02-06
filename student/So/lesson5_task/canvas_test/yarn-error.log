@@ -1,0 +1,39 @@
+Arguments: 
+  D:\study\nodejs\node.exe C:\Users\So\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add webpack
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;D:\study\nodejs\;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Users\So\AppData\Local\Microsoft\WindowsApps;C:\Users\So\AppData\Roaming\npm;D:\study\AppServ\Apache24\bin;D:\study\AppServ\php5;D:\study\AppServ\MySQL\bin
+
+Yarn version: 
+  0.19.1
+
+Node version: 
+  6.2.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "canvas_test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.59.173:443
+      at Object.exports._errnoException (util.js:953:11)
+      at exports._exceptionWithHostPort (util.js:976:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1080:14)
