@@ -1,0 +1,14 @@
+%microsoft-series {
+	font-family: 'SimHei', 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+}
+
+body {
+  /* 0px / 24px */
+  font-size: 0;
+  line-height: 24px;
+  @extend %microsoft-series;
+}
+
