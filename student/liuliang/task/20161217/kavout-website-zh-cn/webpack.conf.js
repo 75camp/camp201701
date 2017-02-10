@@ -22,7 +22,7 @@ const config = {
     app: [
       path.join(src, 'index', 'app.js')
     ],
-    vendors: []
+    vendors: ['toggle']
   },
   output: {
     path: path.join(common.dist, 'static'),
@@ -39,7 +39,8 @@ const config = {
       // ================================
       SCSS: path.join(common.staticDir, 'css/scss'),
       IMAGE: path.join(common.staticDir, 'img'),
-      rem: path.join(common.staticDir, 'js/vendors/rem.js')
+      rem: path.join(common.staticDir, 'js/vendors/rem.js'),
+      toggle: path.join(common.staticDir, 'js/components/toggle.js')
     }
     // root: [rootPath]
     // modulesDirectories: [

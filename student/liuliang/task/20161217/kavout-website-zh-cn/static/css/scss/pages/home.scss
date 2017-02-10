@@ -13,6 +13,9 @@
 }
 .height-520 {
 	min-height: 520px;
+	@include media("<=tablet") {
+		min-height: 257px;
+	}
 }
 .height-554 {
 	min-height: 554px;
@@ -22,6 +25,9 @@
 }
 .height-650 {
 	min-height: 650px;
+	@include media("<=tablet") {
+		min-height: 425px;
+	}
 }
 .height-700 {
 	min-height: 700px;
@@ -40,6 +46,14 @@
 }
 .padding-bottom-30 {
 	padding-bottom: 30px;
+}
+.padding-bottom-85 {
+	padding-bottom: 85px;
+}
+.padding-top-57-sm {
+	@include media("<=tablet") {
+		padding-top: 57px;
+	}
 }
 .app-store-image-border {
 	border: 2px solid #000;
@@ -82,6 +96,10 @@
 .rotate-45-horizontal-center-vertical-center {
 	@extend .transform-horizontal-center-vertical-center;
 	transform: translate(-50%,-50%) rotate(45deg);
+		@include media("<=tablet") {
+			top: 135px;
+			transform: translateX(-50%) rotate(45deg);
+		}
 }
 .flex-column-horizontal-center-vertical-center {
 	@extend %flex-column;
@@ -95,11 +113,14 @@
 }
 .img-responsive {
 	display: block;
-	max-width: 100%;
+	max-width: 95%;
+	margin: 0 auto;
 	height: auto;
 }
 .width-responsive {
-	@extend .img-responsive;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 %flex-row {
 	display: flex;
@@ -140,31 +161,6 @@ html {
 }
 header {
 	background-color: #fff;
-	h1#logo {
-		overflow: hidden;
-		width: 300px;
-		height: 80px;
-		margin: 0 auto;
-		background-color: #ff3030;
-		@include media("<=tablet") {
-			background-color: transparent;
-			float: left;
-			width: 155px;
-			height: 50px;
-		}
-		a {
-			background: url('../../../img/index/logo.png') no-repeat;
-			background-size: 155px auto;
-			background-position: center;
-			color: transparent;
-			display: block;
-			height: 100%;
-			width: 100%;
-			line-height: 0;
-			font-size: 0;
-			overflow: hidden
-		}
-	}
 	nav.navbar-default {
 		font-size: 18px;
 		ul {
@@ -181,7 +177,7 @@ header {
 					line-height: 40px;
 					height: 40px;
 					text-align: right;
-					background-color: #ff3030;
+					background-color: rgba(233, 48, 48, .8);
 				}
 				a {
 					color: #333;
@@ -189,7 +185,8 @@ header {
 					width: 100%;
 					height: 100%;
 					&:hover {
-						background-color: rgba(233, 48, 48, .5);
+						background-color: rgba(233, 48, 48, 1);
+						color: #fff;
 					}
 					@include media("<=tablet") {
 						color: #fff;
@@ -198,15 +195,71 @@ header {
 				}
 			}
 		}
-		.navbar-toggle {
-			&:hover {
+		h1#logo {
+			overflow: hidden;
+			width: 300px;
+			height: 80px;
+			margin: 0 auto;
+			background-color: #ff3030;
+			@include media("<=tablet") {
 				background-color: transparent;
+				float: left;
+				width: 155px;
+				height: 50px;
 			}
-			&:focus {
-				background-color: transparent;
+			a {
+				background: url('../../../img/index/logo.png') no-repeat;
+				background-size: 155px auto;
+				background-position: center;
+				color: transparent;
+				display: block;
+				height: 100%;
+				width: 100%;
+				line-height: 0;
+				font-size: 0;
+				overflow: hidden
 			}
-			.icon-bar {
-				background-color: #fff;
+		}
+		.nav-header {
+			overflow: hidden;
+			input {
+				&[type="radio"] {
+					display: none;
+					&+label {
+						display: inline-block;
+						@extend .float-right;
+					}
+				}
+			}
+			.navbar-toggle {
+				@extend .float-right;
+				&:hover {
+					background-color: transparent;
+				}
+				&:focus {
+					background-color: transparent;
+				}
+				.icon-bar {
+					background-color: #fff;
+				}
+			}
+			@include media("<=tablet") {
+				background-color: rgba(233, 48, 48, .8);
+				padding: 15px 30px;
+				border-bottom: 1px solid rgba(255, 255, 255, .4);
+			}		
+		}
+		.navbar-collapse {
+			&.collapse {
+				// opacity: 0;
+				@include media("<=tablet") {
+					display: none;
+				}
+				&.active {
+					display: initial;
+					// opacity: 1;
+					// transition: opacity 1s;
+				}
 			}
 		}
 	}
@@ -242,33 +295,15 @@ header {
 		clip: rect(0,0,0,0);
 		border: 0;
 	}
-	.nav-header {
-		overflow: hidden;
-		input {
-			&[type="radio"] {
-				display: none;
-				&+label {
-					display: inline-block;
-					@extend .float-right;
-				}
-			}
-		}
-		@include media("<=tablet") {
-			background-color: #ff3030;
-			padding: 20px 30px;
-			border-bottom: 1px solid rgba(255, 255, 255, .5);
-		}		
-	}
 }
 section {
+
 	&#introduce {
-		background-color: #fff;
 		@include media("<=tablet") {
-			background-image: url('../../../img/index/pic-1.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center top;
+			display: flex;
+			flex-direction: column-reverse;
 		}
+		background-color: #fff;
 		.introduce-slogan {
 			text-align: center;
 		}
@@ -279,6 +314,9 @@ section {
 			padding-bottom: 44px;
 			font-weight: bold;
 			@extend .float-right;
+			@include media("<=tablet") {
+				font-size: 40px;
+			}
 		}
 		.introduce-slogan-title-small {
 			font-size: 12px;
@@ -293,19 +331,31 @@ section {
 			font-weight: bold;
 			width: 100%;
 			@extend .float-right;
+			@include media("<=tablet") {
+				font-size: 24px;
+			}
 		}
 		.introduce-slogan-content-strong {
 			font-size: 48px;
 			line-height: 1;
 			color: #e93030;
+			@include media("<=tablet") {
+				font-size: 30px;
+			}
 		}
 	}
 	&#app {
 		background: url('../../../img/index/pic-2.png') center top no-repeat;
 		background-size: cover;
+		.bg-sm {
+			@include media("<=tablet") {
+				background: url('../../../img/index/pic-2.png') 20% center no-repeat;
+				background-size: cover;
+			}			
+		}
 		.app-details {
 			@include media("<=tablet") {
-				padding: 30px 0;
+				padding: 91px 0 100px 0;
 			}	
 		}
 		.app-download-container {
@@ -333,7 +383,7 @@ section {
 		background-color: #f7f2ed;
 		.choose-details {
 			@include media("<=tablet") {
-				padding: 30px 0;
+				padding: 100px 0;
 			}	
 		}
 		i {
@@ -420,6 +470,8 @@ section {
 				padding-right: 0;
 				border-radius: 5px;
 				@include box-shadow(0px, 0px, 44px);
+				padding: 43px 32px 0px 33px;
+				min-height: 375px;
 			}
 			padding: 65px 32px 45px 33px;
 			text-align: center;
@@ -435,6 +487,9 @@ section {
 					color: #e93030;
 					vertical-align: middle;
 					font-weight: bold;
+					@include media("<=tablet") {
+						font-size: 20px;
+					}
 				}
 				&.quote-second-advantage {
 					font-size: 30px;
@@ -453,7 +508,7 @@ section {
 					border-radius: 6px;
 					line-height: 1.4;
 					padding: 0 10px;
-					@include media("<=tablet") {;
+					@include media("<=tablet") {
 						font-size: 40px;
 					}
 				}
@@ -465,7 +520,7 @@ section {
 		text-align: center;
 		.product-features-details {
 			@include media("<=tablet") {
-				padding: 30px 0;
+				padding: 0 0 100px;
 			}	
 		}
 		dl {
@@ -487,6 +542,15 @@ section {
 					display: inline-block;
 					transform: rotate(-45deg);
 				}
+				@include media("<=tablet") {
+					&::before {
+						content: '';
+						display: block;
+						width: 100%;
+						height: 240px;
+						padding: 100px 0;
+					}
+				}
 			}
 			&.product-feature-details {
 				@include media("<=tablet") {
@@ -501,6 +565,9 @@ section {
 					font-size: 16px;
 					line-height: 1.5;
 					color: rgba(0,0,0,.7);
+					@include media("<=tablet") {
+
+					}
 				}
 				img {
 					display: inline-block;
@@ -514,14 +581,13 @@ section {
 		text-align: center;
 		.team-details {
 			width: 1000px;
-			min-height: 320px;
 			padding-top: 80px;
 			border: 1px solid #fff;
 			border-radius: 6px;
 			background-color: rgba(255, 255, 255, .5);
+			padding: 60px 0;
 			@include media("<=tablet") {
-				width: 70%;
-				padding-top: 0px;
+				padding: 30px 10px;
 			}
 		}
 		h2 {
@@ -548,6 +614,7 @@ section {
 			}
 			h2 {
 				font-weight: normal;
+				font-size: 30px;
 			}
 			h3 {
 				font-size: 20px;
@@ -574,8 +641,7 @@ section {
 			dd {
 				padding-right: 40px;
 				@include media("<=tablet") {
-					padding-right: 0;
-					padding-bottom: 30px;
+					padding: 0 0 30px 0;
 				}
 			}
 			img {
@@ -585,12 +651,18 @@ section {
 	}
 	&#strategic-partner {
 		background-color: #e5e5e5;
+		@include media("<=tablet") {
+			padding: 100px 0 40px;
+		}		
 		h2 {
 			font-weight: normal;
 			font-size: 30px;
 			line-height: 1;
 			color: #232424;
 			text-align: center;
+			@include media("<=tablet") {
+				font-size: 20px;
+			}
 		}
 		nav {
 			text-align: justify;
@@ -603,6 +675,10 @@ section {
 		}
 		a {
 			display: inline-block;
+				@include media("<=tablet") {
+					width: 100%;
+					padding-bottom: 60px;
+				}
 		}
 		.strategic-partner-details {
 			width: 1000px;
