@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>超级英雄下拉菜单</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        body {
+            background: #363f48;
+        }
+
+        nav {
+            margin: 100px auto;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .outmenu {
+            display: inline-block;
+            position: relative;
+        }
+
+        .outmenu > li > a {
+            display: block;
+            font-size: 24px;
+            line-height: 1;
+            padding: 10px 87px;
+        }
+
+        .outmenu > li {
+            background: #3b434e;
+            border: solid 1px #2b2929;
+        }
+
+        .outmenu ul {
+            display: none;
+        }
+
+        .outmenu li:hover > ul {
+            display: block;
+        }
+
+        .outmenu li a:hover {
+            background: #3a95f0;
+        }
+
+        .centermenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        .centermenu > li > a {
+            font-size: 17px;
+            display: block;
+            padding: 10px 25px;
+        }
+
+        .centermenu > li {
+            position: relative;
+            border: 1px solid #2b2929;
+            border-bottom: none;
+            border-top: none;
+            background: #3b434e;
+        }
+
+        .centermenu > li:last-child {
+            border-bottom: 1px solid #2b2929;
+            border-top: 1px solid #2b2929;
+        }
+
+        .inmenu {
+            position: absolute;
+            left: 105%;
+            top: 0;
+        }
+
+        .inmenu li {
+            border-left: solid 1px #2b2929;
+            border-right: solid 1px #2b2929;
+            border-bottom: solid 1px #2b2929;
+            background: #3b434e;
+        }
+
+        .inmenu li:first-child {
+            border-top: solid 1px #2b2929;
+        }
+
+        .inmenu a {
+            font-size: 16px;
+            display: block;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul class="outmenu">
+        <li><a href="#">Marvel </a>
+            <ul class="centermenu">
+                <li><a href="#">The Avengers</a>
+                    <ul class="inmenu">
+                        <li><a href="#">Iron Man</a></li>
+                        <li><a href="#">Spider-Man</a></li>
+                        <li><a href="#">Captain</a></li>
+                        <li><a href="#">Thor</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Guardians of the Galaxy</a>
+                    <ul class="inmenu">
+                        <li><a href="#">Star-Lord</a></li>
+                        <li><a href="#">Gamora</a></li>
+                        <li><a href="#">Rocket Racoon</a></li>
+                        <li><a href="#">Groot</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
