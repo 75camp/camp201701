@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>text</title>
+	<style>
+		#canvas{
+			background: #eee;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="600" height="300"></canvas>
+</body>
+<script src="./index.js"></script>
+<script>
+	// import can from ''
+	let context=document.getElementById('canvas').getContext('2d')
+	context.moveTo(1,1)
+	context.dashedLineTo(100,100)
+	context.dashedLineTo(1,100)
+	context.stroke()
+</script>
+</html>
