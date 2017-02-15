@@ -65,4 +65,7 @@ $percent-margin: $margin / $layout-margin-width;
   .hidden-lg {
     display: none;
   }
+  .visibility-hidden-lg {
+    visibility: hidden;
+  }
 }

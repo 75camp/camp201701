@@ -1,3 +1,1 @@
-import 'SCSS/pages/home.scss'
-
-
+import 'SCSS/pages/index/index.scss'

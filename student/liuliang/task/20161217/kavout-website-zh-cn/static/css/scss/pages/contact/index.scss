@@ -1,0 +1,147 @@
+@import '../../main';
+@import '../common/main';
+.height-300 {
+    min-height: 300px;
+}
+.height-520 {
+    min-height: 520px;
+}
+.height-1208 {
+    min-height: 1208px;
+}
+
+.figure-container-padding-bottom-100 {
+    padding-bottom: 100px;
+}
+section {
+    @include media(">tablet") {
+        padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+    }
+    &#company-aim {
+		background: url('../../../img/contact/pic-1.png') center top no-repeat;
+		background-size: cover;
+        .company-aim-details {
+            background: url('../../../img/contact/juxing-1.png') center top no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 80px 0 64px 0;
+            @include media("<=tablet") {
+                margin: 0 30px 0 30px;
+                padding: 80px 30px 75px 30px;
+            }
+        }
+        h2 {
+            font-size: 40px;
+            line-height: 1;
+            color: #000;
+        }
+        dl {
+            dt {
+                padding-bottom: 43px;
+            }
+            dd {
+                font-size: 32px;
+                font-family: 'STXihei';
+                line-height: 1.5;;
+                color: rgba(0, 0, 0, .7);
+                @include media(">tablet") {
+                    padding: 0 130px 0 130px;
+                }
+            }
+        }
+    }
+    &#team-member {
+        background-color: #fff;
+        .team-member-details {
+            .team-member-details-position {
+                font-size: 20px;
+                line-height: 1;
+                color: #000;
+                padding: 19px 0 42px 0;
+            }
+            .team-member-details-job-experience {
+                font-size: 18px;
+                line-height: 1.5;
+                color: rgba(0, 0, 0, .7);
+            }
+            @include media("<=tablet") {
+                padding: 20px 0 100px 0;
+            }
+        }
+        h2 {
+            font-size: 30px;
+            line-height: 190px;
+            color: #000;
+            font-weight: normal;
+            text-align: center;
+        }
+        h3 {
+            font-size: 28px;
+            line-height: 1;
+            font-family: 'Arial';
+            color: #000;
+            font-weight: normal;
+        }
+        figure {
+            @extend %flex-row;
+            // You may only @extend selectors within the same directive
+            @include media("<=tablet") {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            img {
+                flex: 0;
+            }
+            figcaption {
+                padding: 35px 0 0 70px;
+                @include media("<=tablet") {
+                    padding: 30px 30px 0 30px;
+                }
+            }
+        }
+    }
+    &#contact{
+        background: url('../../../img/contact/pic-1.png') center top no-repeat;
+		background-size: cover;
+        .contact-details {
+            @include media(">tablet") {
+              min-width: 600px;
+            }
+        }
+        h2 {
+            font-size: 30px;
+            line-height: 1;
+            color: #000;
+            font-weight: normal;
+        }
+        dl {
+            text-align: center;
+            dt {
+                padding-bottom: 70px;
+            }
+            dd {
+                font-family: 'STXihei';
+                font-size: 18px;
+                line-height: 30px;
+                color: #000;
+                @include media("<=tablet") {
+                    width: 100%;
+                }
+                img {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                &#email {
+                    @include media(">tablet") {
+                        margin-right: 34px;
+                    }
+                    @include media("<=tablet") {
+                        padding-bottom: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -46,77 +46,50 @@
             </nav>
         </header>
         <main id="main" role="main">
-            <section id="company-aim" class="grid-container" role="contentinfo">
-                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-520">
-                    <dl class="company-aim-details">
-                        <dt><h2>公司宗旨</h2></dt>
-                        <dd>用最前沿的技术打破海外投资中的门槛与壁垒，为每个人提供海外投资的桥梁与支持</dd>
-                    </dl>
-                </div>
-            </section>
-            <section id="team-member" class="grid-container" role="contentinfo">
-                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-1208">
-                    <dl class="team-member-details">
-                        <dt><h2>我们团队</h2></dt>
-                        <dd class="figure-container-padding-bottom-100">
-                            <figure>
-                                <img src="../../static/img/contact/photo-1.png" alt="Alex Lu" width="200" height="246">
-                                <figcaption>
-                                    <dl>
-                                        <dt class="team-member-details-name"><h3>Alex Lu</h3></dt>
-                                        <dd class="team-member-details-position">联合创始人&CEO</dd>
-                                        <dd class="team-member-details-job-experience"
-                                            ><span>前大智慧CTO，百度商业平台技术总监，盛大集团副总裁。</span
-                                            ><span>曾在美国微软和Google分别担任首席程序经理，资深工程师，</span
-                                            ><span>在人工智能、机器学习、大数据和金融科技领域有17年的经验。</span
-                                            ><span>清华大学数学和计算机双学位，哥伦比亚大学MBA</span
-                                        ></dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </dd>
-                        <dd class="figure-container-padding-bottom-100">
-                            <figure>
-                                <img src="../../static/img/contact/photo-2.png" alt="Keith Kline" width="200" height="246">
-                                <figcaption>
-                                    <dl>
-                                        <dt class="team-member-details-name"><h3>Keith Kline</h3></dt>
-                                        <dd class="team-member-details-position">COO</dd>
-                                        <dd class="team-member-details-job-experience"
-                                            ><span>华尔街对冲基金VAM合伙人与衍生品交易负责人，在华尔街有25年工作经验。</span
-                                            ><span>1990年在SIG开始交易生涯，在海纳集团创始人Jeff Yass培养下，成长为首席交易员，</span
-                                            ><span>后任衍生品交易投资总监。工作16年后，加入对冲基金VAM做合伙人，基金规模在5年内从$50M增长到$25亿美金。</span
-                                        ></dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </dd>
-                        <dd>
-                            <figure>
-                                <img src="../../static/img/contact/photo-3.png" alt="Barry Bernstein" width="200" height="246">
-                                <figcaption>
-                                    <dl>
-                                        <dt class="team-member-details-name"><h3>Barry Bernstein</h3></dt>
-                                        <dd class="team-member-details-position">首席投资官</dd>
-                                        <dd class="team-member-details-job-experience">
-                                            <span>拥有15年的国际金融服务经验，前美国券商Algo Paterners的首席运营官，</span>
-                                            <span>国际交易机构Neonet Securities的主席。曾获得纳斯达克股票市场敲钟的荣誉。</span>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </dd>
-                    </dl>
-                </div>
-            </section>
-            <section id="contact" class="grid-container" role="contentinfo">
-                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-300">
-                    <dl class="contact-details">
-                        <dt><h2>联系方式</h2></dt>
-                        <dd class="float-left" id="email"><img src="../../static/img/contact/icon-1.png" alt="邮箱" width="30"><span>邮箱：contact@wallstreetstock.cn</span></dd>
-                        <dd class="float-left" id="wechat"><img src="../../static/img/contact/icon-2.png" alt="微信服务号" width="30"><span>微信服务号：wsgupiao</span></dd>
-                        <dd class="clearfix"></dd>
-                    </dl>
+            <section id="login" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-750">
+                    <div class="login-details">
+                        <h2 class="login-heart-tips">登陆后即可查看您的入金指引</h2>
+                        <form name="login-form" method="post" onsubmit="return false;">
+                            <fieldset
+                                ><label for="telephone"
+                                    ><input type="text" name="telephone" id="telephone" placeholder="手机号"
+                                ></label
+                                ><output class="error-tips hide">请输入你的手机号</output
+                            ></fieldset>
+                            <fieldset class="password-container-padding"
+                                ><label for="password"
+                                    ><input type="password" name="password" id="password" placeholder="请输入密码"
+                                ></label
+                                ><output class="error-tips hide">请输入您的登录密码</output
+                            ></fieldset>
+                            <fieldset
+                                ><output class="trade-password-heart-tips">为了保证账号信息安全，请输入交易密码</output
+                                ><label for="trade-password" class="trade-password-input-container-margin-top-11"
+                                    ><input type="password" name="trade-password" id="trade-password" placeholder="请输入交易密码"
+                                ></label
+                                ><output class="error-tips hide">请输入正确的交易密码</output
+                            ></fieldset>
+                            <fieldset class="submit-button-container-padding-top-32"
+                                ><input type="submit" value="登录" class="submit-button"
+                                ><output class="error-tips hide">账号不存在！</output
+                            ></fieldset>
+                        </form>
+                        <div class="app-download-details">
+                            <h3 class="app-download-details-title">还没有账号？扫描下载APP</h3>
+                            <div class="app-download-details-content clearfix">
+                                <figure class="float-left"
+                                    ><img src="../../../static/img/inmoney/ios.png" alt="IOS应用下载" width="100"
+                                    ><figcaption class="figcaption-container-padding-top-11">IOS应用下载</figcaption
+                                ></figure>
+                                <figure class="float-right"
+                                    ><img src="../../../static/img/inmoney/android.png" alt="安卓应用下载" width="100"
+                                    ><figcaption class="figcaption-container-padding-top-11">安卓应用下载</figcaption
+                                ></figure>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

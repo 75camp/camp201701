@@ -46,76 +46,61 @@
             </nav>
         </header>
         <main id="main" role="main">
-            <section id="company-aim" class="grid-container" role="contentinfo">
-                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-520">
-                    <dl class="company-aim-details">
-                        <dt><h2>公司宗旨</h2></dt>
-                        <dd>用最前沿的技术打破海外投资中的门槛与壁垒，为每个人提供海外投资的桥梁与支持</dd>
-                    </dl>
-                </div>
-            </section>
-            <section id="team-member" class="grid-container" role="contentinfo">
-                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-1208">
-                    <dl class="team-member-details">
-                        <dt><h2>我们团队</h2></dt>
-                        <dd class="figure-container-padding-bottom-100">
-                            <figure>
-                                <img src="../../static/img/contact/photo-1.png" alt="Alex Lu" width="200" height="246">
-                                <figcaption>
-                                    <dl>
-                                        <dt class="team-member-details-name"><h3>Alex Lu</h3></dt>
-                                        <dd class="team-member-details-position">联合创始人&CEO</dd>
-                                        <dd class="team-member-details-job-experience"
-                                            ><span>前大智慧CTO，百度商业平台技术总监，盛大集团副总裁。</span
-                                            ><span>曾在美国微软和Google分别担任首席程序经理，资深工程师，</span
-                                            ><span>在人工智能、机器学习、大数据和金融科技领域有17年的经验。</span
-                                            ><span>清华大学数学和计算机双学位，哥伦比亚大学MBA</span
-                                        ></dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </dd>
-                        <dd class="figure-container-padding-bottom-100">
-                            <figure>
-                                <img src="../../static/img/contact/photo-2.png" alt="Keith Kline" width="200" height="246">
-                                <figcaption>
-                                    <dl>
-                                        <dt class="team-member-details-name"><h3>Keith Kline</h3></dt>
-                                        <dd class="team-member-details-position">COO</dd>
-                                        <dd class="team-member-details-job-experience"
-                                            ><span>华尔街对冲基金VAM合伙人与衍生品交易负责人，在华尔街有25年工作经验。</span
-                                            ><span>1990年在SIG开始交易生涯，在海纳集团创始人Jeff Yass培养下，成长为首席交易员，</span
-                                            ><span>后任衍生品交易投资总监。工作16年后，加入对冲基金VAM做合伙人，基金规模在5年内从$50M增长到$25亿美金。</span
-                                        ></dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
+            <section id="inmoney-guides" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-654 width-1000 width-responsive">
+                    <dl class="inmoney-guides-details">
+                        <dt><h2 class="inmoney-guides-details-title">入金指引</h2></dt>
+                        <dd>
+                            <dl class="inmoney-guides-details-content">
+                                <dt class="inmoney-guides-details-content-title-container"><h3 class="inmoney-guides-details-content-title">电汇需知</h3></dt>
+                                <dd>
+                                    <ol start="1" type="1" class="inmoney-guides-details-content-content">
+                                        <li>小牛美股建议您使用网上银行或APP进行汇款。</li>
+                                        <li>您使用的银行卡户名必须与账户开户名一致。</li>
+                                        <li>汇出银行与中转行将收取手续费，中转行费用将在到账后，从汇出的金额中扣除</li>
+                                        <li>请您遵守国家相关外汇管理规定并谨慎选择汇款用途，违规汇入资金或者选择投资相关汇款用途可能会造成退款。</li>
+                                        <li>如果汇款遇阻或被退回，请您优先咨询银行失败原因。因国家政策限制导致的汇款失败，小牛美股恕不负责。</li>
+                                    </ol>
+                                </dd>
+                            </dl>
                         </dd>
                         <dd>
-                            <figure>
-                                <img src="../../static/img/contact/photo-3.png" alt="Barry Bernstein" width="200" height="246">
-                                <figcaption>
-                                    <dl>
-                                        <dt class="team-member-details-name"><h3>Barry Bernstein</h3></dt>
-                                        <dd class="team-member-details-position">首席投资官</dd>
-                                        <dd class="team-member-details-job-experience">
-                                            <span>拥有15年的国际金融服务经验，前美国券商Algo Paterners的首席运营官，</span>
-                                            <span>国际交易机构Neonet Securities的主席。曾获得纳斯达克股票市场敲钟的荣誉。</span>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
+                            <dl class="inmoney-guides-details-content">
+                                <dt class="inmoney-guides-details-content-title-container"><h3 class="inmoney-guides-details-content-title">请优先使用下列银行</h3></dt>
+                                <dd class="clearfix" id="bank-list"
+                                    ><figure class="float-left" id="icbc"
+                                        ><img src="../../../static/img/inmoney/pic-icbc.png" alt="中国工商银行" height="40"
+                                        ><figcaption>查看费用及指引</figcaption
+                                    ></figure
+                                    ><figure class="float-left" id="ceb"
+                                        ><img src="../../../static/img/inmoney/pic-ceb.png" alt="中国光大银行" height="40"
+                                        ><figcaption>查看费用及指引</figcaption
+                                    ></figure
+                                    ><p class="clearfix hidden-lg figure-container-padding-bottom-40"></p><figure class="float-left" id="boc"
+                                        ><img src="../../../static/img/inmoney/pic-boc.png" alt="中国银行" height="40"
+                                        ><figcaption>查看费用及指引</figcaption
+                                    ></figure
+                                    ><figure class="float-left" id="ccb"
+                                        ><img src="../../../static/img/inmoney/pic-ccb.png" alt="中国建设银行" height="40"
+                                        ><figcaption>查看费用及指引</figcaption
+                                    ></figure
+                                    ><p class="clearfix hidden-lg figure-container-padding-bottom-40"></p><figure class="float-left" id="aboc"
+                                        ><img src="../../../static/img/inmoney/pic-aboc.png" alt="中国农业银行" height="40"
+                                        ><figcaption>查看费用及指引</figcaption
+                                    ></figure
+                                    ><figure class="float-left" id="cmb"
+                                        ><img src="../../../static/img/inmoney/pic-cmb.png" alt="招商银行香港分行" height="40"
+                                        ><figcaption>查看费用及指引</figcaption
+                                    ></figure
+                                ><p class="clearfix hidden-lg"></p></dd>
+                                <dd class="inmoney-guides-details-content-content-container">
+                                    <ol start="1" type="1" class="inmoney-guides-details-content-content">
+                                        <li>银行首推中国工商银行APP。</li>
+                                        <li>如果使用其他银行入金，可参照已列出的指引步骤，具体操作及费用请向使用的银行咨询。</li>
+                                    </ol>
+                                </dd>
+                            </dl>
                         </dd>
-                    </dl>
-                </div>
-            </section>
-            <section id="contact" class="grid-container" role="contentinfo">
-                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-300">
-                    <dl class="contact-details">
-                        <dt><h2>联系方式</h2></dt>
-                        <dd class="float-left" id="email"><img src="../../static/img/contact/icon-1.png" alt="邮箱" width="30"><span>邮箱：contact@wallstreetstock.cn</span></dd>
-                        <dd class="float-left" id="wechat"><img src="../../static/img/contact/icon-2.png" alt="微信服务号" width="30"><span>微信服务号：wsgupiao</span></dd>
-                        <dd class="clearfix"></dd>
                     </dl>
                 </div>
             </section>

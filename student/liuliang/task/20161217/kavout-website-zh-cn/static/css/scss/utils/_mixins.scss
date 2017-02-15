@@ -89,3 +89,36 @@
     box-shadow: $horizontal $vertical $magnitude $color;
 }
 
+
+// Create placeholder mixin
+@mixin placeholder($color, $size:"", $font-family: "STXihei") {
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-family: $font-family
+    }
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-family: $font-family
+    }
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-family: $font-family
+    }
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-family: $font-family;
+    }
+  }
+}
+

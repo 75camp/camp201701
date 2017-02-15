@@ -1,4 +1,5 @@
-@import '../main';
+@import '../../main';
+@import '../common/main';
 .height-66 {
 	min-height: 66px;
 }
@@ -16,9 +17,6 @@
 	@include media("<=tablet") {
 		min-height: 257px;
 	}
-}
-.height-554 {
-	min-height: 554px;
 }
 .height-600 {
 	min-height: 600px;
@@ -50,260 +48,23 @@
 .padding-bottom-85 {
 	padding-bottom: 85px;
 }
-.padding-top-57-sm {
-	@include media("<=tablet") {
-		padding-top: 57px;
-	}
-}
 .app-store-image-border {
 	border: 2px solid #000;
 	border-radius: 4px;
 }
-.float-left {
-	float: left;
-}
-.float-right {
-	float: right;
-}
-.flex-set-height-percent-100 {
-	@extend %flex-row;
-	align-items: stretch;
-}
-.horizontal-flex-end-vertical-center {
-	@extend %flex-row;
-	justify-content: flex-end;
-	align-items: center;
-	@include media("<=tablet") {
-		justify-content: center;
-	}
-}
-.horizontal-flex-start-vertical-center {
-	@extend %flex-row;
-	justify-content: flex-start;
-	align-items: center;
-}
-.horizontal-center-vertical-center {
-	@extend %flex-row;
-	justify-content: center;
-	align-items: center;
-}
-.transform-horizontal-center-vertical-center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-.rotate-45-horizontal-center-vertical-center {
-	@extend .transform-horizontal-center-vertical-center;
-	transform: translate(-50%,-50%) rotate(45deg);
-		@include media("<=tablet") {
-			top: 135px;
-			transform: translateX(-50%) rotate(45deg);
-		}
-}
-.flex-column-horizontal-center-vertical-center {
-	@extend %flex-column;
-	justify-content: center;
-	align-items: center;
-}
-.horizontal-space-between-vertical-center {
-	@extend %flex-row, %media-flex-column-horizontal-center-vertical-center;
-	justify-content: space-between;
-	align-items: center;
-}
-.img-responsive {
-	display: block;
-	max-width: 95%;
-	margin: 0 auto;
-	height: auto;
-}
-.width-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-%flex-row {
-	display: flex;
-	flex-direction: row;
-}
-%flex-column {
-	display: flex;
-	flex-direction: column;
-}
-%text-overflow-ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-%set-height-percent-hundred {
-	height: 100%;
-}
-%media-flex-column-horizontal-center-vertical-center {
-	@include media("<=tablet") {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-}
-* {
-	box-sizing: inherit;
-	margin: 0;
-	padding: 0;
-}
-html {
-	box-sizing: border-box;
-	@at-root (without:rule) {
-		body {
-			background-color: #2c2626;
-		}
-	}
-}
-header {
-	background-color: #fff;
-	nav.navbar-default {
-		font-size: 18px;
-		ul {
-			@extend .clearfix;
-			margin: 0 auto;
-			li {
-				@extend .float-left;
-				height: 80px;
-				width: 100px;
-				line-height: 80px;
-				text-align: center;
-				@include media("<=tablet") {
-					width: 100%;
-					line-height: 40px;
-					height: 40px;
-					text-align: right;
-					background-color: rgba(233, 48, 48, .8);
-				}
-				a {
-					color: #333;
-					display: inline-block;
-					width: 100%;
-					height: 100%;
-					&:hover {
-						background-color: rgba(233, 48, 48, 1);
-						color: #fff;
-					}
-					@include media("<=tablet") {
-						color: #fff;
-						padding: 0 30px;
-					}
-				}
-			}
-		}
-		h1#logo {
-			overflow: hidden;
-			width: 300px;
-			height: 80px;
-			margin: 0 auto;
-			background-color: #ff3030;
-			@include media("<=tablet") {
-				background-color: transparent;
-				float: left;
-				width: 155px;
-				height: 50px;
-			}
-			a {
-				background: url('../../../img/index/logo.png') no-repeat;
-				background-size: 155px auto;
-				background-position: center;
-				color: transparent;
-				display: block;
-				height: 100%;
-				width: 100%;
-				line-height: 0;
-				font-size: 0;
-				overflow: hidden
-			}
-		}
-		.nav-header {
-			overflow: hidden;
-			input {
-				&[type="radio"] {
-					display: none;
-					&+label {
-						display: inline-block;
-						@extend .float-right;
-					}
-				}
-			}
-			.navbar-toggle {
-				@extend .float-right;
-				&:hover {
-					background-color: transparent;
-				}
-				&:focus {
-					background-color: transparent;
-				}
-				.icon-bar {
-					background-color: #fff;
-				}
-			}
-			@include media("<=tablet") {
-				background-color: rgba(233, 48, 48, .8);
-				padding: 15px 30px;
-				border-bottom: 1px solid rgba(255, 255, 255, .4);
-			}		
-		}
-		.navbar-collapse {
-			&.collapse {
-				// opacity: 0;
-				@include media("<=tablet") {
-					display: none;
-				}
-				&.active {
-					display: initial;
-					// opacity: 1;
-					// transition: opacity 1s;
-				}
-			}
-		}
-	}
-	.navbar-toggle {
-		position: relative;
-		padding: 9px 10px;
-		background-color: transparent;
-		background-image: none;
-		border: 1px solid #fff;
-		border-radius: 4px;
-		margin-top: 6px;
-		margin-bottom: 6px;
-		&:focus {
-			outline: 0;
-		}
-		.icon-bar {
-			display: block;
-			width: 22px;
-			height: 2px;
-			border-radius: 1px;
-			&+.icon-bar {
-				margin-top: 6px;
-			}
-		}
-	}
-	.src-only {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: hidden;
-		clip: rect(0,0,0,0);
-		border: 0;
-	}
-}
 section {
-
 	&#introduce {
 		@include media("<=tablet") {
 			display: flex;
 			flex-direction: column-reverse;
+      padding: 0 30px 0 30px;
 		}
 		background-color: #fff;
+    .horizontal-flex-start-vertical-center {
+      @include media(">tablet") {
+          padding-left: calc(25% - 77.5px);
+      }
+    }
 		.introduce-slogan {
 			text-align: center;
 		}
@@ -351,12 +112,12 @@ section {
 			@include media("<=tablet") {
 				background: url('../../../img/index/pic-2.png') 20% center no-repeat;
 				background-size: cover;
-			}			
+			}
 		}
 		.app-details {
 			@include media("<=tablet") {
 				padding: 91px 0 100px 0;
-			}	
+			}
 		}
 		.app-download-container {
 			padding-top: 78px;
@@ -381,10 +142,15 @@ section {
 	}
 	&#choose {
 		background-color: #f7f2ed;
+    @include media(">tablet") {
+        padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+    }
 		.choose-details {
 			@include media("<=tablet") {
-				padding: 100px 0;
-			}	
+				padding: 100px 30px;
+        max-width: 100%;
+        overflow-x: hidden;
+			}
 		}
 		i {
 			font: normal normal bold 72px/1 'Microsoft YaHei';
@@ -458,6 +224,9 @@ section {
 	}
 	&#market {
 		background-color: #fff;
+    @include media(">tablet") {
+        padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+    }
 		dl.quote-details {
 			width: 566px;
 			min-height: 440px;
@@ -517,16 +286,18 @@ section {
 	}
 	&#product-features {
 		background-color: #f7f2ed;
+    @include media(">tablet") {
+        padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+    }
 		text-align: center;
 		.product-features-details {
 			@include media("<=tablet") {
 				padding: 0 0 100px;
-			}	
+			}
 		}
 		dl {
 			&.product-features-details {
 				position: relative;
-				width: 1000px;
 				@extend %media-flex-column-horizontal-center-vertical-center;
 				& > dt {
 					width: 170px;
@@ -555,7 +326,7 @@ section {
 			&.product-feature-details {
 				@include media("<=tablet") {
 					padding-bottom: 30px;
-				}		
+				}
 				dt {
 					font-size: 20px;
 					color: #000;
@@ -565,9 +336,6 @@ section {
 					font-size: 16px;
 					line-height: 1.5;
 					color: rgba(0,0,0,.7);
-					@include media("<=tablet") {
-
-					}
 				}
 				img {
 					display: inline-block;
@@ -579,8 +347,10 @@ section {
 		background: url('../../../img/index/pic-3.png') center top no-repeat;
 		background-size: cover;
 		text-align: center;
+    @include media(">tablet") {
+        padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+    }
 		.team-details {
-			width: 1000px;
 			padding-top: 80px;
 			border: 1px solid #fff;
 			border-radius: 6px;
@@ -606,8 +376,10 @@ section {
 	}
 	&#security-assurance {
 		background-color: #fff;
+    @include media(">tablet") {
+        padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+    }
 		dl.security-assurance-details {
-			width: 1000px;
 			@include media("<=tablet") {
 				padding: 30px 0;
 				text-align: center;
@@ -628,7 +400,7 @@ section {
 				font-size: 16px;
 				line-height: 1.5;
 				@include media("<=tablet") {
-					padding: 0 10px;
+					padding: 0 30px;
 				}
 			}
 			dt {
@@ -651,9 +423,12 @@ section {
 	}
 	&#strategic-partner {
 		background-color: #e5e5e5;
+    @include media(">tablet") {
+        padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+    }
 		@include media("<=tablet") {
 			padding: 100px 0 40px;
-		}		
+		}
 		h2 {
 			font-weight: normal;
 			font-size: 30px;
@@ -681,54 +456,6 @@ section {
 				}
 		}
 		.strategic-partner-details {
-			width: 1000px;
-		}
-	}
-}
-footer {
-	background-color: #2c2626;
-	.footer-details {
-		width: 1000px;
-		@extend %media-flex-column-horizontal-center-vertical-center;
-		@include media("<=tablet") {
-			padding: 30px 10px 0;
-		}
-	}
-	h2 {
-		font-style: normal;
-		font-size: 18px;
-		line-height: 1;
-		color: #fff;
-		display: inline-block;
-	}
-	p {
-		font-size: 14px;
-		color: rgba(255, 255, 255, .5);
-		font-family: 'STXihei';
-	}
-	figure {
-		width: 140px;
-		height: 190px;
-		color: #333;
-		font-size: 14px;
-		text-align: center;
-		background-color: #ffde46;
-	}
-	dt {
-		padding-bottom: 44px;
-	}
-	hgroup {
-		text-align: justify;
-		width: 60%;
-		@include media("<=tablet") {
-			width: 100%;
-		}
-		line-height: 0;
-		font-size: 0;
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 100%;
 		}
 	}
 }

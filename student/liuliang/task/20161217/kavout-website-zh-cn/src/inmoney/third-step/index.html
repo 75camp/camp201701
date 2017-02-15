@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+        <title>{%=o.htmlWebpackPlugin.options.title%}</title>
+        <meta name="description" content="小牛美股">
+        <meta name="author" content="liuliangsir@gmail.com">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no,email=no,address=no">
+        <meta name="renderer" content="webkit">
+        <link rel="shortcut icon" href="" type="image/x-icon"/>
+        {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+        <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+        {% } %}
+    </head>
+    <body>
+        <header id="header" role="banner">
+            <nav id="navigation" class="navbar navbar-default grid-container" role="navigation">
+                <div class="grid-md-6 nav-header">
+                        <button type="button" class="navbar-toggle hidden-lg" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <h1 id="logo" title="小牛美股"><a href="/">小牛美股</a></h1>
+                </div>
+                <div class="grid-md-6 navbar-collapse collapse" id="navbar-collapse"  aria-expanded="false">
+                    <nav id="navigation" class="navbar navbar-default" role="navigation"
+                        ><ul class="nav navbar-nav">
+                            <li><a href="/inmoney/first-step/index.html" role="button">入金指引</a></li>
+                            <li><a href="/contact/index.html" role="button">联系我们</a></li>
+                            <li class="hide">
+                                <figure class="hidden-sm clearfix"
+                                    ><img class="transform-vertical-center" src="../../../static/img/inmoney/icon.png" alt="用户18612345678的头像" width="31"
+                                    ><figcaption class="float-right">18612345678</figcaption
+                                ></figure>
+                                <a id="login-out-button" href="javascript:;" role="button" class="hide">退出</a>
+                            </li>
+                        </ul
+                    ></nav>
+                </div>
+            </nav>
+        </header>
+        <main id="main" role="main">
+            <section id="inmoney-guides" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-916">
+                    <div class="inmoney-guides-details">
+                        <figure class="inmoney-guides-details-bank-title clearfix">
+                            <img src="../../../static/img/inmoney/pic-icbc.png" alt="中国工商银行" width="68" class="float-left">
+                            <figcaption class="float-left"><h2>中国工商银行</h2><p>2至4个工作日后入账</p></figcaption>
+                        </figure>
+                        <div class="inmoney-guides-details-bank-content">
+                            <h2>参考收费标准</h2>
+                            <p>汇款手续费为汇款金额的0.1%，最低人民币50元/笔，最高人民币260元/笔。通过网银及手机银行汇款，汇款手续费8折优惠。电报费人民币150元/笔。单笔及每日限额5万美金。中转行费用将在到账后扣除。</p>
+                            <ol start="1" type="1" >
+                                <li
+                                    ><dl
+                                        ><dt><h3>购汇</h3></dt
+                                        ><dd><b>网银电脑版</b>：网上银行首页－＞全部－＞贵重金属.外汇.账户商品－＞外汇买卖</dd
+                                        ><dd><b>手机APP应用</b>：APP首页－＞投资理财－＞结售汇－＞USD美元－＞购汇</dd
+                                    ></dl
+                                ></li>
+                                <li
+                                    ><dl
+                                        ><dt><h3>汇款</h3></dt
+                                        ><dd><b>网银电脑版</b>：网上银行首页－＞全部－＞汇款－＞向境外银行汇款</dd
+                                        ><dd><b>手机APP应用</b>：APP首页－＞转账汇款－＞境外汇款</dd
+                                        ><dd>
+                                            <table class="inmoney-guides-table">
+                                                <caption>收款方信息</caption>
+                                                <tbody>
+                                                    <tr><td>收款行是否为工行</td><td>否</td></tr>
+                                                    <tr><td>收款人姓名</td><td>E T Clear</td></tr>
+                                                    <tr><td>收款人账号</td><td>2459865</td></tr>
+                                                    <tr><td>收款人常驻国家(地区)</td><td>美国(UNITED STATES OF AMERICA)</td></tr>
+                                                    <tr><td>收款人地址</td><td>660 S. Figueroa St. Ste.1450, Los Angeles, CA, USA 90017</td></tr>
+                                                    <tr><td>汇款/收款币种</td><td>美元(USD)</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </dd
+                                        ><dd>
+                                            <table class="inmoney-guides-table">
+                                                <caption>收款行信息</caption>
+                                                <tbody>
+                                                    <tr><td>收款行标示Swift Code</td><td>HATRUS44或HATRUS44XXX</td></tr>
+                                                    <tr><td>本地清算号ABA#</td><td>071 000 288</td></tr>
+                                                    <tr><td>收款行全称</td><td>BMO Harris Bank, N.A.</td></tr>
+                                                    <tr><td>收款行地址(部分银行预留信息有误，但不影响汇款结果)</td><td>111 West Monroe Street, Chicago, Illinois 60603</td></tr>
+                                                    <tr><td>收款行所在国家</td><td>美国(UNITED STATES OF AMERICA)</td></tr>
+                                                    <tr><td>收款行所在城市</td><td>芝加哥(Chicago)</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </dd
+                                        ><dd>
+                                            <table class="inmoney-guides-table">
+                                                <caption>汇款方信息</caption>
+                                                <tbody>
+                                                    <tr><td>汇款人姓名</td><td>输入您的姓名全拼</td></tr>
+                                                    <tr><td>汇款人地址</td><td>填入您的中文地址全拼</td></tr>
+                                                    <tr><td>附言/备注</td><td>BMO Harris Bank, N.A.</td></tr>
+                                                    <tr><td>收款行地址(部分银行预留信息有误，但不影响汇款结果)</td><td>111 West Monroe Street, Chicago, Illinois 60603</td></tr>
+                                                    <tr><td>收款行所在国家</td><td>美国(UNITED STATES OF AMERICA)</td></tr>
+                                                    <tr><td>收款行所在城市</td><td>芝加哥(Chicago)</td></tr>
+                                                </tbody>
+                                            </table>
+                                            <ul>
+                                                <li>若汇款人地址超过可填写长度，则截断地址，填满即可。</li>
+                                            </ul>
+                                        </dd
+                                        ><dd>
+                                            <table class="inmoney-guides-table">
+                                                <caption class="important-tips">汇款附言(必填)</caption>
+                                                <tbody>
+                                                    <tr><td>附言/备注</td><td>华尔街股票账号身份证住址所在城市(拼音)开户姓名(拼音)</td></tr>
+                                                </tbody>
+                                            </table>
+                                            <ul>
+                                                <li class="important-tips">若附言/备注内容超过可填写长度，优先填写前两行信息，第三行起地址可填写部分。</li>
+                                                <li class="important-tips">若汇款信息或附言/备注信息填写有误，您的款项有可能延迟到账或被退回。</li>
+                                            </ul>
+                                        </dd
+                                    ></dl
+                                ></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="grid-container" role="contentinfo">
+            <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-554">
+                <div class="footer-details grid-container flex-set-height-percent-100">
+                    <dl class="grid-md-6">
+                        <dt>
+                            <hgroup>
+                                <h2>联系我们</h2>
+                                <h2>客户协议</h2>
+                                <h2>安全可靠</h2>
+                            </hgroup>
+                        </dt>
+                        <dd class="padding-bottom-30">
+                            <p>所有投资都存在风险。任何一支证券或金融产品的历史数据都不能保证其未来的表现<wbr/>
+                               及回报。虽然投资多样化可以帮助分散风险，但是并不能在市场低迷时确保您获益或<wbr/>
+                               防止您损失。投资证券或金融产品总会存在潜在的亏损可能。投资者在进行投资前需<wbr/>
+                               考虑自身的投资目标及风险承受能力。</p>
+                        </dd>
+                        <dd class="padding-bottom-30">
+                            <p>本平台所提供的数据、资料等信息，力求但不保证其准确性、完整性及适用性。本平<wbr/>
+                            台信息将随时进行必要更新或修正，本公司保留无需事先通知即可删除或修改网站信<wbr/>
+                            息的权利。股市有风险，投资需谨慎。您在作出任何投资决策前，应考虑产品特点、<wbr/>
+                            投资目标、自身可承受风险程度及其他因素，必要时寻求专业财务咨询。本平台不对<wbr/>
+                            您的任何决定承担法律责任。</p>
+                        </dd>
+                        <dd class="padding-bottom-30">
+                            <p>进行交易之前，敬请阅读在我们警告和声明网页上的相关风险透露声明。</p>
+                        </dd>
+                        <dd>
+                            <p>&copy;沪ICP备15055900号－3</p>
+                        </dd>
+                    </dl>
+                    <div class="grid-md-6 horizontal-flex-end-vertical-center padding-top-57-sm">
+                        <figure class="flex-column-horizontal-center-vertical-center">
+                            <img src="../../static/img/index/wechat.png" class="img-responsive" alt="小牛美股微信公众号" width="110">
+                            <figcaption>小牛美股<br/>微信公众号</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+        <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+        {% } %}
+    </body>
+</html>
+
