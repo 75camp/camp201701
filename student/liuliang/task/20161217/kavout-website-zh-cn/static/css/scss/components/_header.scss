@@ -83,7 +83,8 @@ header {
 				height: 50px;
 			}
 			a {
-				background: url('../../../img/index/logo.png') no-repeat;
+				background: url('#{$path-prefix}../../../img/index/logo.png') no-repeat;
+        // background: url('../../../img/index/logo.png') no-repeat;
 				background-size: 155px auto;
 				background-position: center;
 				color: transparent;

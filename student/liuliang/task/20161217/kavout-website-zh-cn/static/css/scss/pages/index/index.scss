@@ -106,11 +106,11 @@ section {
 		}
 	}
 	&#app {
-		background: url('../../../img/index/pic-2.png') center top no-repeat;
+		background: url('#{$path-prefix}../../../img/index/pic-2.png') center top no-repeat;
 		background-size: cover;
 		.bg-sm {
 			@include media("<=tablet") {
-				background: url('../../../img/index/pic-2.png') 20% center no-repeat;
+				background: url('#{$path-prefix}../../../img/index/pic-2.png') 20% center no-repeat;
 				background-size: cover;
 			}
 		}
@@ -191,12 +191,12 @@ section {
 				@extend .float-left;
 				line-height: 1.8;
 				&.choose-reason-frist {
-					background: url('../../../img/index/juxing-1.png') no-repeat;
+					background: url('#{$path-prefix}../../../img/index/juxing-1.png') no-repeat;
 					background-size: contain;
 					padding: 61px 28px 37px 84px;
 				}
 				&.choose-reason-second {
-					background: url('../../../img/index/juxing-2.png') no-repeat;
+					background: url('#{$path-prefix}../../../img/index/juxing-2.png') no-repeat;
 					background-size: contain;
 					padding: 51px 28px 48px 84px;
 					margin-top: 42px;
@@ -206,7 +206,7 @@ section {
 					}
 				}
 				&.choose-reason-third {
-					background: url('../../../img/index/juxing-3.png') no-repeat;
+					background: url('#{$path-prefix}../../../img/index/juxing-3.png') no-repeat;
 					background-size: contain;
 					width: 400px;
 					height: 400px;
@@ -230,7 +230,7 @@ section {
 		dl.quote-details {
 			width: 566px;
 			min-height: 440px;
-			background: url('../../../img/index/juxing-4.png') no-repeat;
+			background: url('#{$path-prefix}../../../img/index/juxing-4.png') no-repeat;
 			background-size: contain;
 			@include media("<=tablet") {
 				background: none;
@@ -344,7 +344,7 @@ section {
 		}
 	}
 	&#team {
-		background: url('../../../img/index/pic-3.png') center top no-repeat;
+		background: url('#{$path-prefix}../../../img/index/pic-3.png') center top no-repeat;
 		background-size: cover;
 		text-align: center;
     @include media(">tablet") {

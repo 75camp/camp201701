@@ -18,10 +18,10 @@ section {
         padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
     }
     &#company-aim {
-		background: url('../../../img/contact/pic-1.png') center top no-repeat;
+		background: url('#{$path-prefix}../../../img/contact/pic-1.png') center top no-repeat;
 		background-size: cover;
         .company-aim-details {
-            background: url('../../../img/contact/juxing-1.png') center top no-repeat;
+            background: url('#{$path-prefix}../../../img/contact/juxing-1.png') center top no-repeat;
             background-size: cover;
             text-align: center;
             padding: 80px 0 64px 0;
@@ -103,7 +103,7 @@ section {
         }
     }
     &#contact{
-        background: url('../../../img/contact/pic-1.png') center top no-repeat;
+        background: url('#{$path-prefix}../../../img/contact/pic-1.png') center top no-repeat;
 		background-size: cover;
         .contact-details {
             @include media(">tablet") {

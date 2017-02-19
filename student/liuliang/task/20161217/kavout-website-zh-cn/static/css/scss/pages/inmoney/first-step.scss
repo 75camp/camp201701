@@ -72,16 +72,16 @@ section {
                 position: relative;
 	            @include media("<=tablet") {
                     &[for="telephone"] {
-                        background: url('../../../img/inmoney/icon-2.png') 15.5px center no-repeat;
+                        background: url('#{$path-prefix}../../../img/inmoney/icon-2.png') 15.5px center no-repeat;
                         background-size: 13px auto;
                     }
                     &[for="password"] {
-                        background: url('../../../img/inmoney/icon-1.png') 13px center no-repeat;
-                        background-size: 18px auto;                  
+                        background: url('#{$path-prefix}../../../img/inmoney/icon-1.png') 13px center no-repeat;
+                        background-size: 18px auto;
                     }
                     &[for="trade-password"] {
-                        background: url('../../../img/inmoney/icon-1.png') 13px center no-repeat;
-                        background-size: 18px auto;                  
+                        background: url('#{$path-prefix}../../../img/inmoney/icon-1.png') 13px center no-repeat;
+                        background-size: 18px auto;
                     }
                     &::before {
                         content: '';

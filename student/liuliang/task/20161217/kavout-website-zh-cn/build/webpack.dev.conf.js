@@ -5,7 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import BrowserSyncPlugin from 'browser-sync-webpack-plugin'
 
-const rootPath = path.resolve(__dirname, './') // 项目根目录
+const rootPath = path.resolve(__dirname, '../') // 项目根目录
 const src = path.join(rootPath, 'src') // 开发源码目录
 const env = process.env.NODE_ENV.trim() // 当前环境
 const common = {
@@ -152,13 +152,21 @@ const config = {
       __WHY_DID_YOU_UPDATE__: false // 是否检测不必要的组件重渲染
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false
-        },
-        output: {
-            comments: false
-        }
+      mangle: true,
+      compress: {
+        warnings: false, // Suppress uglification warnings
+        // pure_getters: true,
+        unsafe: true
+        // unsafe_comps: true,
+        // screw_ie8: true
+      },
+      output: {
+        comments: false
+      },
+      exclude: [/\.min\.js$/gi] // skip pre-minified libs
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),

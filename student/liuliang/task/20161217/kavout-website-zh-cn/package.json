@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "kavout stock",
   "scripts": {
-    "start": "cross-env NODE_ENV=development babel-node build/dev.js"
+    "start": "cross-env NODE_ENV=development babel-node build/dev.js",
+    "build": "cross-env NODE_ENV=production babel-node build/prod.js"
   },
   "dependencies": {},
   "devDependencies": {
@@ -18,7 +19,7 @@
     "babel-runtime": "^6.9.0",
     "browser-sync": "^2.11.1",
     "browser-sync-webpack-plugin": "^1.0.1",
-    "clean-webpack-plugin": "^0.1.13",
+    "clean-webpack-plugin": "^0.1.15",
     "connect-history-api-fallback": "^1.1.0",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.0",
