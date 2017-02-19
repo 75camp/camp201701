@@ -6,7 +6,6 @@
     "start": "cross-env NODE_ENV=development babel-node build/dev.js",
     "build": "cross-env NODE_ENV=production babel-node build/prod.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
