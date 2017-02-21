@@ -6,22 +6,22 @@
             <th colspan="3"><center>特殊的js风格</center></th>
         </tr>
         <tr>
-            <th><center>目录结构和文件名</th>
-            <th><center>变量命名</th>
-            <th><center>文档规范</th>
-            <th><center>缩进方式</th>
-            <th><center>使用字符串的方式</th>
-            <th><center>存在变量声明后未使用</th>
-            <th><center>在语句，表达式结束处添加分号</th>
-            <th><center>以<code>(</code>，<code>[</code>，<code>'</code>作为一行的开头</th>
-            <th><center>关键词后有空格</th>
-            <th><center>函数名后有空格</th>
-            <th><center>使用严格模式进行值比较</th>
-            <th><center>会进行错误处理</th>
-            <th><center>使用全局变量，会添加<code>window</code>前缀</th>
-            <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IIFE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
-            <th><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;严格模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            <th><center>模块</th>
+            <th>目录结构和文件名</th>
+            <th>变量命名</th>
+            <th>文档规范</th>
+            <th>缩进方式</th>
+            <th>使用字符串的方式</th>
+            <th>存在变量声明后未使用</th>
+            <th>在语句，表达式结束处添加分号</th>
+            <th>以<code>(</code>，<code>[</code>，<code>'</code>作为一行的开头</th>
+            <th>关键词后有空格</th>
+            <th>函数名后有空格</th>
+            <th>使用严格模式进行值比较</th>
+            <th>会进行错误处理</th>
+            <th>使用全局变量，会添加<code>window</code>前缀</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IIFE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;严格模式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th>模块</th>
         </tr>
         <tr>
             <th><center>thinkjs</center></th>
