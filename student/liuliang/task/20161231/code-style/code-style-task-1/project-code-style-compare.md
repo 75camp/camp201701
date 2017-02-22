@@ -6,21 +6,21 @@
             <th colspan="3"><center>特殊的js风格</center></th>
         </tr>
         <tr>
-            <th width="200"><center>目录结构和文件名</th>
-            <th width="200"><center>变量命名</th>
-            <th><center>文档规范</th>
-            <th>缩进方式</th>
+            <th><center>目录结构和文件名</th>
+            <th><center>　　变量命名　　</center></th>
+            <th><center>　　文档规范　　</center></th>
+            <th><center>　　缩进方式　　</center></th>
             <th>使用字符串的方式</th>
-            <th width="200"><center>存在变量声明后未使用</th>
-            <th width="200"><center>在语句，表达式结束处添加分号</th>
-            <th width="200"><center>以<code>(</code>，<code>[</code>，<code>'</code>作为一行的开头</th>
-            <th width="200"><center>关键词后有空格</th>
-            <th width="200"><center>函数名后有空格</th>
-            <th width="200"><center>使用严格模式进行值比较</th>
-            <th width="200"><center>会进行错误处理</th>
-            <th width="200"><center>使用全局变量，会添加<code>window</code></th>
-            <th width="200"><center>IIFE</th>
-            <th width="200"><center>严格模式</th>
+            <th><center>　　　　存在变量声明后未使用　　　　</center></th>
+            <th><center>在语句，表达式结束处添加分号</th>
+            <th><center>　　　　以<code>(</code>，<code>[</code>，<code>'</code>作为一行的开头　　　　</center></th>
+            <th><center>　　　　关键词后有空格　　　　</center></th>
+            <th><center>　　　　函数名后有空格　　　　</center></th>
+            <th><center>　　　　使用严格模式进行值比较　　　　</center></th>
+            <th><center>　　　　会进行错误处理　　　　</center></th>
+            <th><center>　　　　使用全局变量，会添加<code>window</code>　　　　</center></th>
+            <th><center>　　　　IIFE　　　　</center></th>
+            <th><center>　　　　严格模式　　　　</center></th>
             <th>模块</th>
         </tr>
         <tr>
