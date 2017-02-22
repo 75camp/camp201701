@@ -1,5 +1,5 @@
+###github项目代码风格の比较
 <table  class="table table-bordered table-striped table-condensed">
-        <caption>github项目代码风格の比较</caption>
         <tr>
             <th rowspan="2"><center>github项目名</center></th>
             <th colspan="3"><center>广义的代码格式</center></th>
