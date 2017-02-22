@@ -7,20 +7,20 @@
         </tr>
         <tr>
             <th><center>目录结构和文件名</th>
-            <th><center>　　变量命名　　</center></th>
+            <th><center>　　　　　　　　变量命名　　　　　　　　</center></th>
             <th><center>　　文档规范　　</center></th>
-            <th><center>　　缩进方式　　</center></th>
-            <th>使用字符串的方式</th>
-            <th><center>　　　　存在变量声明后未使用　　　　</center></th>
-            <th><center>在语句，表达式结束处添加分号</th>
-            <th><center>　　　　以<code>(</code>，<code>[</code>，<code>'</code>作为一行的开头　　　　</center></th>
-            <th><center>　　　　关键词后有空格　　　　</center></th>
-            <th><center>　　　　函数名后有空格　　　　</center></th>
-            <th><center>　　　　使用严格模式进行值比较　　　　</center></th>
-            <th><center>　　　　会进行错误处理　　　　</center></th>
-            <th><center>　　　　使用全局变量，会添加<code>window</code>　　　　</center></th>
-            <th><center>　　　　IIFE　　　　</center></th>
-            <th><center>　　　　严格模式　　　　</center></th>
+            <th><center>　　　　　　　　缩进方式　　　　　　　　</center></th>
+            <th><center>　　　　　　　　使用字符串的方式　　　　　　　　</center></th>
+            <th><center>　　　　　　　　存在变量声明后未使用　　　　　　　　</center></th>
+            <th><center>　　　　　　　　在语句，表达式结束处添加分号　　　　　　　　</center></th>
+            <th><center>　　　　　　　　以<code>(</code>，<code>[</code>，<code>'</code>作为一行的开头　　　　　　　　</center></th>
+            <th><center>　　　　　　　　关键词后有空格　　　　　　　　</center></th>
+            <th><center>　　　　　　　　函数名后有空格　　　　　　　　</center></th>
+            <th><center>　　　　　　　　使用严格模式进行值比较　　　　　　　　</center></th>
+            <th><center>　　　　　　　　会进行错误处理　　　　　　　　</center></th>
+            <th><center>　　　　　　　　使用全局变量，会添加<code>window</code>　　　　　　　　</center></th>
+            <th><center>　　　　　　　　IIFE　　　　　　　　</center></th>
+            <th><center>　　　　　　　　严格模式　　　　　　　　</center></th>
             <th>模块</th>
         </tr>
         <tr>
