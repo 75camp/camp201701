@@ -24,7 +24,7 @@
             <th><center>　　　　　　　　严格模式　　　　　　　　</center></th>
             <th>模块</th>
         </tr>
-        <tr>
+        <tr align="center">
             <th><center>thinkjs</center></th>
             <td>
             <ul>
@@ -114,7 +114,7 @@
 			<td><center><img src="http://ohupawle2.bkt.clouddn.com/1487713331_Tick_Mark_Dark.png"/></td>
 			<td>ES6</td>
         </tr>
-        <tr>
+        <tr align="center">
             <th><center>avalon</center></th>
             <td>
 	            <ul>
