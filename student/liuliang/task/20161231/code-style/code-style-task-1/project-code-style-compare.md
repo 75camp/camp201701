@@ -10,9 +10,9 @@
             <th align="center">目录结构和文件名</th>
             <th align="center">　　　　　　　　　变量命名</center></th>
             <th align="center">文档规范</center></th>
-            <th align="center">　　　　　　　　　缩进方式　　　　　　　　</center></th>
-            <th align="center">　　　　　　　　　使用字符串的方式　　　　　　　　</center></th>
-            <th align="center">　　　　　　　　　存在变量声明后未使用　　　　　　　　</center></th>
+            <th align="center">　　　　　　　　　缩进方式</center></th>
+            <th align="center">　　　　　　　　　使用字符串的方式</center></th>
+            <th align="center">　　　　　　　　　存在变量声明后未使用</center></th>
             <th align="center">　　　　　　　　　在语句，表达式结束处添加分号　　　　　　　　</center></th>
             <th align="center">　　　　　　　　　以<code>(</code>，<code>[</code>，<code>'</code>作为一行的开头　　　　　　　　</center></th>
             <th align="center">　　　　　　　　　关键词后有空格　　　　　　　　</center></th>
