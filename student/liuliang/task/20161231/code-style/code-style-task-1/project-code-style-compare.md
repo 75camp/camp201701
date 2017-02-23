@@ -7,7 +7,7 @@
             <th colspan="3" align="center">特殊的js风格</center></th>
         </tr>
         <tr>
-            <th align="center">　　　　　　　　　目录结构和文件名</th>
+            <th align="center">　　　　　　　　　　　　目录结构和文件名</th>
             <th align="center">　　　　　　　　　变量命名</center></th>
             <th align="center">　　　　　　　　　文档规范</center></th>
             <th align="center">　　　　　　　　　缩进方式</center></th>
