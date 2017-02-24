@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interest</title>
+</head>
+<body>
+	<label>Please enter your interests here<input type="text" id="input" placeholder="游泳,健身,篮球,阅读" /></label>
+	<button>Deduplicate</button><br /><br />
+	<label>Deduplicated interests<input type="text" id="output" /></label>
+	<script type="text/javascript">
+		var mainButton = document.querySelector('button');
+		var deduplication = function(){
+			var inputElement = document.getElementById('input');
+			var outputElement = document.getElementById('output');
+			var inputValue = inputElement.value;
+			var temp = inputValue.split(",");
+			var newArray = [];
+			for(var i=0; i<temp.length; i++){
+				if(newArray.indexOf(temp[i]) != -1){continue;}
+				newArray.push(temp[i]);
+			}
+			var outputValue = newArray.join();
+			outputElement.value = outputValue;
+			return outputValue;
+		};
+		mainButton.onclick = deduplication;
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping card</title>
+</head>
+<body>
+	<form>
+		<label>
+			Please enter your shopping card password here
+			<input type="text" name="password" maxlength="23" placeholder="aaaaa-aaaaa-aaaaa-aaaaa" />
+		</label>
+		<button type="button">Bind</button><br /><br />
+		<label>Valid password:<input type="text" id="result" width="100" /></label>
+	</form>
+	<script type="text/javascript">
+		var bindButton = document.querySelector('button');
+		var confirm = function(){
+			var inputElement = document.querySelector('input');
+			var outputElement = document.getElementById('result');
+			var inputValue = inputElement.value;
+			var temp = inputValue.toUpperCase().split('-').join("");
+			if(temp.length === 20){
+				outputElement.value = temp;
+				return temp;
+			}
+			alert('Invalid password!')
+			return false;
+		};
+		bindButton.onclick = confirm;
+	</script>
+</body>
+</html>
