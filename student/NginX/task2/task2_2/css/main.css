@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+section{
+	position: relative;
+	width: 150px;
+	line-height: 100px; 
+	background: #f00;
+	text-align: center;
+	margin: 0 auto;
+}
+section span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	box-sizing: border-box;
+	border: 10px solid #f00;
+	border-top: 10px solid #0f0;
+}
+section ul{
+	position: absolute;
+	left: -10000px;
+	width: 150px;
+	background: #abcdef;
+}
+section ul li{
+	border: 1px solid #fff;
+	border-bottom: none; 
+}
+section:hover ul{
+	left: 0;
+}

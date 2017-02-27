@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nginx Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/base/layout.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages/article.css" />
+	<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+	<header>
+		<p class="logo">
+			<a href="index.html">Nginx Blog</a>
+		</p>
+		<nav class="navigation">
+			<ul>
+				<li class="navigation__item"><a href="#">HOME</a></li>
+				<li class="navigation__item"><a href="#">ABOUT</a></li>
+				<li class="navigation__item"><a href="#">PORTFOLIO</a></li>
+				<li class="navigation__item"><a href="#">TAGS</a></li>
+			</ul>
+		</nav>
+		<section class="title">
+			<section class="title__tags">
+				<p class="title__tags__item">前端开发</p>
+				<p class="title__tags__item">译文</p>
+				<p class="title__tags__item">JavaScript</p>
+				<p class="title__tags__item">IOS</p>
+			</section>
+			<p class="title__title">iOS 9，为前端世界都带来了些什么？「译」</p>
+			<p class="title__subtitle">iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs</p>
+			<p class="title__date">Posted on December 15, 2015</p>
+		</section>
+	</header>
+	<div class="wrap">
+		<main role="main">
+			<h1>
+				新的 iOS 设备特性
+			</h1>
+			<h2>
+				iPhones 6s 与 3D Touch
+			</h2>
+			<p>
+				从 web 设计与开发的角度来说，新的 iPhone 6s 与 6s Plus 与之前的版本并没有太多差别。不过，有一个特性注定会吸引我们的目光：3D Touch
+			</p>
+			<p>
+				我们无法确定 Apple 是不是只是重命名了一下 “Force Touch”（用于 Apple Watch、TrackPad 2 与最新的 MacBook 上）或者 3D Touch 的确是一个为 iPhone 定制的似曾相识却不同的东西。3D Touch 允许操作系统和应用侦测每一个手指与屏幕接触时的压力。从用户体验的角度来说，最大的变化莫过于当你用点力去触碰或者拖拽屏幕时，操作系统将会触发诸如 peek，pop 这些新机制。那么问题来了：我们是否能够在网站中使用这个新玩意呢？让我们一点点来看：
+			</p>
+			<p>
+				iOS 9 搭载的 Safari 包含了一些用于 “Force Touch” 的新 API，但它们其实并不是那个用于 iPhone 6s 3D Touch 的 API。你可以理解为这些 API 就是 MacBook 版 Safari 里为 Force Touch 准备的那些 API ，因为共享一套 codebase，所以它理所当然得存在了 iOS 版里而已。
+			</p>
+			<h2>
+				iPad Pro
+			</h2>
+			<p>
+				全新的 iPad Pro（12.9 寸）打破了以往 iPad 渲染网站的方式。在此之前，市面上所有的 iPad（从初代 iPad，到 iPad Air 4，到 iPad Mini）都是以 768px 的宽度提供 viewport。
+			</p>
+			<p>
+				而屏幕更大的 iPad Pro 选择了宽 1024px 的 viewport，这使得它天生就能容纳更多的内容。不少人说iPad Pro 就是抄 Microsft Surface Pro 的嘛……嗯哼，IE/Edge 在 Surface Pro 上就是以 1024px 作为视口宽度的……
+			</p>
+			<p>
+				从交互的角度上来说，iPad Pro 虽然不支持 3D Touch，但是可以搭配 Smart Keyboard 与/或 Apple Pen（带有压力侦测）使用。对于键盘其实并没有什么好说的，如果一个网站在搭配键盘的桌面电脑上好用，它在 iPad Pro 上应该也不赖。而对于 Apple Pen，很可惜，目前似乎并没有 API 能让你在网站上获得这根笔的压力与角度。
+			</p>
+			<h1>
+				新的 iOS 操作系统特性
+			</h1>
+			<h2>
+				iPad 上的多任务处理
+			</h2>
+			<p>
+				自 iOS 9 起，iPad 允许两个应用在同一时刻并肩执行，有三种方式：Slide Over，Split View 与 Picture-in-Picture。不过，每一种方式都有其硬件需求，比如说 Slide Over 需要 iPad Air, iPad Mini 2 以上的设备，而 Split View 由于对内存的要求目前只支持 iPad Air 2 与 iPad Pro。
+			</p>
+			<h2>
+				Slide Over（滑过来！）
+			</h2>
+			<p>
+				Slide Over 支持的 App 并不多，不过 Safari 名列其中，这意味着我们的网站将可能在这个模式下被渲染。当网站处于 Slide Over 模式下时，它将在屏幕的右 1/4 位置渲染，并且置于其他 native app 之上。
+			</p>
+			<p>
+				这个模式也为 Responsive Web Design（响应式网站设计）提出了新的挑战：一个只为 iPad 优化的网站，也需要能在该设备上以无需手动刷新的形式支持小屏幕的渲染。因此，如果你正在使用服务器端探测（RESS），那么你的 iPad 版本需要以某种方式包含手机版本的网站，或者在进入该模式后重新加载一次。（如果你不了解 RESS，你可以观看我的另一篇博文）
+			</p>
+			<h2>Split View（分屏视图）</h2>
+			<p>
+				在较新版本的 iPad 上，你可以将 Slide Over 的 Side View（侧视图）升级为 Split View。此时，两个应用将以相同比例在你的屏幕上同时工作。
+			</p>
+		</main>
+	</div>
+	<footer>
+		<nav class="social">
+			<ul>
+				<li class="social__item"><a href="#"></a></li>
+				<li class="social__item"><a href="#"></a></li>
+				<li class="social__item"><a href="#"></a></li>
+				<li class="social__item"><a href="#"></a></li>
+			</ul>
+		</nav>
+		<section class="copyright">
+			<p>Copyright &copy; Nginx Blog 2016</p>
+		</section>
+	</footer>
+</body>
+</html>
