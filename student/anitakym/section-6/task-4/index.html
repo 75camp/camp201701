@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+
+        input,button{
+            font-size: 20px;
+        }
+
+        ul{
+            list-style-type:none;
+        }
+
+        ul>li:hover{
+            background: black;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="buttons">
+    <button>insert</button>
+    <button>delete</button>
+    <button>update</button>
+    <input id="rowtext" value="new row"/>
+</div>
+<ul id="datalist">
+    <li><label><input type="checkbox"/>row 1</label></li>
+    <li><label><input type="checkbox"/>row 2</label></li>
+    <li><label><input type="checkbox"/>row 3</label></li>
+    <li><label><input type="checkbox"/>row 4</label></li>
+    <li><label><input type="checkbox"/>row 5</label></li>
+    <li><label><input type="checkbox"/>row 6</label></li>
+</ul>
+
+
+<script>
+    const [insertBtn, deleteBtn, updateBtn]
+        = Array.from(document.querySelectorAll('#buttons button'));
+
+    const datalist = document.getElementById('datalist');
+    const rowtext = document.getElementById('rowtext');
+
+    function getAllCheckedRows(){
+        return Array.from(datalist.querySelectorAll('li input:checked'))
+                .map(el=>el.parentNode.parentNode);
+    }
+
+    function createNewRow(){
+        var row = document.createElement('li');
+        row.innerHTML = `<label><input type="checkbox"/>${rowtext.value}</label>`;
+        return row;
+    }
+
+    insertBtn.addEventListener('click', evt=>{
+        var checkedRows = getAllCheckedRows();
+    if(checkedRows.length){
+        checkedRows.forEach(row=>
+        row.insertAdjacentElement('afterend', createNewRow()));
+    }else{
+        datalist.appendChild(createNewRow());
+    }
+    });
+
+    deleteBtn.addEventListener('click', evt=>{
+        var checkedRows = getAllCheckedRows();
+    if(checkedRows.length){
+        checkedRows.forEach(row=>row.remove());
+    }
+    });
+
+    updateBtn.addEventListener('click', evt=>{
+        var checkedRows = getAllCheckedRows();
+    if(checkedRows.length){
+        checkedRows.forEach(row=>row.childNodes[0].childNodes[1].textContent = rowtext.value);
+    }
+    });
+
+
+</script>
+</body>
+</html>
