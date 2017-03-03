@@ -52,14 +52,15 @@
 
         this.button.onclick = function(){
             window.scrollTo(0, 0);
-        }
+        };
 
         window.onscroll = function(evt){
             self.update();
-        }
+        };
 
         this.update();
     }
+
 
     GoTop.prototype.update = function(){
         if(window.scrollY > threshold){
@@ -67,7 +68,7 @@
         }else{
             this.button.className = '';
         }
-    }
+    };
 
     var gotop = new GoTop('go-top');
 
