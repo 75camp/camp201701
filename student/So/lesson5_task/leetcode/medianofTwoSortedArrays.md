@@ -39,5 +39,5 @@ var findMedianSortedArrays = function (nums1, nums2) {
     median = arr[(len - 1) / 2]
   }
   return Number(median.toFixed(5))
-}
-```
+`}
+````
