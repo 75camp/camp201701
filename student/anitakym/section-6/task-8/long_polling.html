@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="http://s4.qhres.com/static/6026082b2fdaf405.js"></script>
+
+<a href="###">
+    <div id="qrcode"></div>
+</a>
+
+<script>
+    const qrcode = document.getElementById("qrcode");
+
+    function long_poll(code){
+        const xhr = new XMLHttpRequest(),
+            method = "GET",
+            url = `http://teach.h5jun.com/qrcode/${code}`;
+
+        xhr.open(method, url, true);
+
+        xhr.onreadystatechange = function () {
+            if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                //console.log(xhr.responseText);
+                let data = JSON.parse(xhr.responseText);
+                let url = `http://teach.h5jun.com/check/${data.code}`;
+                qrcode.innerHTML = '';
+                new QRCode(qrcode, url);
+                qrcode.parentNode.href = url;
+                long_poll(data.code);
+            }
+        };
+
+        xhr.send();
+    }
+
+    long_poll(0);
+</script>
+
+</body>
+</html>
