@@ -21,6 +21,7 @@
     }
 //     console.log(arr)
   }
+
   win.promotionBySecondKill = promotionBySecondKill
 })(window)
 
