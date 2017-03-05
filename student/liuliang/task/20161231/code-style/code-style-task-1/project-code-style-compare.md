@@ -36,22 +36,22 @@
             	</li>
             	<li>
             		<code>lib</code>
-         			<ul>
+                <ul>
             			<li><code>Common</code></li>
             			<li><code>Conf</code></li>
             			<li><code>Lib</code></li>
             			<li><code>View</code></li>
-             			<li><code>think.js</code></li>
+                  <li><code>think.js</code></li>
             		</ul>
             	</li>
             	<li>
             		<code>test</code>
-         			<ul>
+                <ul>
             			<li><code>Common</code></li>
             			<li><code>Conf</code></li>
             			<li><code>Lib</code></li>
             			<li><code>View</code></li>
-             			<li><code>think.js</code></li>
+                  <li><code>think.js</code></li>
             		</ul>
             	</li>
             </ul>
@@ -67,11 +67,11 @@
 	            <ol>
 		            <li>文件头部进行文档注释，例如：<pre><code>/**
 		
-		 * 行为类
+		  * 行为类
 		
-		 * @return {[type]} [description]
+		  * @return {[type]} [description]
 		
-		 */
+		  */
 		</code></li>
 						<li>文件关键部分进行文档注释，例如：<pre><code>/**
 		
@@ -133,51 +133,51 @@
 	            	</li>
 	            	<li>
 	            		<code>dist</code>
-	         			<ul>
+	              <ul>
 	            			<li><code>arthur.js</code></li>
 	            			<li><code>avalon.js</code></li>
 	            			<li><code>avalon.modern.js</code></li>
-	         			</ul>
+	              </ul>
 	            	</li>
 	            	<li>
 	            		<code>test</code>
-	         			<ul>
+	                <ul>
 	            			<li><code>directives</code></li>
 	            			<li><code>dom</code></li>
 	            			<li><code>filters</code></li>
 	            			<li><code>parser</code></li>
-	             			<li><code>seed</code></li>
-	             			<li><code>vdom</code></li>
-	             			<li><code>vmodel</code></li>
-	             			<li><code>vtree</code></li>
-	             			<li><code>beforeIt.js</code></li>
-	             			<li><code>jquery.js</code></li>
-	             			<li><code>matchers.js</code></li>
-	             			<li><code>promise.js</code></li>
-	             			<li><code>spec.js</code></li>
-	             			<li><code>spec.modern.js</code></li>
-	             			<li><code>test.js</code></li>
+	                  <li><code>seed</code></li>
+	                  <li><code>vdom</code></li>
+	                  <li><code>vmodel</code></li>
+	                  <li><code>vtree</code></li>
+	                  <li><code>beforeIt.js</code></li>
+	                  <li><code>jquery.js</code></li>
+	                  <li><code>matchers.js</code></li>
+	                  <li><code>promise.js</code></li>
+	                  <li><code>spec.js</code></li>
+	                  <li><code>spec.modern.js</code></li>
+	                  <li><code>test.js</code></li>
 	            		</ul>
 	            	</li>
 	            	<li>
 	            		<code>src</code>
-	         			<ul>
+	                <ul>
 	            			<li><code>component</code></li>
 	            			<li><code>directives</code></li>
 	            			<li><code>dom</code></li>
 	            			<li><code>effect</code></li>
-	             			<li><code>filters</code></li>
-	             			<li><code>gesture</code></li>
-	             			<li><code>parser</code></li>
-	             			<li><code>renders</code></li>
-	             			<li><code>seed</code></li>
-	             			<li><code>vdom</code></li>
-	             			<li><code>vmodel</code></li>
-	             			<li><code>vtree</code></li>
-	             			<li><code>avalon.js</code></li>
-	             			<li><code>avalon.modern.js</code></li>
-	             			<li><code>avalon.tap.js</code></li>      				             	             			<li><code>pager.js</code></li>
-	             			<li><code>routergrid.js</code></li>
+	                  <li><code>filters</code></li>
+	                  <li><code>gesture</code></li>
+	                  <li><code>parser</code></li>
+	                  <li><code>renders</code></li>
+	                  <li><code>seed</code></li>
+	                  <li><code>vdom</code></li>
+	                  <li><code>vmodel</code></li>
+	                  <li><code>vtree</code></li>
+	                  <li><code>avalon.js</code></li>
+	                  <li><code>avalon.modern.js</code></li>
+	                  <li><code>avalon.tap.js</code></li>      				             	             			<li><code>pager.js</code></li>
+	                  <li><code>routergrid.js</code></li>
 	            		</ul>
 	            	</li>
 	            </ul>
@@ -216,21 +216,14 @@ https://github.com/RubyLouvre/avalon/tree/2.2.4
 
     /**
 
-     * Shim for "fixing" IE's lack of support (IE < 9) for applying slice
-
-     * on host objects like NamedNodeMap, NodeList, and HTMLCollection
-
-     * (technically, since host objects have been implementation-dependent,
-
-     * at least before ES6, IE hasn't needed to work this way).
-
-     * Also works on strings, fixes IE < 9 to allow an explicit undefined
-
-     * for the 2nd argument (as in Firefox), and prevents errors when
-
-     * called on other DOM objects.
-
-     */
+      * Shim for "fixing" IE's lack of support (IE < 9) for applying slice
+      * on host objects like NamedNodeMap, NodeList, and HTMLCollection
+      * (technically, since host objects have been implementation-dependent,
+      * at least before ES6, IE hasn't needed to work this way).
+      * Also works on strings, fixes IE < 9 to allow an explicit undefined
+      * for the 2nd argument (as in Firefox), and prevents errors when
+      * called on other DOM objects.
+      */
 
 
 
