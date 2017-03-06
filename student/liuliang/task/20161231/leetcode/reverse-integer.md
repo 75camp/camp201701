@@ -20,7 +20,7 @@ var reverse = function(x) {
 
 - 接下来的步骤
 	- 将数字转成字符串，例如	`String`构造器，`+`字符串连接符，`toString`方法，`toFixed`方法，如果遇到`x`为负数，将负数去绝对值，同时设置一个标志量`isNegative`，并且将`isNegative`的值设置为true
-，[可以参考这里](http://stackoverflow.com/questions/5765398/whats-the-best-way-to-convert-a-number-to-a-string-in-javascript)
+。[如果你需要了解如何将数字转成字符串，不妨参考这里](http://stackoverflow.com/questions/5765398/whats-the-best-way-to-convert-a-number-to-a-string-in-javascript)
 	- 利用字符串的`split`方法将字符串分割成单个字符组成的数组
 
 	
