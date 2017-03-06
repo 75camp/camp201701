@@ -12,6 +12,7 @@ var reverse = function(x) {
 ```
 
 **解题思路**
+
 这道题，leetcode给出的难易程度是容易。不过对于不熟悉JavaScript api的前端工程师来说，难度目测不小，步骤如下：
 
 - 实现一个方法`isLeage`，对于任意的`x`以及逆序后的数字，都能判断数字是否合法
