@@ -16,6 +16,7 @@ var threeSum = function(nums) {
 
 针对这道题，我没有好的办法，就只能用递归来实现。这样就能很好的解释，为啥leetcode给出超时的评判啦，步骤如下：
 
+
 - 实现一个方法`findThirdNumber`，找出在数组的位置处于`i`、`j`之间，且满足上述三个数字（分别是`numsCopy[i]`、`numsCopy[m]`、`numsCopy[j]`）相加等于0的数字`numsCopy[m]`，分别对i、j进行加一以及减一操作，递归调用`findThirdNumber`。（ps：numsCopy数组其实是对nums数组正排序的副本）
 
 
