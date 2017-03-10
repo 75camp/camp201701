@@ -1,0 +1,444 @@
+/************
+ * 页面样式
+ ************／
+
+
+/* =========
+    基本默认值
+    ========= */
+
+@font-face {
+    font-family: "icomoon";
+    font-style: normal;
+    font-weight: 400;
+    src: url("http://s2.open.126.net/ocb/res/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("http://s2.open.126.net/ocb/res/fonts/icomoon.ttf") format("truetype"), url("http://s2.open.126.net/ocb/res/fonts/icomoon.woff") format("woff"), url("http://s2.open.126.net/ocb/res/fonts/icomoon.svg#icomoon") format("svg");
+}
+
+body {
+    width: 100%;
+    min-width: 960px;
+}
+
+body,textarea,input,button,select,keygen,legend {
+    color: #333;
+}
+
+li {
+    list-style: outside none none;
+}
+
+a,a:hover {
+    text-decoration: none;
+}
+
+/* =========
+    工具样式
+    ========= */
+
+.wrap{
+    width: 100%;
+}
+
+.left, .f-f1 {
+    float: left;
+}
+.right {
+    float: right;
+}
+.rel {
+    position: relative;
+}
+
+.f-c3 {
+    color: #333;
+}
+
+.f-c9 {
+    color: #999;
+}
+
+.f-fl {
+    float: left;
+}
+
+.f-fr {
+    float: right;
+}
+
+.clear::after,
+.f-cb::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clear, .f-cb {
+    zoom: 1;
+}
+
+.f-cf {
+    color: #ffffff;
+}
+
+.f-f0 {
+    font-family: "Arial","Hiragino Sans GB","Microsoft YaHei",微软雅黑,"Helvetica","sans-serif";
+}
+
+.f-icon:before {
+    content: "\e986";
+}
+
+.f-icon {
+    font-family: "IcoMoon";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+
+.f-cg {
+    color: #8e8a8a;
+}
+
+.nowrp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* =============
+    自定义页面样式
+   ============= */
+
+/*网站头部logo加搜索*/
+.nav-top{
+    background: #ffffff none repeat scroll 0 0;
+    height: 54px;
+    padding: 28px 0;
+    z-index: 700;
+}
+
+.nav-container{
+    margin: 0 auto;
+    width:960px;
+}
+
+.search{
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    cursor: text;
+    height: 14px;
+    margin-top: 10px;
+    padding: 9px;
+    transition: background 0.1s ease-in 0s;
+    width:370px;
+}
+
+.nav-top .phold
+{
+    cursor: text;
+    height: 32px;
+    left: 0;
+    line-height: 32px;
+    position: absolute;
+    right: 40px;
+    text-indent: 10px;
+    top:0;
+}
+
+
+.subbtn {
+    background-color: #ef9632;
+    border: medium none;
+    bottom: -1px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 34px;
+    position: absolute;
+    right: -1px;
+    top:-1px;
+    transition: backgroud 0.05s ease-in 0s;
+    width: 42px;
+}
+
+
+
+.inputxt {
+    background: #f5f5f5 none  repeat scroll 0 0;
+    border: medium none;
+    height: 14px;
+    outline: medium none;
+    transition: background 0.1s ease-in 0s;
+    width:90%;
+
+}
+
+.main-nav {
+    background: #286a46 none repeat scroll 0 0;
+    height:100%;
+}
+
+/*绿色导航条*/
+.g-container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.g-container1 {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+.mainnav {
+    height: 40px;
+}
+
+.mainnav .link {
+    border: 1px;
+    display: block;
+    font-size: 16px;
+    height:38px;
+    line-height: 40px;
+    padding: 0 13px;
+}
+
+/*轮播*/
+.slidebox {
+    clear: both;
+    text-align: center;
+}
+
+#carousel-container {
+    clear: both;
+    text-align: center;
+    width: 960px;
+    height: 400px;
+    border: 3px solid #333;
+    overflow: hidden;
+    position: relative;
+}
+#carousel-list {
+    width: 4200px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+}
+#carousel-list img {
+    float: left;
+}
+#carousel-buttons {
+    position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 250px;
+}
+
+#carousel-buttons span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+    margin-right: 5px;
+}
+#carousel-buttons .on {
+    background: orangered;
+}
+
+/*公开课策划部分*/
+
+.m-indexMain {
+    background-color: #fafafa;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.m-indexMain .g-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.m-indexMain .item {
+    width: 22%;
+    float: left;
+    margin-right: 20px;
+}
+
+.m-indexMain .item span{
+    display: block;
+}
+
+.m-indexMain .item span a {
+    text-decoration: none;
+    color: #111;
+}
+
+.m-indexMain .g-item {
+    display: inline-block;
+}
+.m-openSpecial {
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+.lazy {
+    width: 220px;
+    height: 122px;
+}
+
+.u-mtitle {
+    padding: 15px 0;
+}
+.u-mtitle h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.u-mtitle p {
+    padding: 10px 0 0 12px;
+    font-size: 16px;
+}
+.u-mtitle a.label {
+    border-radius: 4px;
+    padding: 0 4px;
+    margin-right: 1em;
+    line-height: 20px;
+    transition: .25s;
+}
+
+.u-index-more {
+    padding-top: 15px;
+}
+
+/*课程主要内容按块分类部分*/
+.main-index *{
+    box-sizing: border-box;
+}
+
+.m-class {
+    background-color: #970700;
+}
+.m-training {
+    background-color:#7e9324;
+}
+
+.m-teacher {
+    background-color:#145978 ;
+
+}
+
+.lazy2 {
+    width: 760px;
+    height: 350px;
+}
+.index-left
+{
+    margin-right: 20px;
+}
+
+.index-left {
+    height: 355px;
+    margin-bottom: 55px;
+    margin-right: 15px;
+    padding-top: 28px;
+    transition: all 0.5s ease 0s;
+    width: 180px;
+}
+
+.index-left.short {
+    height: 295px;
+}
+.index-left a {
+    color: #fff;
+}
+.index-left a:hover {
+    text-decoration: underline;
+}
+.index-left .ciTitle {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.25em;
+    text-align: center;
+}
+.index-left .ciList {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 24px 0 14px;
+}
+.index-left .ciList.shortList {
+    padding: 0 12px 0 26px;
+}
+.index-left .ciList.shortList + .ciAll {
+    margin-left: 38px;
+}
+
+.index-left .ciList > li {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 1.5em;
+    margin-left: 12px;
+    text-align: left;
+    white-space: nowrap;
+    width: 4em;
+}
+
+.index-left .ciAll {
+    display: block;
+    margin-left: 26px;
+}
+
+.f-arrow-right::after {
+    content: " >";
+    font-family: aimsun,serif;
+}
+
+
+/*网站底部*/
+.m-footer {
+    background: #e6e6e6 none repeat scroll 0 0;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.m-footer .theme {
+    display: inline-block;
+    zoom: 1;
+    margin-top: 10px;
+    height: 23px;
+    width: 317px;
+    background: url(../img/footer.png) no-repeat 0 0;
+}
+
+.m-footer .links {
+    line-height: 16px;
+    margin-bottom: 12px;
+    color: #999;
+}
+
+.m-footer .links a {
+    color: #666;
+}
+
+.m-footer .links span {
+    padding: 0 6px;
+}
+
+.m-footer .cr {
+    color: #999;
+    line-height: 18px;
+}
+
+
+
+.border-right {
+    border-right: 1px solid #dddddd;
+    padding: 0 8px 0 0;
+}
+
+

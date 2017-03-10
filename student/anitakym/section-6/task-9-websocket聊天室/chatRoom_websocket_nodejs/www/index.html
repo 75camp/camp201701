@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="author" content="anitakym">
+    <meta name="description" content="chat room websocket">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>chatRoom</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+<div class="container">
+    <div class="title">
+        <h1>chatRoom--online</h1>
+        <p>目前在线: <span id="status"></span></p>
+    </div>
+
+    <div class="dialog">
+
+    </div>
+
+    <div class="control">
+
+    </div>
+    <div class="inputting">
+        <div class="inputting--content">
+            <textarea name="" id="msg-input"></textarea>
+        </div>
+        <div class="inputting--send">
+            <input id="sender" type="button" value="SEND">
+        </div>
+    </div>
+</div>
+
+<div class="login--mask">
+    <p id="info">正在连接服务器</p>
+    <div class="login--name">
+        <input type="text" placeholder="your name" id="user-name">
+        <input type="button" value="yes" id="user-login">
+    </div>
+
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="scripts/chat.js"></script>
+
+</body>
+</html>

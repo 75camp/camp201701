@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gb2312">
+    <title>教育部考试中心托福网考网上报名 - 创建个人档案: 第一步</title>
+    <meta name="keywords" content="TOEFL">
+    <meta name="description" content="TOEFL">
+    <link href="/css/CBSR_IMC.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<!--该部分最好使用div布局，结构样式做到分离-->
+<header>
+    <img src="/images/Toefl_iBT_Banner.jpg" alt="logo">
+    <nav>
+        <a href="/cn">登录</a>
+        <a href="/cn/Information">考生须知</a>
+        <a href="/cn/FAQ">常见问题解答</a>
+        <a href="http://www.ets.org/toefl/" target="_blank">ETS TOEFL 网站</a>
+        <a href="http://www.etest.edu.cn/" target="_blank">返回首页</a>
+        <a href="/cn/ContactUs">联系我们</a>
+        <a href="/en/CreateProfile?AgreeNeeaRules=yes">English Version</a>
+    </nav>
+</header>
+<div id="container">
+    <div id="maincontent">
+        <div class="Alert">
+            <img src="/images/info16.gif">
+            <span>提示：网站高峰时间，请在 2 秒后再点击链接或按钮或刷新本页面。</span>
+        </div>
+        <h2>
+            创建个人档案: 第一步（共三步）
+        </h2>
+        <div class="notice">
+            <h3><strong>重要提示</strong></h3>
+            <ul>
+                <li>您在此提交的个人信息（如中英文姓名/拼音姓名、性别、生日、出生地、母语、证件类型、证件所属国家、证件号码）将会显示在您的成绩报告上，一旦提交后就不能做任何修改，您有责任确保这些信息的真实性和准确性。</li>
+                <li>请注意您在此提交的个人信息要和考试当天出示的有效证件上的信息完全一致，托福网考有效证件要求请查阅考生手册。</li>
+                <li>输入中英文姓名/拼音姓名时，中国大陆考生请按新华字典规则输入标准汉语拼音，中国香港、澳门和台湾考生请以证件上的拼音或英文姓名为准；非中国籍考生请输入护照上显示的英文姓名。</li>
+                <li>系统不支持非英文字母，如：ê ? ? è ? 。在您要创建的档案中请不要使用那些非英文字母。</li>
+                <li>标有*号的是必填项。</li>
+            </ul>
+        </div>
+        <form name="validateCreateProfileForm" method="post" action="/cn/CreateProfile">
+            <!-- fieldsets -->
+            <fieldset>
+                <h2>联系信息</h2>
+                <p>
+                    <label>所在国家／地区</label>
+                    <select name="country">
+                        <optgroup label="美洲">
+                            <option value="1">a</option>
+                            <option value="2">b</option>
+                            <option value="3">c</option>
+                            <option value="4">d</option>
+                            <option value="5">e</option>
+                            <option value="6">f</option>
+                            <option value="7">g</option>
+                        </optgroup>
+                        <optgroup label="亚洲">
+                            <option value="8">a</option>
+                            <option value="9">b</option>
+                            <option value="10">c</option>
+                            <option value="11">d</option>
+                            <option value="12">e</option>
+                            <option value="13">f</option>
+                            <option value="14">g</option>
+                        </optgroup>
+                        <optgroup label="欧洲">
+                            <option value="15">a</option>
+                            <option value="16">b</option>
+                            <option value="17">c</option>
+                            <option value="18">d</option>
+                            <option value="19">e</option>
+                            <option value="20">f</option>
+                            <option value="21">g</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label>称呼</label>
+                    <select name="country">
+                            <option value="1">-select-</option>
+                            <option value="2">miss</option>
+                            <option value="3">Mr.</option>
+                            <option value="4">Dr</option>
+                            <option value="5">Ms</option>
+                            <option value="6">Mrs.</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>考生中文姓名：</label>
+                    <input type="text" name="ch-name" placeholder="chine" />
+                    <span>（必须输入汉字，非中国考生请跳过）</span>
+                </p>
+                <p>
+                    <label>考生拼音／英文姓</label>
+                    <input type="text" name="last-name">
+                    <span>名</span>
+                    <input type="text" name="first-name">
+                    <span>中国大陆的考生请输入标准汉语拼音。其他考生请以证件上的拼音或英文姓名为准。</span>
+                </p>
+
+                <p>
+                    <label>英文地址</label>
+                    <input type="text" name="en-addr">
+                </p>
+
+                <p>
+                    <label>城市／地区（英文）</label>
+                    <input type="text" name="en-addr-city">
+                </p>
+
+                <p>
+                    <label>省份／州：如果您在中国请选择：</label>
+                    <select name="province">
+                        <option value="1">-中国的省份-</option>
+                        <option value="2">a</option>
+                        <option value="3">b</option>
+                        <option value="4">c</option>
+                        <option value="5">d</option>
+                        <option value="6">e</option>
+                    </select>
+                </p>
+                <p>
+                    <label>如果您所在国家是美国或加拿大，请选择：</label>
+                    <select name="province">
+                        <option value="1">-中国的省份-</option>
+                        <option value="2">a</option>
+                        <option value="3">b</option>
+                        <option value="4">c</option>
+                        <option value="5">d</option>
+                        <option value="6">e</option>
+                    </select>
+                </p>
+                <p>
+                    <label>其他国家或地区请输入</label>
+                    <select name="province">
+                        <option value="1">-中国的省份-</option>
+                        <option value="2">a</option>
+                        <option value="3">b</option>
+                        <option value="4">c</option>
+                        <option value="5">d</option>
+                        <option value="6">e</option>
+                    </select>
+                </p>
+                <div class="noctice">
+                    <p>重要提示</p>
+                    <ul>
+                        <li>考生个人成绩报告将通过中国邮政EMS快递至此地址（仅限中国大陆地区）。
+                            1、如您的邮寄地址为家庭住址，请详细填写街道名及单元门牌号；
+                            2、如您的邮寄地址为单位地址，请详细填写单位名称及房间号；
+                            3、如您的邮寄地址为学校地址，请详细填写学校名称、院系及班级信息。</li>
+                        <li>如因中文地址不详等考生个人原因导致成绩报告投递失败，将延误考生接收个人成绩报告的时间，且考生须额外支付EMS快递费并申请重寄。</li>
+                    </ul>
+                </div>
+
+                <p>
+                    <label>中文地址</label>
+                    <input type="text" name="ch-addr">
+                    <span>此地址将用于考生接收个人成绩单，请准确填写并确保在考试后2个月内有效。</span>
+                </p>
+
+                <p>
+                    <label>邮政编码</label>
+                    <input type="text" name="mail-code">
+                </p>
+
+                <p>
+                    <label>性别</label>
+                    <select>
+                        <option>-select-</option>
+                        <option value="female">女</option>
+                        <option value="male">男</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>生日</label>
+                    <input type="date" name="birthday">
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <h2>联系选项</h2>
+                <h3>电话号码：</h3>
+                <div class="noctice">
+                    <p>重要提示</p>
+                    <ul>
+                        <li>请在首选联系电话中输入11位手机号码，如：13901234567。</li>
+                        <li>此手机号码将用于联系考生接收个人成绩报告及考试重要通知时使用。如有变更，请及时更新</li>
+                    </ul>
+                </div>
+                <p>
+                    首选电话：<input type="text" name="prime-tel" placeholder="Twitter">手机号（11位）
+                </p>
+                <div class="sim-table">
+                    <span>国家/地区区号</span>
+                    <span>电话号码（请包括国内区号</span>
+                    <span>分机</span>
+                </div>
+                <p>
+                    <label>联系电话：</label>
+                    <select name="country">
+                        <optgroup label="美洲">
+                            <option value="1">a</option>
+                            <option value="2">b</option>
+                            <option value="3">c</option>
+                            <option value="4">d</option>
+                            <option value="5">e</option>
+                            <option value="6">f</option>
+                            <option value="7">g</option>
+                        </optgroup>
+                        <optgroup label="亚洲">
+                            <option value="8">a</option>
+                            <option value="9">b</option>
+                            <option value="10">c</option>
+                            <option value="11">d</option>
+                            <option value="12">e</option>
+                            <option value="13">f</option>
+                            <option value="14">g</option>
+                        </optgroup>
+                        <optgroup label="欧洲">
+                            <option value="15">a</option>
+                            <option value="16">b</option>
+                            <option value="17">c</option>
+                            <option value="18">d</option>
+                            <option value="19">e</option>
+                            <option value="20">f</option>
+                            <option value="21">g</option>
+                        </optgroup>
+                    </select>
+                    <input type="text" name="connect-tel">
+                    <input type="text" name="connect-tel-dist">
+
+                </p>
+                <p>
+                    <label>传真：</label>
+                    <select name="country">
+                        <optgroup label="美洲">
+                            <option value="1">a</option>
+                            <option value="2">b</option>
+                            <option value="3">c</option>
+                            <option value="4">d</option>
+                            <option value="5">e</option>
+                            <option value="6">f</option>
+                            <option value="7">g</option>
+                        </optgroup>
+                        <optgroup label="亚洲">
+                            <option value="1">a</option>
+                            <option value="2">b</option>
+                            <option value="3">c</option>
+                            <option value="4">d</option>
+                            <option value="5">e</option>
+                            <option value="6">f</option>
+                            <option value="7">g</option>
+                        </optgroup>
+                        <optgroup label="欧洲">
+                            <option value="1">a</option>
+                            <option value="2">b</option>
+                            <option value="3">c</option>
+                            <option value="4">d</option>
+                            <option value="5">e</option>
+                            <option value="6">f</option>
+                            <option value="7">g</option>
+                        </optgroup>
+                    </select>
+                    <input type="text" name="fax">
+                </p>
+
+                <div class="notice">
+                    电话号码如果是固话请包含国内区号，第一位不需要0，中间不要有空格，如北京的号码：1088888888。
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <h2>E-mail</h2>
+                <p>
+                    Email地址: <input type="email">
+                </p>
+                <p>
+                    ETS可能随时会有重要的通知公告变更等信息需要通知您，您愿意接收这些信息吗？
+                </p>
+                <p>
+                    <input type="radio" name="msg" value="send" checked> 给我寄最新消息和录取通知
+                    <input type="radio" name="msg" value="nosend"> 不要寄最新消息和录取通知
+                </p>
+
+            </fieldset>
+            <p>
+                <button type="button">取消</button>
+                <button type="submit">继续</button>
+            </p>
+        </form>
+        
+    </div>
+</div>
+<footer>
+    <div>ETS, the ETS logo, TOEFL, GRE and [OTHERS (if indicated in the Territory)], are the Trademarks of Educational Testing Service, Princeton, New Jersey, U.S.A.and are used in the People's Republic of China by the National Education Examination Authority pursuant to a license from Educational Testing Service.</div>
+    <div>Copyright &copy; 2006 教育部考试中心版权所有. 保留所有权利.</div>
+</footer>
+<script language="JavaScript">
+    function confirmCancel(validateCreateProfileForm){
+
+        var conf=confirm("Do you really want to cancel Creating a Profile?");
+        if(conf){
+            window.location="/cn";
+            return false;
+        }
+        return false;
+    }
+</script>
+</body>
+</html>
