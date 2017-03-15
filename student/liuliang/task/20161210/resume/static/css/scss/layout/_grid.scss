@@ -27,6 +27,9 @@ $percent-margin: $margin / $layout-margin-width;
   .grid-container {
     width: $layout-margin-width + px;
   }
+  .hidden-lg {
+    display: none;
+  }
   // Grid Columns
   @for $i from 1 through $cols {
     .grid-md-#{$i} {
