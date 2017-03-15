@@ -5,23 +5,23 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import BrowserSyncPlugin from 'browser-sync-webpack-plugin'
 
-const rootPath = path.resolve(__dirname, './') // 项目根目录
+const rootPath = path.resolve(__dirname, '../') // 项目根目录
 const src = path.join(rootPath, 'src') // 开发源码目录
 const env = process.env.NODE_ENV.trim() // 当前环境
 const common = {
   rootPath,
   dist: path.join(rootPath, 'dist'), // build 后输出目录
-  indexHtml: path.join(src, 'index.html'), // 入口基页
+  indexHtml: path.join(src, 'index', 'index.html'), // 入口基页
   staticDir: path.join(rootPath, 'static') // 无需处理的静态资源目录
 }
 
 const config = {
   common,
   entry: {
+    vendors: ['html2pdf', 'jspdf', 'html2canvas', 'jquery', 'jspdf2html'],
     app: [
-      path.join(src, 'app.js')
-    ],
-    vendors: []
+      path.join(src, 'index', 'app.js')
+    ]
   },
   output: {
     path: path.join(common.dist, 'static'),
@@ -36,7 +36,13 @@ const config = {
       // ================================
       // 自定义路径别名
       // ================================
-      SCSS: path.join(common.staticDir, 'css/scss')
+      SCSS: path.join(common.staticDir, 'css/scss'),
+      JS: path.join(common.staticDir, 'js'),
+      html2pdf: path.join(common.staticDir, 'js/vendors', 'html2pdf.js'),
+      jspdf: path.join(common.staticDir, 'js/vendors', 'jspdf.debug.js'),
+      html2canvas: path.join(common.staticDir, 'js/vendors', 'html2canvas.min.js'),
+      jquery: path.join(common.staticDir, 'js/vendors', 'jquery.min.js'),
+      jspdf2html: path.join(common.staticDir, 'js/vendors', 'jspdf.plugin.addhtml.js')
     }
   },
   resolveLoader: {
@@ -94,9 +100,21 @@ const config = {
     new NyanProgressPlugin(), // 进度条
     new webpack.optimize.CommonsChunkPlugin({
       // 公共代码分离打包
-      names: ['vendors', 'mainfest'],
+      names: ['mainfest', 'vendors'],
       minChunks: Infinity,
       filename: '[name].js'
+    }),
+    new webpack.ProvidePlugin({
+      'window.jsPDF': 'jspdf',
+      'win.jsPDF': 'jspdf',
+      'window.html2canvas': 'html2canvas',
+      'win.html2canvas': 'html2canvas',
+      'window.html2pdf': 'html2pdf',
+      'win.html2pdf': 'html2pdf',
+      '$': 'jquery',
+      'window.jQuery': 'jquery',
+      'window.$': 'jquery',
+      'jQuery': 'jquery'
     }),
     new webpack.DefinePlugin({
       'process.env': { // 这是给 React / Redux 打包用的

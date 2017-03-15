@@ -1,7 +1,7 @@
 import express from 'express'
 import webpack from 'webpack'
 // import path from 'path'
-import config from '../webpack.conf'
+import config from './webpack.dev.conf'
 // import favicon from 'express-favicon'
 import connectHistoryApiFallback from 'connect-history-api-fallback'
 import webpackDevMiddleware from 'webpack-dev-middleware'

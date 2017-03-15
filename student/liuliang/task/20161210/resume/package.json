@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "resume factory",
   "scripts": {
-    "start": "cross-env NODE_ENV=development babel-node build/dev.js"
+    "start": "cross-env NODE_ENV=development babel-node build/dev.js",
+    "build": "cross-env NODE_ENV=development babel-node build/prod.js"
   },
   "dependencies": {
 
