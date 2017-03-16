@@ -258,28 +258,44 @@ section {
 				text-overflow: ellipsis;
 				overflow: hidden;
 			}
+      %progress-bar-common-style {
+          position: absolute;
+          top: 0;
+          border-radius: 50%;
+          background-color: rgba(0, 128, 128, .7);
+          color: #fff;
+          height: 25px;
+          width: 25px;
+          line-height: 25px;
+          font-size: 14px;
+      }
 			.cet-4 {
 				@extend %height-25;
+        position: relative;
 				&::-webkit-progress-value {
 					@extend %background-color-teal;
 				}
 				&::after {
 					content: "524";
 					left: 74%;
+          @extend %progress-bar-common-style;
 				}
 			}
 			.cet-6 {
 				@extend %height-25;
+        position: relative;
 				&::-webkit-progress-value {
 					@extend %background-color-teal;
 				}
 				&::after {
 					content: "452";
 					left: 64%;
+          @extend %progress-bar-common-style;
 				}
 			}
 			.javascript {
 				@extend %height-25;
+        position: relative;
 				&::-webkit-progress-value {
 					@extend %background-color-teal;
 				}
@@ -287,10 +303,12 @@ section {
 					content: "熟练";
 					font-size: 12px;
 					left: 80%;
+          @extend %progress-bar-common-style;
 				}
 			}
 			.html {
 				@extend %height-25;
+        position: relative;
 				&::-webkit-progress-value {
 					@extend %background-color-teal;
 				}
@@ -298,10 +316,12 @@ section {
 					content: "熟悉";
 					font-size: 12px;
 					left: 75%;
+          @extend %progress-bar-common-style;
 				}
 			}
 			.css {
 				@extend %height-25;
+        position: relative;
 				&::-webkit-progress-value {
 					@extend %background-color-teal;
 				}
@@ -309,10 +329,12 @@ section {
 					content: "熟悉";
 					font-size: 12px;
 					left: 75%;
+          @extend %progress-bar-common-style;
 				}
 			}
 			.java {
 				@extend %height-25;
+        position: relative;
 				&::-webkit-progress-value {
 					@extend %background-color-teal;
 				}
@@ -320,10 +342,12 @@ section {
 					content: "写过";
 					font-size: 12px;
 					left: 73%;
+          @extend %progress-bar-common-style;
 				}
 			}
 			.php {
 				@extend %height-25;
+        position: relative;
 				&::-webkit-progress-value {
 					@extend %background-color-teal;
 				}
@@ -331,6 +355,7 @@ section {
 					content: "写过";
 					font-size: 12px;
 					left: 70%;
+          @extend %progress-bar-common-style;
 				}
 			}
 		}

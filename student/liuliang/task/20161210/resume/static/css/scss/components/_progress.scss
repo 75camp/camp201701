@@ -74,15 +74,29 @@ progress[value] {
 }
 /* Fallback technique styles */
 .progress-bar {
-	background-color: whiteSmoke;
+	background-color: #333;
 	border-radius: 3px;
-	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
 	/* Dimensions should be similar to the parent progress element. */
-	width: 100%;
-	height:20px;
+	height: 20px;
 }
 .progress-bar span {
-  background-color: royalblue;
+  background-color: rgba(0, 128, 128, .7);
+	position: relative;
+	border-radius:3px;
+	background-size: 40px 40px;
+	background-repeat: repeat-x;
+  background-image:
+	-webkit-linear-gradient(
+	  135deg,
+	  rgba(255,255,255,.15) 25%,
+	  transparent 25%,
+	  transparent 50%,
+	  rgba(255,255,255,.15) 50%,
+	  rgba(255,255,255,.15) 75%,
+	  transparent 75%,
+	  transparent
+	);
 	border-radius: 3px;
 	display: block;
 	text-indent: -9999px;
