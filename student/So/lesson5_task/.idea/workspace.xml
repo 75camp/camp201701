@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9afabbbf-b17e-427f-ae71-47480f7ed105" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="lesson5_task" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="twoSum.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/twoSum.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding>
+                  <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+                  <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+                  <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+                  <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+                  <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+                  <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addTwoNumbers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addTwoNumbers.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1738">
+                <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+                <folding>
+                  <marker date="1486976698887" expanded="true" signature="162:208" ph="/** Created by So on 2017/2/12. ...*/" />
+                  <marker date="1486976698887" expanded="true" signature="213:283" ph="/** from https://leetcode.com/problems/add-two-numbers ...*/" />
+                  <marker date="1486976698887" expanded="true" signature="288:438" ph="/** Definition for singly-linked list. ...*/" />
+                  <marker date="1486976698887" expanded="true" signature="443:536" ph="/** @param {ListNode} l1 ...*/" />
+                  <marker date="1486976698887" expanded="true" signature="556:645" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="582:639" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="693:812" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="840:1002" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="892:959" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="1032:1386" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="1222:1361" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="1416:1468" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="1870:2141" ph="{...}" />
+                  <marker date="1486976698887" expanded="true" signature="2165:2198" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="longestSubstring.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="longestSubstring.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="2508">
+                <caret line="114" column="15" lean-forward="false" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
+                <folding>
+                  <marker date="1486976698839" expanded="true" signature="81:148" ph="/** 采用hash映射到ascii码 ...*/" />
+                  <marker date="1486976698839" expanded="true" signature="193:673" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="332:655" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="381:553" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="456:518" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="524:547" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="624:651" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="895:962" ph="/** 采用hash映射到ascii码 ...*/" />
+                  <marker date="1486976698839" expanded="true" signature="1007:1691" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="1199:1673" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="1264:1495" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="1339:1429" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="1435:1489" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="1566:1593" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="2070:2852" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="2231:2249" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="2381:2834" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="2527:2570" ph="{...}" />
+                  <marker date="1486976698839" expanded="true" signature="2576:2716" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="medianofTwoSortedArrays.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="medianofTwoSortedArrays.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="902">
+                <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="42" selection-end-column="0" />
+                <folding>
+                  <marker date="1487840447261" expanded="true" signature="400:481" ph="/** @param {number[]} nums1 ...*/" />
+                  <marker date="1487840447261" expanded="true" signature="535:1136" ph="{...}" />
+                  <marker date="1487840447261" expanded="true" signature="691:975" ph="{...}" />
+                  <marker date="1487840447261" expanded="true" signature="713:771" ph="{...}" />
+                  <marker date="1487840447261" expanded="true" signature="792:850" ph="{...}" />
+                  <marker date="1487840447261" expanded="true" signature="881:923" ph="{...}" />
+                  <marker date="1487840447261" expanded="true" signature="929:971" ph="{...}" />
+                  <marker date="1487840447261" expanded="true" signature="997:1055" ph="{...}" />
+                  <marker date="1487840447261" expanded="true" signature="1061:1098" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="longestPalindromicSubstring.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="longestPalindromicSubstring.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="773">
+                <caret line="62" column="1" lean-forward="false" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+                <folding>
+                  <marker date="1487053429121" expanded="true" signature="239:287" ph="/** @param {string} s ...*/" />
+                  <marker date="1487053429121" expanded="true" signature="339:989" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="520:538" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="593:669" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="675:709" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="764:870" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="876:910" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="1056:1586" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="1145:1172" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="1252:1551" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="1309:1547" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="1386:1531" ph="{...}" />
+                  <marker date="1487053429121" expanded="true" signature="1445:1523" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/leetcode/twoSum.js" />
+        <option value="$PROJECT_DIR$/leetcode/twoSum.md" />
+        <option value="$PROJECT_DIR$/leetcode/addTwoNumbers.js" />
+        <option value="$PROJECT_DIR$/leetcode/longestSubstring.js" />
+        <option value="$PROJECT_DIR$/leetcode/addTwoNumbers.md" />
+        <option value="$PROJECT_DIR$/leetcode/longestSubstring.md" />
+        <option value="$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js" />
+        <option value="$PROJECT_DIR$/leetcode/longestPalindromicSubstring.js" />
+        <option value="$PROJECT_DIR$/leetcode/longestPalindromicSubstring.md" />
+        <option value="$PROJECT_DIR$/leetcode/基于RDF的自然语言问答——子图匹配实现方案.md" />
+        <option value="$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.md" />
+        <option value="$PROJECT_DIR$/leetcode/aa.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/canvas_test/node_modules" />
+    <handled-path value="$PROJECT_DIR$/canvas_utils/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="width" value="1934" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>UnterminatedStatementJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson5_task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson5_task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../../../nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="C:\Users\So\AppData\Roaming\npm\node_modules\eslint" />
+    <property name="js-jscs-nodeInterpreter" value="D:\study\nodejs\node.exe" />
+    <property name="js.eslint.nodeInterpreter" value="project" />
+  </component>
+  <component name="RunManager" selected="Node.js.longestPalindromicSubstring.js">
+    <configuration default="false" name="twoSum.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="twoSum.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method />
+    </configuration>
+    <configuration default="false" name="addTwoNumbers.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="addTwoNumbers.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method />
+    </configuration>
+    <configuration default="false" name="longestSubstring.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="longestSubstring.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method />
+    </configuration>
+    <configuration default="false" name="medianofTwoSortedArrays.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="medianofTwoSortedArrays.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method />
+    </configuration>
+    <configuration default="false" name="longestPalindromicSubstring.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="longestPalindromicSubstring.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.twoSum.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.addTwoNumbers.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.longestSubstring.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.medianofTwoSortedArrays.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.longestPalindromicSubstring.js" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.longestPalindromicSubstring.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.medianofTwoSortedArrays.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.addTwoNumbers.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.longestSubstring.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.twoSum.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9afabbbf-b17e-427f-ae71-47480f7ed105" name="Default" comment="" />
+      <created>1486879278327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1486879278327</updated>
+      <workItem from="1486879280465" duration="4780000" />
+      <workItem from="1486885834910" duration="1643000" />
+      <workItem from="1486887912770" duration="39807000" />
+      <workItem from="1487581705140" duration="847000" />
+      <workItem from="1487839093511" duration="465000" />
+      <workItem from="1487839681458" duration="257000" />
+      <workItem from="1487839968810" duration="125000" />
+      <workItem from="1487840151541" duration="8039000" />
+      <workItem from="1487991115130" duration="886000" />
+      <workItem from="1488534316449" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="56883000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-10" y="0" width="1934" height="1090" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14802982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.4955157" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5044843" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23991032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35986546" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/leetcode/twoSum.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js</url>
+          <line>39</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="20" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2508">
+            <caret line="114" column="15" lean-forward="false" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
+            <folding>
+              <marker date="1486976698839" expanded="true" signature="81:148" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="193:673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="332:655" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="381:553" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="456:518" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="524:547" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="624:651" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="895:962" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="1007:1691" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1199:1673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1264:1495" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1339:1429" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1435:1489" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1566:1593" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2070:2852" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2231:2249" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2381:2834" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2527:2570" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2576:2716" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="902">
+            <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            <folding>
+              <marker date="1487840447261" expanded="true" signature="400:481" ph="/** @param {number[]} nums1 ...*/" />
+              <marker date="1487840447261" expanded="true" signature="535:1136" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="691:975" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="713:771" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="792:850" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="881:923" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="929:971" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="997:1055" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="1061:1098" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1364">
+            <caret line="62" column="1" lean-forward="false" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <folding>
+              <marker date="1487053429121" expanded="true" signature="239:287" ph="/** @param {string} s ...*/" />
+              <marker date="1487053429121" expanded="true" signature="339:989" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="520:538" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="593:669" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="675:709" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="764:870" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="876:910" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1056:1586" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1145:1172" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1252:1551" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1309:1547" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1386:1531" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1445:1523" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/aa.md" />
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1738">
+            <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <folding>
+              <marker date="1486976698887" expanded="true" signature="162:208" ph="/** Created by So on 2017/2/12. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="213:283" ph="/** from https://leetcode.com/problems/add-two-numbers ...*/" />
+              <marker date="1486976698887" expanded="true" signature="288:438" ph="/** Definition for singly-linked list. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="443:536" ph="/** @param {ListNode} l1 ...*/" />
+              <marker date="1486976698887" expanded="true" signature="556:645" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="582:639" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="693:812" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="840:1002" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="892:959" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1032:1386" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1222:1361" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1416:1468" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1870:2141" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="2165:2198" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2508">
+            <caret line="114" column="15" lean-forward="false" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
+            <folding>
+              <marker date="1486976698839" expanded="true" signature="81:148" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="193:673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="332:655" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="381:553" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="456:518" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="524:547" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="624:651" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="895:962" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="1007:1691" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1199:1673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1264:1495" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1339:1429" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1435:1489" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1566:1593" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2070:2852" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2231:2249" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2381:2834" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2527:2570" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2576:2716" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="902">
+            <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            <folding>
+              <marker date="1487840447261" expanded="true" signature="400:481" ph="/** @param {number[]} nums1 ...*/" />
+              <marker date="1487840447261" expanded="true" signature="535:1136" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="691:975" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="713:771" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="792:850" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="881:923" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="929:971" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="997:1055" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="1061:1098" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1364">
+            <caret line="62" column="1" lean-forward="false" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <folding>
+              <marker date="1487053429121" expanded="true" signature="239:287" ph="/** @param {string} s ...*/" />
+              <marker date="1487053429121" expanded="true" signature="339:989" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="520:538" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="593:669" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="675:709" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="764:870" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="876:910" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1056:1586" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1145:1172" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1252:1551" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1309:1547" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1386:1531" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1445:1523" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1738">
+            <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <folding>
+              <marker date="1486976698887" expanded="true" signature="162:208" ph="/** Created by So on 2017/2/12. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="213:283" ph="/** from https://leetcode.com/problems/add-two-numbers ...*/" />
+              <marker date="1486976698887" expanded="true" signature="288:438" ph="/** Definition for singly-linked list. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="443:536" ph="/** @param {ListNode} l1 ...*/" />
+              <marker date="1486976698887" expanded="true" signature="556:645" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="582:639" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="693:812" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="840:1002" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="892:959" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1032:1386" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1222:1361" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1416:1468" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1870:2141" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="2165:2198" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2508">
+            <caret line="114" column="15" lean-forward="false" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
+            <folding>
+              <marker date="1486976698839" expanded="true" signature="81:148" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="193:673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="332:655" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="381:553" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="456:518" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="524:547" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="624:651" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="895:962" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="1007:1691" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1199:1673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1264:1495" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1339:1429" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1435:1489" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1566:1593" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2070:2852" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2231:2249" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2381:2834" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2527:2570" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2576:2716" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="902">
+            <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            <folding>
+              <marker date="1487840447261" expanded="true" signature="400:481" ph="/** @param {number[]} nums1 ...*/" />
+              <marker date="1487840447261" expanded="true" signature="535:1136" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="691:975" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="713:771" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="792:850" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="881:923" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="929:971" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="997:1055" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="1061:1098" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1487053429121" expanded="true" signature="239:287" ph="/** @param {string} s ...*/" />
+              <marker date="1487053429121" expanded="true" signature="339:989" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="520:538" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="593:669" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="675:709" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="764:870" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="876:910" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1056:1586" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1145:1172" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1252:1551" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1309:1547" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1386:1531" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1445:1523" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1738">
+            <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <folding>
+              <marker date="1486976698887" expanded="true" signature="162:208" ph="/** Created by So on 2017/2/12. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="213:283" ph="/** from https://leetcode.com/problems/add-two-numbers ...*/" />
+              <marker date="1486976698887" expanded="true" signature="288:438" ph="/** Definition for singly-linked list. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="443:536" ph="/** @param {ListNode} l1 ...*/" />
+              <marker date="1486976698887" expanded="true" signature="556:645" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="582:639" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="693:812" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="840:1002" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="892:959" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1032:1386" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1222:1361" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1416:1468" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1870:2141" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="2165:2198" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2508">
+            <caret line="114" column="15" lean-forward="false" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
+            <folding>
+              <marker date="1486976698839" expanded="true" signature="81:148" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="193:673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="332:655" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="381:553" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="456:518" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="524:547" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="624:651" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="895:962" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="1007:1691" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1199:1673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1264:1495" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1339:1429" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1435:1489" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1566:1593" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2070:2852" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2231:2249" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2381:2834" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2527:2570" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2576:2716" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="902">
+            <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            <folding>
+              <marker date="1487840447261" expanded="true" signature="400:481" ph="/** @param {number[]} nums1 ...*/" />
+              <marker date="1487840447261" expanded="true" signature="535:1136" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="691:975" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="713:771" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="792:850" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="881:923" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="929:971" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="997:1055" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="1061:1098" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1487053429121" expanded="true" signature="239:287" ph="/** @param {string} s ...*/" />
+              <marker date="1487053429121" expanded="true" signature="339:989" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="520:538" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="593:669" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="675:709" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="764:870" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="876:910" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1056:1586" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1145:1172" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1252:1551" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1309:1547" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1386:1531" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1445:1523" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/twoSum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+              <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="37" column="3" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="37" selection-end-column="3" />
+          <folding>
+            <marker date="1486886870487" expanded="true" signature="631:1022" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="687:722" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="746:764" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="770:1020" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="882:949" ph="{...}" />
+            <marker date="1486886870487" expanded="true" signature="953:1014" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2508">
+            <caret line="114" column="15" lean-forward="false" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
+            <folding>
+              <marker date="1486976698839" expanded="true" signature="81:148" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="193:673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="332:655" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="381:553" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="456:518" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="524:547" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="624:651" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="895:962" ph="/** 采用hash映射到ascii码 ...*/" />
+              <marker date="1486976698839" expanded="true" signature="1007:1691" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1199:1673" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1264:1495" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1339:1429" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1435:1489" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="1566:1593" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2070:2852" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2231:2249" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2381:2834" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2527:2570" ph="{...}" />
+              <marker date="1486976698839" expanded="true" signature="2576:2716" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/longestPalindromicSubstring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="773">
+            <caret line="62" column="1" lean-forward="false" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <folding>
+              <marker date="1487053429121" expanded="true" signature="239:287" ph="/** @param {string} s ...*/" />
+              <marker date="1487053429121" expanded="true" signature="339:989" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="520:538" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="593:669" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="675:709" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="764:870" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="876:910" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1056:1586" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1145:1172" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1252:1551" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1309:1547" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1386:1531" ph="{...}" />
+              <marker date="1487053429121" expanded="true" signature="1445:1523" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/medianofTwoSortedArrays.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="902">
+            <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="42" selection-end-column="0" />
+            <folding>
+              <marker date="1487840447261" expanded="true" signature="400:481" ph="/** @param {number[]} nums1 ...*/" />
+              <marker date="1487840447261" expanded="true" signature="535:1136" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="691:975" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="713:771" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="792:850" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="881:923" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="929:971" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="997:1055" ph="{...}" />
+              <marker date="1487840447261" expanded="true" signature="1061:1098" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/addTwoNumbers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1738">
+            <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <folding>
+              <marker date="1486976698887" expanded="true" signature="162:208" ph="/** Created by So on 2017/2/12. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="213:283" ph="/** from https://leetcode.com/problems/add-two-numbers ...*/" />
+              <marker date="1486976698887" expanded="true" signature="288:438" ph="/** Definition for singly-linked list. ...*/" />
+              <marker date="1486976698887" expanded="true" signature="443:536" ph="/** @param {ListNode} l1 ...*/" />
+              <marker date="1486976698887" expanded="true" signature="556:645" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="582:639" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="693:812" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="840:1002" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="892:959" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1032:1386" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1222:1361" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1416:1468" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="1870:2141" ph="{...}" />
+              <marker date="1486976698887" expanded="true" signature="2165:2198" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/aa.md" />
+  </component>
+</project>

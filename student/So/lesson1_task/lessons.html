@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程表</title>
+	<style>
+		.lesson-table{
+			margin: 0 auto;
+			border:solid 1px #999;
+			text-align: center;
+			background-color: #f8f8f8;
+			padding:0;
+			border-spacing: 0;
+			border-collapse: separate;  /* 'cellspacing' equivalent */
+		}
+		.capition{
+			display: block;
+			text-align: center;
+		}
+		th{
+			background-color: #ddd;
+		}
+		th,td{
+			border:solid 1px #999;
+			height: 28px;
+		}
+		tr>td{
+			width: 100px;
+		}
+		tr>td:first-of-type,tr>td:nth-of-type(2){
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+<table class="lesson-table">
+	<capition class="capition">So的课程表</capition>
+	<colgroup>
+	    <col class="column1" span="2">
+	    <col class="columns2plus3" >
+	</colgroup>
+	<thead>
+		<tr>
+			<th colspan="2">节次</th>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+			<th>星期六</th>
+			<th>星期日</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="6">上午</td>
+			<td>1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td rowspan="2">有课</td>
+			<td></td>
+			<td rowspan="2">有课</td>
+			<td rowspan="2">有课</td>
+			<td rowspan="2">有课</td>
+			
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			
+			
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td></td>
+			<td></td>
+			<td rowspan="2">有课</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td rowspan="4">下午</td>
+			<td>7</td>
+			<td></td>
+			<td rowspan="2">有课</td>
+			<td rowspan="2">有课</td>
+			<td rowspan="2">有课</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			
+			
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td></td>
+			<td></td>
+			<td rowspan="2">有课</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td></td>
+			
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td rowspan="4">晚上</td>
+			<td>11</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="2">有课</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>12</td>
+			
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+	
+</body>
+</html>

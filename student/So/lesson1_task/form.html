@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人基本信息填写</title>
+	<style>
+		body{
+			height: 1000px;
+			/*width: 100%;*/
+		}
+		.row{
+			display: flex;
+			justify-content: space-around;
+		}
+		.-lable{
+			display: flex;
+			justify-content: space-between;
+			width: 300px;
+			/*background-color: #eee;*/
+			text-align: right;
+		}
+		.-input{
+			width: 200px;
+		}
+		.-radio{
+			/*width: 50px;*/
+			/*margin-right: 50px;*/
+		}
+		.btn-wrap{
+			text-align: center;
+		}
+		.btn-wrap>button{
+			width: 100px;
+			height: 40px;
+		}
+		select{
+			width: 205px;
+			padding: 2px 5px;
+		}
+	</style>
+</head>
+<body>
+	<form action="form.html" method="post">
+		<fieldset>
+			<legend>基本信息</legend>
+			<p class="row">
+				<label class="-lable">学号<input required placeholder="必填" class="-input" type="number"></label>
+				<label class="-lable">姓名<input required placeholder="必填" class="-input" type="text"></label>
+			</p>
+			<p class="row">
+				<label class="-lable">曾用名<input placeholder="选填" class="-input" type="text"></label>
+				<label class="-lable">姓名拼音<input required placeholder="必填" class="-input" type="text"></label>
+			</p>
+			<p class="row">
+				<label class="-lable">性别
+					<span>
+						<input class="-radio" type="radio" name="sex" value="0"> 男
+    					<input class="-radio" type="radio" name="sex" value="1"> 女
+					</span>
+    			</label>
+				<label class="-lable">民族
+					<select name="nation">
+					  <option value="1">汉族</option>
+					  <option value="2">回族</option>
+					  <option value="3">满族</option>
+					  <option value="4">白族</option>
+					</select>
+				</label>
+			</p>
+			<p class="row">
+				<label class="-lable">身份证号<input required placeholder="必填" class="-input" type="text"></label>
+				<label class="-lable">身份证类型
+					<select name="idcardtype">
+					  <option value="1">居民身份证</option>
+					  <option value="2">临时身份证</option>
+					  <option value="3">护照</option>
+					</select>
+				</label>
+			</p>
+			<p class="row">
+				<label class="-lable">政治面貌
+					<select name="politicstatus">
+					  <option value="1">团员</option>
+					  <option value="2">党员</option>
+					  <option value="3">群众</option>
+					</select>
+				</label>
+				<label class="-lable">籍贯
+					<select name="nativeplace">
+					  <option value="1">云南省</option>
+					  <option value="2">山东省</option>
+					  <option value="3">北京市</option>
+					</select>
+				</label>
+			</p>
+			<p class="row">
+				<label class="-lable">出生日期<input required placeholder="必填" class="-input" type="date"></label>
+				<label class="-lable">血型
+					<select name="bloodtype">
+					  <option value="1">AB</option>
+					  <option value="2">A</option>
+					  <option value="3">B</option>
+					  <option value="4">O</option>
+					</select>
+				</label>
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>学籍信息</legend>
+			<p class="row">
+				<label class="-lable">学历
+					<select name="eductionbackground">
+					  <option value="1">博士</option>
+					  <option value="2">研究生</option>
+					  <option value="3">本科</option>
+					</select>
+				</label>
+				<label class="-lable">院系
+					<select name="department">
+					  <option value="1">计算机与控制工程</option>
+					  <option value="2">化学</option>
+					  <option value="3">物理</option>
+					</select>
+				</label>
+			</p>
+			<p class="row">
+				<label class="-lable">专业
+					<select name="major">
+					  <option value="1">计算机科学</option>
+					  <option value="2">化学</option>
+					  <option value="3">物理</option>
+					</select>
+				</label>
+				<label class="-lable">学制
+					<select name="lengthofschooling">
+					  <option value="1">三年</option>
+					  <option value="2">四年</option>
+					  <option value="3">五年</option>
+					</select>
+				</label>
+			</p>
+			<p class="row">
+				<label class="-lable">班级<input required placeholder="必填" class="-input" type="text"></label>
+				<label class="-lable">学位
+					<select name="degree">
+					  <option value="1">博士</option>
+					  <option value="2">硕士</option>
+					  <option value="3">学士</option>
+					</select>
+				</label>
+			</p>
+			<p class="row">
+				<label class="-lable">是否在校
+					<span>
+						<input class="-radio" type="radio" name="inschool" value="0"> 是
+    					<input class="-radio" type="radio" name="inschool" value="1"> 否
+					</span>
+				</label>
+				<label class="-lable">是否预科
+					<span>
+						<input class="-radio" type="radio" name="yuke" value="0"> 是
+    					<input class="-radio" type="radio" name="yuke" value="1"> 否
+					</span>
+				</label>
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>联系信息</legend>
+			<p class="row">
+				<label class="-lable">校区
+					<select name="campus">
+					  <option value="1">新校区</option>
+					  <option value="2">老校区</option>
+					</select>
+				</label>
+				<label class="-lable">邮编<input required placeholder="必填" class="-input" type="number"></label>
+			</p>
+			<p class="row">
+				<label class="-lable">电话<input required placeholder="必填" class="-input" type="phonenumber"></label>
+				<label class="-lable">QQ<input required placeholder="必填" class="-input" type="number"></label>
+			</p>
+			<p class="row">
+				<label class="-lable">邮箱<input required placeholder="必填" class="-input" type="email"></label>
+				<label class="-lable">个人主页<input placeholder="选填" class="-input" type="url"></label>
+			</p>
+			<p class="row">
+				<label class="-lable">家庭电话<input required placeholder="必填" class="-input" type="text"></label>
+				<label class="-lable">家庭住址<input required placeholder="必填" class="-input" type="text"></label>
+			</p>
+		</fieldset>
+		<p class="btn-wrap">
+			<button type="submit">确定</button>
+			<button type="reset">重置</button>
+		</p>
+	</form>
+</body>
+</html>
