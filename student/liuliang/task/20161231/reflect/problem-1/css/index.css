@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 24px;
+}
+ul#user-list {
+  width: 300px;
+  line-height: 1.5em;
+  margin: 100px auto 0;
+  cursor: pointer;
+}
+
+ul#user-list > li:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+ul#user-list > li.active {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
