@@ -184,120 +184,25 @@
   <td>
     <ol>
       <li>文件头部进行文档注释，例如：
-      <pre><code>
-      /*!
-        built in 2017-2-17:17:59 version 2.2.4 by 司徒正美
-        https://github.com/RubyLouvre/avalon/tree/2.2.4
-        修正IE下 orderBy BUG
-        更改下载Promise的提示
-        修复avalon.modern 在Proxy 模式下使用ms-for 循环对象时出错的BUG
-        修复effect内部传参 BUG
-        重构ms-validate的绑定事件的机制
-      */
-      </code></pre>
+        <pre><code>
+        /*!
+          built in 2017-2-17:17:59 version 2.2.4 by 司徒正美
+          https://github.com/RubyLouvre/avalon/tree/2.2.4
+          修正IE下 orderBy BUG
+          更改下载Promise的提示
+          修复avalon.modern 在Proxy 模式下使用ms-for 循环对象时出错的BUG
+          修复effect内部传参 BUG
+          重构ms-validate的绑定事件的机制
+        */
+        </code></pre>
       </li>
       <li>文件关键部分进行文档注释，例如：
-      <pre><code>
-      //https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
-
-      /**
-
-      * Shim for "fixing" IE's lack of support (IE < 9) for applying slice
-
-      * on host objects like NamedNodeMap, NodeList, and HTMLCollection
-
-      * (technically, since host objects have been implementation-dependent,
-
-      * at least before ES6, IE hasn't needed to work this way).
-
-      * Also works on strings, fixes IE < 9 to allow an explicit undefined
-
-      * for the 2nd argument (as in Firefox), and prevents errors when
-
-      * called on other DOM objects.
-
-      */
-
-
-
-      try {
-
-        // Can't be used with DOM elements in IE < 9
-
-        _slice.call(avalon.document.documentElement);
-
-      } catch (e) {
-
-        // Fails in IE < 9
-
-        // This will work for genuine arrays, array-like objects,
-
-        // NamedNodeMap (attributes, entities, notations),
-
-        // NodeList (e.g., getElementsByTagName), HTMLCollection (e.g., childNodes),
-
-        // and will not fail on other DOM objects (as do DOM elements in IE < 9)
-
-        /* istanbul ignore next*/
-
-        ap.slice = function (begin, end) {
-
-          // IE < 9 gets unhappy with an undefined end argument
-
-          end = typeof end !== 'undefined' ? end : this.length;
-
-
-
-          // For native Array objects, we use the native slice function
-
-          if (Array.isArray(this)) {
-
-            return _slice.call(this, begin, end);
-
-          }
-
-
-
-          // For array like object we handle it ourselves.
-
-          var i,
-
-              cloned = [],
-
-              size,
-
-              len = this.length;
-
-
-
-              // Handle negative value for "begin"
-
-              var start = begin || 0;
-
-              start = start >= 0 ? start : len + start;
-
-
-
-              // Handle negative value for "end"
-
-              var upTo = end ? end : len;
-
-              if (end < 0) {
-
-                upTo = len + end;
-
-              }
-
-
-
-              // Actual expected size of the slice
-
-              size = upTo - start;
-
-        };
-
-      }
-      </code></pre>
+        <pre><code>
+        try {
+          _slice.call(avalon.document.documentElement);
+        } catch (e) {
+        }
+        </code></pre>
       </li>
     </ol>
   </td>
