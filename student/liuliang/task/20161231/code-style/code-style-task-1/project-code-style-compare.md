@@ -316,6 +316,8 @@
   <td>ES6</td>
 </tr>
 </table>
+
 ---
+
 综合比较，我还是喜欢avalon的文件命名方式，喜欢thinkjs的模块系统
 
