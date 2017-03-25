@@ -57,11 +57,11 @@ var twoSum = function(nums, target) {
     };
 
     var findArrayIndex = function(arr){
-       var result = [];
-       for(var i = 0;i < nums.length; i++){
-           findArrayIndexByIndexofMethod(arr,nums[i]) >= 0 && result.push(i);
-       }
-       return result;
+      var result = [];
+      for(var i = 0;i < nums.length; i++){
+          findArrayIndexByIndexofMethod(arr,nums[i]) >= 0 && result.push(i);
+      }
+      return result;
     };
     findArrayValue(0,numsCopy.length-1,arr);
     return findArrayIndex(arr);
