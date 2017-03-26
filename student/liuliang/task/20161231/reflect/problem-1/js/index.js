@@ -6,6 +6,10 @@
   var items = list.querySelectorAll('li > a'); // static NodeList
   // var child = list.childNodes; // live NodeList contain text node
   // var child = list.children; // HTMLCollection not contain text node
+  var isWhichTag = function(elem, originalTag){
+    var currentTag = elem.nodeName || elem.tagName;
+    return currentTag.toLowerCase() === originalTag.toLowerCase();
+  };
 
   list.addEventListener('click', function(event){
 
@@ -14,17 +18,17 @@
       items.forEach(function(item){
         // var itemClassList = item.classList; //add、remove、item、toggle、contains
         // if(itemClassList.contains('active')) itemClassList.remove('active');
-        item.href = 'javascript:;';
+        if(isWhichTag(item, 'a')) item.href = 'javascript:;';
         // console.log(item.)
       });
     };
     var givenItemOperate = function(){
-      var current = event.target;
-      var dataSet = current.dataset;
+      var elem = event.target;
+      var dataSet = elem.dataset;
       // console.log(dataSet)
       // current.classList.toggle('active')
       // current.href = '#'+dataSet.id;
-      current.setAttribute('href','#'+dataSet.id)
+      if(isWhichTag(elem, 'a')) elem.setAttribute('href','#' + dataSet.id);
     };
     var initial = function(){
       resetAll();
