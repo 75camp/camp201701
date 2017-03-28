@@ -19,7 +19,6 @@
         // var itemClassList = item.classList; //add、remove、item、toggle、contains
         // if(itemClassList.contains('active')) itemClassList.remove('active');
         if(isWhichTag(item, 'a')) item.href = 'javascript:;';
-        // console.log(item.)
       });
     };
     var givenItemOperate = function(){
@@ -28,7 +27,7 @@
       // console.log(dataSet)
       // current.classList.toggle('active')
       // current.href = '#'+dataSet.id;
-      if(isWhichTag(elem, 'a')) elem.setAttribute('href','#' + dataSet.id);
+      if(isWhichTag(elem, 'a')) elem.setAttribute('href', '#' + dataSet.id);
     };
     var initial = function(){
       resetAll();
