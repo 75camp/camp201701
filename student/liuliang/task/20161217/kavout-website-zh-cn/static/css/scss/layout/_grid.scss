@@ -1,0 +1,71 @@
+// edit these values
+$cols: 12;
+$margin: 0;
+$layout-width: 970;
+
+// do not edit these values
+$layout-margin-width: $layout-width + $margin * 2;
+$percent-margin: $margin / $layout-margin-width;
+
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+// Grid Container
+.grid-container {
+  margin: 0 auto;
+  @extend .clearfix;
+}
+
+@include media(">tablet") {
+  .grid-container {
+    // min-width: $layout-margin-width + px;
+  }
+  // Grid Columns
+  @for $i from 1 through $cols {
+    .grid-md-#{$i} {
+      width: ( ($i / $cols) - 2 * $percent-margin) * 100%;
+      padding: 0;
+      margin: 0 $percent-margin * 100%;
+      float: left;
+      min-height: 1px;
+    }
+  }
+}
+
+@include media("<=tablet") {
+  .hidden-sm {
+    display: none !important;
+  }
+  // Grid Columns
+  @for $i from 1 through $cols {
+    .grid-sm-#{$i} {
+      @if $i == 6 {
+        width: 100%;
+      }@else if $i == 2 {
+        max-width: 40px;
+        width: 40px;
+      }@else {
+        width: ( ($i / $cols) - 2 * $percent-margin) * 100%;
+      }
+      padding: 0;
+      margin: 0 $percent-margin * 100%;
+      float: left;
+      min-height: 1px;
+    }
+  }
+}
+@include media(">tablet") {
+  .hidden-lg {
+    display: none;
+  }
+  .visibility-hidden-lg {
+    visibility: hidden;
+  }
+}

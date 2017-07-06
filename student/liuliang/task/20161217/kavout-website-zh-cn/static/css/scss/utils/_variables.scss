@@ -1,0 +1,15 @@
+/* utils/function */
+$baseFontSize: 100 !default;
+
+/* base/typography */
+
+$typography-line: 24;
+$typography-column: 100% / 18;
+$typography-font-size: 0;
+$typography-rem: $baseFontSize * 1;
+
+/* utils/include-media*/
+$breakpoints: (phone: 320px, tablet: 750px, desktop: 1024px);
+
+/* 路径前缀 */
+$path-prefix: '../';

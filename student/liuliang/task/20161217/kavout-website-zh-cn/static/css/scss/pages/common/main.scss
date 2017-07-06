@@ -1,0 +1,132 @@
+// 浮动类
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+
+// 图片响应式
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	height: auto;
+}
+
+// 宽度响应式
+.width-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+// flex实现子容器高度充满父容器
+.flex-set-height-percent-100 {
+	@extend %flex-row;
+	align-items: stretch;
+}
+
+// 常规方法实现子容器高度充满父容器
+%set-height-percent-hundred {
+	height: 100%;
+}
+
+// flex实现垂直或者水平方向的居中
+.flex-column-horizontal-center-vertical-center {
+	@extend %flex-column;
+	justify-content: center;
+	align-items: center;
+}
+.horizontal-space-between-vertical-center {
+	@extend %flex-row, %media-flex-column-horizontal-center-vertical-center;
+	justify-content: space-between;
+	align-items: center;
+}
+.transform-vertical-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.transform-horizontal-center-vertical-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.horizontal-flex-end-vertical-center {
+	@extend %flex-row;
+	justify-content: flex-end;
+	align-items: center;
+	@include media("<=tablet") {
+		justify-content: center;
+	}
+}
+.horizontal-flex-start-vertical-center {
+	@extend %flex-row;
+	justify-content: flex-start;
+	align-items: center;
+	@include media("<=tablet") {
+		justify-content: center;
+	}
+}
+.horizontal-center-vertical-center {
+	@extend %flex-row;
+	justify-content: center;
+	align-items: center;
+}
+
+// 旋转45度水平方向垂直方向均居中
+.rotate-45-horizontal-center-vertical-center {
+	@extend .transform-horizontal-center-vertical-center;
+	transform: translate(-50%,-50%) rotate(45deg);
+		@include media("<=tablet") {
+			top: 135px;
+			transform: translateX(-50%) rotate(45deg);
+		}
+}
+
+%flex-row {
+	display: flex;
+	flex-direction: row;
+}
+%flex-column {
+	display: flex;
+	flex-direction: column;
+}
+%text-overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+%media-flex-column-horizontal-center-vertical-center {
+	@include media("<=tablet") {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+// 重置一些样式
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+html {
+	box-sizing: border-box;
+	@at-root (without:rule) {
+		body {
+			background-color: #f5f5f5;
+		}
+	}
+}
+.hide {
+	display: none !important;
+}
+.width-1000 {
+	width: 1000px;
+}
+

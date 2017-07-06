@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 24px;
+}
+ul#user-list {
+  width: 300px;
+  line-height: 1.5em;
+  margin: 100px auto 0;
+  cursor: pointer;
+}
+
+ul#user-list > li > a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+/*ul#user-list > li > a:link {
+  color: #fff;
+  background-color: #000;
+}
+ul#user-list > li > a:visited {
+  color: #ff7f24;
+}
+ul#user-list > li > a:hover {
+  color: #ff4;
+}
+ul#user-list > li > a:active {
+  color: #f00;
+}*/
+
+
+a:link {
+  background-color: #fff;
+  color: #000;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+a:focus {
+  background-color: #000;
+  color: #fff;
+}
+a:visited:not(:focus) {
+  background-color: #000;
+  color: #fff;
+}
+
+/*a:not(:focus):visited {
+  background-color: #000;
+  color: #fff;
+}*/
+/*a:active {
+  color:#0055AA;
+}
+a:visited {
+  background-color: #000;
+  color: #fff;
+}*/
+/*ul#user-list > li.active {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}*/

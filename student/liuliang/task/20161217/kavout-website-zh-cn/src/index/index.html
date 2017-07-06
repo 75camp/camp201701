@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+        <title>{%=o.htmlWebpackPlugin.options.title%}</title>
+        <meta name="description" content="小牛美股">
+        <meta name="author" content="liuliangsir@gmail.com">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no,email=no,address=no">
+        <meta name="renderer" content="webkit">
+        <link rel="shortcut icon" href="" type="image/x-icon"/>
+        {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+        <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+        {% } %}
+    </head>
+    <body>
+        <header id="header" role="banner">
+            <nav id="navigation" class="navbar navbar-default grid-container" role="navigation">
+                <div class="grid-md-6 nav-header">
+                        <button type="button" class="navbar-toggle hidden-lg" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <h1 id="logo" title="小牛美股"><a href="/">小牛美股</a></h1>
+                </div>
+                <div class="grid-md-6 navbar-collapse collapse" id="navbar-collapse"  aria-expanded="false">
+                    <nav id="navigation" class="navbar navbar-default" role="navigation"
+                        ><ul class="nav navbar-nav">
+                            <li><a href="/inmoney/first-step/index.html" role="button">入金指引</a></li>
+                            <li><a href="/contact/index.html" role="button">联系我们</a></li>
+                            <li class="hide">
+                                <figure class="hidden-sm clearfix"
+                                    ><img class="transform-vertical-center" src="../../../static/img/inmoney/icon.png" alt="用户18612345678的头像" width="31"
+                                    ><figcaption class="float-right">18612345678</figcaption
+                                ></figure>
+                                <a id="login-out-button" href="javascript:;" role="button" class="hide">退出</a>
+                            </li>
+                        </ul
+                    ></nav>
+                </div>
+            </nav>
+        </header>
+        <main id="main" role="main">
+            <section id="introduce" class="grid-container" role="contentinfo">
+                <div class="grid-md-6 grid-sm-6 horizontal-flex-start-vertical-center height-520">
+                    <dl class="introduce-slogan">
+                        <dt class="introduce-slogan-title">买美股<i class="introduce-slogan-title-small">■</i>找小牛</dt>
+                        <dd class="clearfix"></dd>
+                        <dd class="introduce-slogan-content"><b class="introduce-slogan-content-strong">0佣</b>美股交易APP</dd>
+                        <dd class="clearfix"></dd>
+                    </dl>
+                </div>
+                <div class="grid-md-6 grid-sm-6 horizontal-center-vertical-center height-520">
+                    <figure><img src='../../static/img/index/pic-1.png' class="img-responsive" alt="华尔街" width="846"></figure>
+                </div>
+            </section>
+            <section id="app" class="grid-container" role="contentinfo">
+                <div class="grid-md-6 grid-sm-6 bg-sm height-650"></div>
+                <div class="grid-md-6 grid-sm-6 height-650 horizontal-center-vertical-center">
+                    <div class="app-details width-846 width-responsive">
+                        <h2>随身交易  一键投资</h2>
+                        <div class="app-download-container horizontal-space-between-vertical-center width-500 width-responsive">
+                            <dl class="app-android-download">
+                                <dt>IOS应用下载</dt>
+                                <dd class="padding-bottom-30"><img src="../../static/img/index/ios.png" class="img-responsive" alt="小牛美股app ios版二维码" width="180"></dd>
+                                <dd class="app-store-image-border horizontal-center-vertical-center height-66"><img src="../../static/img/index/app-store.png" class="img-responsive" alt="苹果应用商店" width="139"></dd>
+                            </dl>
+                            <dl class="app-other-download padding-bottom-85 hidden-lg"></dl>
+                            <dl class="app-ios-download">
+                                <dt>安卓应用下载</dt>
+                                <dd class="padding-bottom-30"><img src="../../static/img/index/android.png" class="img-responsive" alt="小牛美股app android版二维码" width="180"></dd>
+                                <dd class="app-store-image-border horizontal-center-vertical-center height-66"><img src="../../static/img/index/android-store.png" class="img-responsive" alt="安卓应用商店" width="121"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="choose" class="grid-container" role="contentinfo">
+                    <div class="grid-md-12 grid-sm-12 flex-column-horizontal-center-vertical-center height-800">
+                        <div class="choose-details">
+                        <h2>为什么选择小牛？</h2>
+                        <dl class="choose-reason">
+                            <dt class="img-responsive">为您提供免佣金、0门槛、无限制的美股交易平台，让您的美股投资畅<wbr>快无忧。</dt>
+                            <dd class="choose-reason-frist"><span><i>０</i>佣金</span><p>免用交易，更高收益。<wbr/> 专为中国投资者设计的<wbr/>美股app。</p></dd>
+                            <dd class="choose-reason-second"><span><i>１</i>美元</span><p>仅需1美元，<wbr/> 即可开始交易美股， <wbr/>做全球500强公司股东。</p></dd>
+                            <dd class="choose-reason-third"><span><i>３</i>分钟</span><p>3分钟在线开户， <wbr/>用一张身份证开启你的<wbr/>美股免佣之旅。</p></dd>
+                        </dl>
+                        </div>
+                    </div>
+            </section>
+            <section id="market" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-600">
+                    <dl class="quote-details">
+                        <dd class="quote-first-advantage">价值 <i>$3800</i> 行情</dd>
+                        <dd class="quote-second-advantage">实时数据免费看</dd>
+                        <dt>下载小牛美股APP，即可免费享受价值3800<wbr/>美金的美股实时行情， <wbr/>帮你准确决断最佳交易时机。</dt>
+                    </dl>
+                </div>
+            </section>
+            <section id="product-features" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-750">
+                    <dl class="product-features-details width-1000">
+                        <dt class="rotate-45-horizontal-center-vertical-center"><span>产品特点</span></dt>
+                        <dd class="float-left">
+                            <dl class="product-feature-details">
+                                <dd><img src="../../static/img/index/icon-1.png" class="img-responsive" alt="策略选股" width="50"></dd>
+                                <dt>策略选股</dt>
+                                <dd>结合大数据与人工智能，第一时间捕捉技术<br/>信号，让选股更轻松，择时更精确。</dd>
+                            </dl>
+                        </dd>
+                        <dd class="float-right">
+                            <dl class="product-feature-details">
+                                <dd><img src="../../static/img/index/icon-2.png" class="img-responsive" alt="日内交易" width="50"></dd>
+                                <dt>日内交易</dt>
+                                <dd>无限制T + 0交易，当天买进即可当天卖出，<br/>及时锁定收益。</dd>
+                            </dl>
+                        </dd>
+                        <dd class="clearfix height-290 hidden-sm"></dd>
+                        <dd class="float-left">
+                            <dl class="product-feature-details">
+                                <dd><img src="../../static/img/index/icon-3.png" class="img-responsive" alt="极速传输" width="50"></dd>
+                                <dt>极速传输</dt>
+                                <dd>结合大数据与人工智能，第一时间捕捉技<br/>术信号，让选股更轻松，择时更精确。</dd>
+                            </dl>
+                        </dd>
+                        <dd class="float-right">
+                            <dl class="product-feature-details">
+                                <dd><img src="../../static/img/index/icon-4.png" class="img-responsive" alt="中文界面" width="50"></dd>
+                                <dt>中文界面</dt>
+                                <dd>专为华人打造的交易APP，汉化的指<br/>标、新闻与财务信息，不用再为语言<br/>障碍担忧。</dd>
+                            </dl>
+                        </dd>
+                        <dd class="clearfix"></dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="team" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-460">
+                    <div class="team-details width-1000">
+                        <h2>国际化团队</h2>
+                        <p
+                            ><span>公司团队有深厚的国际金融与技术背景，成员主要来自纽约银行、摩根大通、大智慧、凯雷</span
+                            ><span>集团、海纳集团等著名金融公司，技术人员主要来自谷歌、微软、百度、网易等知名互联网</span
+                            ><span>企业，有丰富的金融与人工智能开发经验，为您的美股交易保驾护航。</span
+                        ></p>
+                    </div>
+                </div>
+            </section>
+            <section id="security-assurance" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-700">
+                    <dl class="security-assurance-details grid-container width-1000">
+                        <dt class="grid-md-12"><h2>安全保障</h2></dt>
+                        <dd class="grid-md-4 grid-container">
+                            <figure class="grid-md-2">
+                                <img src="../../static/img/index/icon-5.png" class="img-responsive" alt="帐号安全" width="29">
+                            </figure>
+                            <div class="grid-md-10">
+                                <h3>帐号安全</h3>
+                                <p>小牛美股的客户账户受美国金融业监管<wbr/>局（FINRA）和美国证券投资者保护公司<wbr/>（SIPC）的保护。</p>
+                            </div>
+                        </dd>
+                        <dd class="grid-md-4 grid-container">
+                            <figure class="grid-md-2">
+                                <img src="../../static/img/index/icon-6.png" class="img-responsive" alt="资产安全" width="39">
+                            </figure>
+                            <div class="grid-md-10">
+                                <h3>资产安全</h3>
+                                <p>小牛美股的客户证券账户受到证券投资<wbr/>人保护公司(“SIPC”)最高达50万美元<wbr/>的保护。</p>
+                            </div>
+                        </dd>
+                        <dd class="grid-md-4 grid-container">
+                            <figure class="grid-md-2">
+                                <img src="../../static/img/index/icon-7.png" class="img-responsive" alt="数据安全" width="39">
+                            </figure>
+                            <div class="grid-md-10">
+                                <h3>数据安全</h3>
+                                <p>阿里云为小牛美股提供安全快速而稳定<wbr/>数据保证。另有银行级安保守卫数据安<wbr/>全。</p>
+                            </div>
+                        </dd>
+                        <dd class="grid-md-12 height-110 hidden-sm"></dd>
+                        <dd class="grid-md-4 grid-container">
+                            <figure class="grid-md-2">
+                                <img src="../../static/img/index/icon-8.png" class="img-responsive" alt="托管安全" width="35">
+                            </figure>
+                            <div class="grid-md-10">
+                                <h3>托管安全</h3>
+                                <p>小牛美股严格按照美国证监会的要求，<wbr/>将客户资产隔离在美国合众银行（US <wbr/>Bank）中。</p>
+                            </div>
+                        </dd>
+                        <dd class="grid-md-4 grid-container">
+                            <figure class="grid-md-2">
+                                <img src="../../static/img/index/icon-9.png" class="img-responsive" alt="隐私安全" width="38">
+                            </figure>
+                            <div class="grid-md-10">
+                                <h3>隐私安全</h3>
+                                <p>我们致力于保护用户的个人信息与用户<wbr/>隐私。小牛美股不会出售任何各户信息。</p>
+                            </div>
+                        </dd>
+                        <dd class="grid-md-4 grid-container">
+                            <figure class="grid-md-2">
+                                <img src="../../static/img/index/icon-10.png" class="img-responsive" alt="交易安全" width="38">
+                            </figure>
+                            <div class="grid-md-10">
+                                <h3>交易安全</h3>
+                                <p>交易密码，交易专线以及资金同卡进出，<wbr/>我们的安全系统为你的账户提供额外的<wbr/>安全保护。</p>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="strategic-partner" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-460">
+                    <div class="strategic-partner-details width-1000">
+                        <h2>致力于为您提供一流的美股投资保障</h2>
+                        <nav>
+                            <a href="javascript:;"><img src="../../static/img/index/logo-1.png" class="img-responsive" alt="usbank" width="180"></a>
+                            <a href="javascript:;"><img src="../../static/img/index/logo-2.png" class="img-responsive" alt="finra" width="180"></a>
+                            <a href="javascript:;"><img src="../../static/img/index/logo-3.png" class="img-responsive" alt="aliyun" width="177"></a>
+                            <a href="javascript:;"><img src="../../static/img/index/logo-4.png" class="img-responsive" alt="阿里云计算" width="122"></a>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="grid-container" role="contentinfo">
+            <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-554">
+                <div class="footer-details grid-container flex-set-height-percent-100">
+                    <dl class="grid-md-6">
+                        <dt>
+                            <hgroup>
+                                <h2>联系我们</h2>
+                                <h2>客户协议</h2>
+                                <h2>安全可靠</h2>
+                            </hgroup>
+                        </dt>
+                        <dd class="padding-bottom-30">
+                            <p>所有投资都存在风险。任何一支证券或金融产品的历史数据都不能保证其未来的表现<wbr/>
+                               及回报。虽然投资多样化可以帮助分散风险，但是并不能在市场低迷时确保您获益或<wbr/>
+                               防止您损失。投资证券或金融产品总会存在潜在的亏损可能。投资者在进行投资前需<wbr/>
+                               考虑自身的投资目标及风险承受能力。</p>
+                        </dd>
+                        <dd class="padding-bottom-30">
+                            <p>本平台所提供的数据、资料等信息，力求但不保证其准确性、完整性及适用性。本平<wbr/>
+                            台信息将随时进行必要更新或修正，本公司保留无需事先通知即可删除或修改网站信<wbr/>
+                            息的权利。股市有风险，投资需谨慎。您在作出任何投资决策前，应考虑产品特点、<wbr/>
+                            投资目标、自身可承受风险程度及其他因素，必要时寻求专业财务咨询。本平台不对<wbr/>
+                            您的任何决定承担法律责任。</p>
+                        </dd>
+                        <dd class="padding-bottom-30">
+                            <p>进行交易之前，敬请阅读在我们警告和声明网页上的相关风险透露声明。</p>
+                        </dd>
+                        <dd>
+                            <p>&copy;沪ICP备15055900号－3</p>
+                        </dd>
+                    </dl>
+                    <div class="grid-md-6 horizontal-flex-end-vertical-center padding-top-57-sm">
+                        <figure class="flex-column-horizontal-center-vertical-center">
+                            <img src="../../static/img/index/wechat.png" class="img-responsive" alt="小牛美股微信公众号" width="110">
+                            <figcaption>小牛美股<br/>微信公众号</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+        <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+        {% } %}
+    </body>
+</html>

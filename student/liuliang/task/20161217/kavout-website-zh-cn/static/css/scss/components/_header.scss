@@ -1,0 +1,175 @@
+header {
+	background-color: #fff;
+	nav.navbar-default {
+		font-size: 18px;
+		line-height: 0;
+		@include media(">tablet") {
+      display: flex;
+      flex-direction: row;
+	    justify-content: center;
+	    align-items: center;
+    }
+		ul {
+      width: 402px;
+      @extend .horizontal-space-between-vertical-center;
+			@include media("<=tablet") {
+				width: 100%;
+			}
+
+			li {
+				height: 80px;
+				width: 134px;
+        display: inline-block;
+				line-height: 80px;
+				text-align: center;
+				position: relative;
+				@include media("<=tablet") {
+					width: 100%;
+					line-height: 40px;
+					height: 40px;
+					text-align: right;
+					background-color: rgba(233, 48, 48, .8);
+				}
+				a {
+					color: #333;
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					&:not(#login-out-button) {
+						&:hover {
+							background-color: rgba(233, 48, 48, 1);
+							color: #fff;
+						}
+					}
+					@include media(">tablet") {
+						&#login-out-button {
+							position: absolute;
+							left: 0;
+							top: 65px;
+							height: 40px;
+							line-height: 40px;
+							background-color: #f5f5f5;
+						}
+					}
+
+					@include media("<=tablet") {
+						color: #fff;
+						padding: 0 30px;
+						&#login-out-button {
+							display: initial !important;
+						}
+					}
+				}
+				figure {
+					&.hidden-sm {
+						cursor: pointer;
+						&:hover + a {
+							display: initial !important;
+						}
+					}
+				}
+			}
+		}
+		h1#logo {
+			overflow: hidden;
+			width: 300px;
+			height: 80px;
+			margin: 0 auto;
+			background-color: #ff3030;
+			@include media("<=tablet") {
+				background-color: transparent;
+				float: left;
+				width: 155px;
+				height: 50px;
+			}
+			a {
+				background: url('#{$path-prefix}../../../img/index/logo.png') no-repeat;
+        // background: url('../../../img/index/logo.png') no-repeat;
+				background-size: 155px auto;
+				background-position: center;
+				color: transparent;
+        text-align: center;
+				display: block;
+				height: 100%;
+				width: 100%;
+				line-height: 0;
+				font-size: 0;
+				overflow: hidden
+			}
+		}
+		.nav-header {
+			overflow: hidden;
+			input {
+				&[type="radio"] {
+					display: none;
+					&+label {
+						display: inline-block;
+						@extend .float-right;
+					}
+				}
+			}
+			.navbar-toggle {
+				@extend .float-right;
+				&:hover {
+					background-color: transparent;
+				}
+				&:focus {
+					background-color: transparent;
+				}
+				.icon-bar {
+					background-color: #fff;
+				}
+			}
+			@include media("<=tablet") {
+				background-color: rgba(233, 48, 48, .8);
+				padding: 15px 30px;
+				border-bottom: 1px solid rgba(255, 255, 255, .4);
+			}
+		}
+		.navbar-collapse {
+			&.collapse {
+				// opacity: 0;
+				@include media("<=tablet") {
+					display: none;
+				}
+				&.active {
+					display: initial;
+					// opacity: 1;
+					// transition: opacity 1s;
+				}
+			}
+		}
+	}
+	.navbar-toggle {
+		position: relative;
+		padding: 9px 10px;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		&:focus {
+			outline: 0;
+		}
+		.icon-bar {
+			display: block;
+			width: 22px;
+			height: 2px;
+			border-radius: 1px;
+			&+.icon-bar {
+				margin-top: 6px;
+			}
+		}
+	}
+	.src-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0,0,0,0);
+		border: 0;
+	}
+}

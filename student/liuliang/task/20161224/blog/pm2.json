@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "blog",
+    "script": "www/production.js",
+    "cwd": "/Users/liuliang/Desktop/project/fe/study/camp201701/student/liuliang/task/20161224/blog",
+    "exec_mode": "cluster",
+    "instances": 0,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}

@@ -1,0 +1,94 @@
+@import '../../main';
+@import '../common/main';
+
+.height-654 {
+    min-height: 654px;
+}
+
+.figure-container-padding-bottom-40 {
+    padding-bottom: 40px;
+}
+section {
+    &#inmoney-guides {
+	    @include media("<=tablet") {
+            padding: 80px 30px 100px 30px;
+        }
+        @include media(">tablet") {
+            padding: 0 calc(25% - 172px) 0 calc(25% - 77.5px);
+        }
+        background-color: #fff;
+        .inmoney-guides-details {
+            .inmoney-guides-details-title {
+                font-size: 30px;
+                line-height: 1;
+                color: #000;
+                font-weight: normal;
+            }
+            .inmoney-guides-details-content {
+                & > dd {
+                    font-size: 0;
+                }
+            }
+            .inmoney-guides-details-content-title{
+                font-family: 'STXihei';
+                font-size: 20px;
+                line-height: 1;
+                font-weight: normal;
+                color: #000;
+            }
+            .inmoney-guides-details-content-title-container {
+                padding: 46px 0 24px;
+            }
+            .inmoney-guides-details-content-content-container {
+                padding-top: 24px;
+            }
+            .inmoney-guides-details-content-content {
+                font-family: 'STXihei';
+                font-size: 16px;
+                line-height: 1.75;
+                color: rgba(0, 0, 0, .7);
+            }
+            ol {
+                list-style-position: inside;
+            }
+            figure {
+                width: 150px;
+                height: 106px;
+                text-align: center;
+                border: 1px solid #eee;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                padding-top: 15px;
+                position: relative;
+                cursor: pointer;
+	             @include media(">tablet") {
+                    &:not(:nth-last-of-type(1)) {
+                        margin-right: 20px;
+                    }
+                 }
+	             @include media("<=tablet") {
+                    width: 50%;
+                    max-width: 150px;
+                     &:nth-child(even) {
+                         float: right;
+                     }
+                 }
+            }
+            img {
+                display: inline-block;
+            }
+            figcaption {
+                line-height: 24px;
+                font-family: 'STXihei';
+                font-size: 16px;
+                background-color: #e93030;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+        }
+    }
+}

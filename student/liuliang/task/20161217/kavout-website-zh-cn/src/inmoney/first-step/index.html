@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+        <title>{%=o.htmlWebpackPlugin.options.title%}</title>
+        <meta name="description" content="小牛美股">
+        <meta name="author" content="liuliangsir@gmail.com">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no,email=no,address=no">
+        <meta name="renderer" content="webkit">
+        <link rel="shortcut icon" href="" type="image/x-icon"/>
+        {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+        <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+        {% } %}
+    </head>
+    <body>
+        <header id="header" role="banner">
+            <nav id="navigation" class="navbar navbar-default grid-container" role="navigation">
+                <div class="grid-md-6 nav-header">
+                        <button type="button" class="navbar-toggle hidden-lg" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <h1 id="logo" title="小牛美股"><a href="/">小牛美股</a></h1>
+                </div>
+                <div class="grid-md-6 navbar-collapse collapse" id="navbar-collapse"  aria-expanded="false">
+                    <nav id="navigation" class="navbar navbar-default" role="navigation"
+                        ><ul class="nav navbar-nav">
+                            <li><a href="/inmoney/first-step/index.html" role="button">入金指引</a></li>
+                            <li><a href="/contact/index.html" role="button">联系我们</a></li>
+                            <li class="hide">
+                                <figure class="hidden-sm clearfix"
+                                    ><img class="transform-vertical-center" src="../../../static/img/inmoney/icon.png" alt="用户18612345678的头像" width="31"
+                                    ><figcaption class="float-right">18612345678</figcaption
+                                ></figure>
+                                <a id="login-out-button" href="javascript:;" role="button" class="hide">退出</a>
+                            </li>
+                        </ul
+                    ></nav>
+                </div>
+            </nav>
+        </header>
+        <main id="main" role="main">
+            <section id="login" class="grid-container" role="contentinfo">
+                <div class="grid-md-12 flex-column-horizontal-center-vertical-center height-750">
+                    <div class="login-details">
+                        <h2 class="login-heart-tips">登陆后即可查看您的入金指引</h2>
+                        <form name="login-form" method="post" onsubmit="return false;">
+                            <fieldset
+                                ><label for="telephone"
+                                    ><input type="text" name="telephone" id="telephone" placeholder="手机号"
+                                ></label
+                                ><output class="error-tips hide">请输入你的手机号</output
+                            ></fieldset>
+                            <fieldset class="password-container-padding"
+                                ><label for="password"
+                                    ><input type="password" name="password" id="password" placeholder="请输入密码"
+                                ></label
+                                ><output class="error-tips hide">请输入您的登录密码</output
+                            ></fieldset>
+                            <fieldset
+                                ><output class="trade-password-heart-tips">为了保证账号信息安全，请输入交易密码</output
+                                ><label for="trade-password" class="trade-password-input-container-margin-top-11"
+                                    ><input type="password" name="trade-password" id="trade-password" placeholder="请输入交易密码"
+                                ></label
+                                ><output class="error-tips hide">请输入正确的交易密码</output
+                            ></fieldset>
+                            <fieldset class="submit-button-container-padding-top-32"
+                                ><input type="submit" value="登录" class="submit-button"
+                                ><output class="error-tips hide">账号不存在！</output
+                            ></fieldset>
+                        </form>
+                        <div class="app-download-details">
+                            <h3 class="app-download-details-title">还没有账号？扫描下载APP</h3>
+                            <div class="app-download-details-content clearfix">
+                                <figure class="float-left"
+                                    ><img src="../../../static/img/inmoney/ios.png" alt="IOS应用下载" width="100"
+                                    ><figcaption class="figcaption-container-padding-top-11">IOS应用下载</figcaption
+                                ></figure>
+                                <figure class="float-right"
+                                    ><img src="../../../static/img/inmoney/android.png" alt="安卓应用下载" width="100"
+                                    ><figcaption class="figcaption-container-padding-top-11">安卓应用下载</figcaption
+                                ></figure>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="grid-container" role="contentinfo">
+            <div class="grid-md-12 grid-sm-12 horizontal-center-vertical-center height-554">
+                <div class="footer-details grid-container flex-set-height-percent-100">
+                    <dl class="grid-md-6">
+                        <dt>
+                            <hgroup>
+                                <h2>联系我们</h2>
+                                <h2>客户协议</h2>
+                                <h2>安全可靠</h2>
+                            </hgroup>
+                        </dt>
+                        <dd class="padding-bottom-30">
+                            <p>所有投资都存在风险。任何一支证券或金融产品的历史数据都不能保证其未来的表现<wbr/>
+                               及回报。虽然投资多样化可以帮助分散风险，但是并不能在市场低迷时确保您获益或<wbr/>
+                               防止您损失。投资证券或金融产品总会存在潜在的亏损可能。投资者在进行投资前需<wbr/>
+                               考虑自身的投资目标及风险承受能力。</p>
+                        </dd>
+                        <dd class="padding-bottom-30">
+                            <p>本平台所提供的数据、资料等信息，力求但不保证其准确性、完整性及适用性。本平<wbr/>
+                            台信息将随时进行必要更新或修正，本公司保留无需事先通知即可删除或修改网站信<wbr/>
+                            息的权利。股市有风险，投资需谨慎。您在作出任何投资决策前，应考虑产品特点、<wbr/>
+                            投资目标、自身可承受风险程度及其他因素，必要时寻求专业财务咨询。本平台不对<wbr/>
+                            您的任何决定承担法律责任。</p>
+                        </dd>
+                        <dd class="padding-bottom-30">
+                            <p>进行交易之前，敬请阅读在我们警告和声明网页上的相关风险透露声明。</p>
+                        </dd>
+                        <dd>
+                            <p>&copy;沪ICP备15055900号－3</p>
+                        </dd>
+                    </dl>
+                    <div class="grid-md-6 horizontal-flex-end-vertical-center padding-top-57-sm">
+                        <figure class="flex-column-horizontal-center-vertical-center">
+                            <img src="../../static/img/index/wechat.png" class="img-responsive" alt="小牛美股微信公众号" width="110">
+                            <figcaption>小牛美股<br/>微信公众号</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+        <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+        {% } %}
+    </body>
+</html>

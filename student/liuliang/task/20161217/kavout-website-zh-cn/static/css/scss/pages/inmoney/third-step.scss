@@ -1,0 +1,161 @@
+@import '../../main';
+@import '../common/main';
+
+.height-916 {
+    min-height: 916px;
+}
+%padding-top-14 {
+    padding-top: 14px;
+}
+%padding-bottom-12 {
+    padding-bottom: 12px;
+}
+section {
+    &#inmoney-guides {
+	    @include media("<=tablet") {
+            padding: 30px 0px 100px 0px;
+        }
+        @include media(">tablet") {
+            padding: 30px calc(25% + 99px) 30px calc(25% - 77.5px);
+        }
+        background-color: #fff;
+        .inmoney-guides-details {
+
+        }
+        .inmoney-guides-details-bank-title {
+            width: 100%;
+            background-color: #f5f5f5;
+            padding: 7px 0 6px 9px;
+            @include media("<=tablet") {
+                margin-left: 30px;
+            }
+            figcaption {
+                margin-left: 13px;
+            }
+            h2 {
+                font-size: 16px;
+                color: #333;
+                font-weight: normal;
+                line-height: 1.75;
+            }
+            p {
+                font-size: 10px;
+                color: rgba(51, 51, 51, .7);
+                line-height: 1;
+            }
+        }
+        .inmoney-guides-details-bank-content {
+            padding: 10px 0 0 10px;
+            @include media("<=tablet") {
+                padding: 40px 30px 0 30px;
+            }
+            h2 {
+                font-size: 16px;
+                color: #000;
+                line-height: 1;
+                font-weight: bold;
+            }
+            p {
+                font-size: 14px;
+                color: rgba(0, 0, 0, .7);
+                font-weight: bold;
+                line-height: 1.5;
+                margin: 18px 0 0;
+            }
+            ol {
+                list-style-type: none;
+                counter-reset: section;
+                & > li {
+                    counter-increment: section;
+                    padding: 17px 0 10px 0;
+                    h3 {
+                        position: relative;
+                        padding-left: 20px;
+                        &::before {
+                            content: counter(section);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 14px;
+                            height: 14px;
+                            line-height: 14px;
+                            border-radius: 4px;
+                            color: #fff;
+                            background-color: #ff3030;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            h3 {
+                font-size: 14px;
+                color: #000;
+                font-weight: bold;
+                line-height: 1;
+            }
+            dl {
+                dt {
+                    padding-bottom: 7px;
+                }
+                dd {
+                    font-size: 14px;
+                    color: #000;
+                    font-family: 'STXihei';
+                    line-height: 2;
+                    b {
+                        font-size: 14px;
+                        color: #000;
+                        line-height: 1;
+                        font-weight: bold;
+                    }
+                }
+            }
+                
+        }
+        table {
+            &.inmoney-guides-table {
+                width: 100%;
+                caption {
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: bold;
+                    line-height: 1;
+                    text-align: left;
+                    @extend %padding-top-14;
+                    @extend %padding-bottom-12;
+                }
+               td {
+                   border: 1px solid #e6e6e6;
+                   font-family: 'STXihei';
+                   font-size: 14px;
+                   &:nth-child(odd) {
+                       text-align: right;
+                       color: #666;
+                        @include media(">tablet") {
+                            width: 250px;                        
+                        }
+                        @include media("<=tablet"){
+                            width: 160px;
+                        }
+                   }
+                   &:nth-child(even) {
+                       color: #333;
+                   }
+               }
+            }
+        }
+        ul {
+            li {
+                &::before {
+                    content: '*';
+                    width: 6px;
+                    height: 28px;
+                    display: inline-block;
+                }
+            }
+        }
+        .important-tips {
+            color: #ff3030 !important;
+        }
+    }
+}

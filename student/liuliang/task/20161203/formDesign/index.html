@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+		<title>中国建设银行-信用卡频道</title>
+	</head>
+	<body>
+		<form acqformmodel="formApply" id="formApply" name="formApply" action="/ccapp/documentprint?type=apply" method="post" target="_blank">
+			<div id="newCard">
+				<input type="hidden" name="AplFrm_TpCd" id="AplFrm_TpCd" value="0201">
+				<!-- 申请处理序号值 已有卡为-1/附卡单申-1 -->
+				<input type="hidden" name="Aply_Pcsg_SN_Val" id="Aply_Pcsg_SN_Val" value="0">
+				<!-- 主附卡标识 信用卡主卡附属卡标志  0-主卡  1-附属卡 附卡单申送1 -->
+				<input type="hidden" name="CrCrdHstCrd_AfCrd_In" id="CrCrdHstCrd_AfCrd_In" value="0">
+				<!-- 主卡申请人客户号 -->
+				<input type="hidden" name="Cst_ID" id="cstID" value="">
+				<!-- 性别 -->
+				<input type="hidden" name="Aply_Psn_Gnd_Cd" id="baseSex" value="">
+				<!-- 根据证件号信息获年龄 -->
+				<input type="hidden" name="Cst_Age" id="Cst_Age" value="">
+				<!-- 申请人证件长期有效标志 -->
+				<input type="hidden" name="Crdt_LongTrm_Vld_Ind" id="Crdt_LongTrm_Vld_Ind" value="0">
+				<!-- 证件有效期 -->
+				<input type="hidden" name="Crdt_ExDat" id="Crdt_ExDat" value="">
+				<!-- 主卡出生日期 -->
+				<input type="hidden" name="Aply_Psn_Brth_Dt" id="Aply_Psn_Brth_Dt" value="">
+				<!-- 住宅地址 -->
+				<input type="hidden" name="Aply_Psn_Rsdnc_Adr" id="Aply_Psn_Rsdnc_Adr" value="">
+				<!-- 住宅电话 -->
+				<input type="hidden" name="Aply_Psn_Rsdnc_TelNo" id="Aply_Psn_Rsdnc_TelNo" value="">
+				<!-- EMAIL -->
+				<input type="hidden" name="Aply_Psn_Email_Adr" id="Aply_Psn_Email_Adr" value="">
+				<!-- 单位地址 -->
+				<input type="hidden" name="Wrk_Unit_Adr" id="Wrk_Unit_Adr" value="">
+				<!-- 单位电话 -->
+				<input type="hidden" name="Unit_Ctc_Tel" id="Unit_Ctc_Tel" value="">
+				<!-- 联系人住宅电话 -->
+				<input type="hidden" name="CCAplCtcPsnRsdncTelN" id="CCAplCtcPsnRsdncTelN" value="">
+				<!-- 联系人单位电话 -->
+				<input type="hidden" name="CCAplCtcPsnUnit_TelN" id="CCAplCtcPsnUnit_TelN" value="">
+				<!-- 年收入 -->
+				<input type="hidden" name="CCApl_Psn_Yr_IncmAm" id="CCApl_Psn_Yr_IncmAm" value="">
+				<!-- 附卡数量-->
+				<input type="hidden" name="SplmtCrd_Num" id="SplmtCrd_Num" value="0">
+				<!-- 附卡循环记录条数-->
+				<input type="hidden" name="Rvl_Rcrd_Num" id="Rvl_Rcrd_Num" value="0">
+				<!-- 附属卡客户号 -->
+				<input type="hidden" name="Cst_ID2" id="pertainCstId" value="">
+				<!-- 附属卡证件类型 -->
+				<input type="hidden" name="Aply_Psn_Crdt_TpCd2" id="pertainIDCardType" value="1010">
+				<!-- 附属卡国籍 -->
+				<input type="hidden" name="CN_Nat_Ind2" id="CN_Nat_Ind2" value="1">
+				<!-- 附属卡出生日期 -->
+				<input type="hidden" name="Aply_Psn_Brth_Dt2" id="Aply_Psn_Brth_Dt2" value="">
+				<!-- 附属卡客户年龄 -->
+				<input type="hidden" name="Cst_Age2" id="Cst_Age2" value="">
+				<!-- 附属卡人性别 -->
+				<input type="hidden" name="Aply_Psn_Gnd_Cd2" id="pertainSex" value="">
+				<!-- 附属卡证件有效期 -->
+				<input type="hidden" name="Crdt_ExDat2" id="Crdt_ExDat2" value="">
+				<!-- 附属卡申请处理序号值 有附属卡为1-->
+				<input type="hidden" name="Aply_Pcsg_SN_Val2" id="Aply_Pcsg_SN_Val2" value="0">
+				<!-- 邮寄地址类型代码 01-住宅地址 02-单位地址 -->
+				<input type="hidden" id="CrCrd_Stmt_Adr_TpCd" name="CrCrd_Stmt_Adr_TpCd" value="">
+				<!-- 人民币账户分行号 -->
+				<input type="hidden" id="RMBSubBankNum" name="CNY_Acc_Br_No" value="">
+			</div>
+			<div id="publicCard">
+				<!-- 网银传过来的验证结果 -->
+				<input type="hidden" value="" id="onlineResult" name="onlineResult">
+				<!-- 三亲见标志-->
+				<input type="hidden" name="ThrWns_Ind" id="ThrWns_Ind" value="0">
+				<!-- 后确认标识-->
+				<input type="hidden" name="CCApl_Af_Cfm_StCd" id="CCApl_Af_Cfm_StCd" value="15">
+
+				<!-- 网银验签回来的验证结果 -->
+				<input type="hidden" value="" id="ebsApply" name="ebsApply">
+				<!-- 三亲见标志-->
+				<input type="hidden" name="CODE" id="CODE" value="0">
+				<!-- 后确认标识-->
+				<input type="hidden" name="Sign" id="Sign" value="">
+
+				<!-- 来源码 -->
+				<input type="hidden" name="Src_CD" id="Src_CD" value="DNP0000">
+				<!-- 发卡分行编号 -->
+				<input type="hidden" id="CrCrd_CrdIsu_Br_ID" name="CrCrd_CrdIsu_Br_ID" value="">
+				<!-- 申请机构编号 -->
+				<input type="hidden" value="110001600" id="subBankNum" name="Aply_InsID">
+				<!-- 营销机构编号 -->
+				<input type="hidden" value="" id="Cmpn_InsID" name="Cmpn_InsID">
+				<!-- 营销人员编号 -->
+				<input type="hidden" value="" id="accessPersonCode" name="Cmpn_EmpID">
+
+				<!-- 引荐机构代码 -->
+				<input type="hidden" name="Rcmd_InsID" id="recOrgCode" value="">
+				<!-- 引荐机构人员代码 -->
+				<input type="hidden" name="Rcmd_Stff_ID" id="recManCode" value="">
+
+				<!-- 优先级 -->
+				<input type="hidden" name="CrCrdApl_Prty_Cd" id="CrCrdApl_Prty_Cd" value="04">
+				<!-- 加急类型 -->
+				<input type="hidden" name="CCApl_Urgnt_TpCd" id="CCApl_Urgnt_TpCd" value="04">
+				<!-- 预审批客户标识 -->
+				<input type="hidden" name="PreEx_Btch_Cst_Ind" id="perAprvFlag" value="0">
+				<!-- 预审批客户额度 -->
+				<input type="hidden" name="CrCrdPreExBtch_CrLin" id="perAprvLmt" value="">
+
+				<!-- 国际卡组织代码 -->
+				<input type="hidden" id="Itnl_Crd_Org_Cd" name="Itnl_Crd_Org_Cd" value="">
+				<!-- 信用卡卡片等级代码 -->
+				<input type="hidden" id="CrCrd_Crd_Grd_Cd" name="CrCrd_Crd_Grd_Cd" value="">
+				<!-- 卡面编号 -->
+				<input type="hidden" id="CrdFace_ID" name="CrdFace_ID" value="">
+				<!-- 可售产品编码 -->
+				<input type="hidden" id="ASPD_ECD" name="ASPD_ECD" value="">
+				<!-- 信用卡卡片介质代码 -->
+				<input type="hidden" id="CrCrd_Crd_Medm_Cd" name="CrCrd_Crd_Medm_Cd" value="">
+				<!-- 约定还款方式 根据卡面设置(单币/双币种) -->
+				<input type="hidden" value="" id="backType">
+				<!-- 人民币账户约定还款标志 0-无约定 1-约定还款 -->
+				<input type="hidden" value="" id="CNY_Acc_AptRpy_Ind" name="CNY_Acc_AptRpy_Ind">
+				<!-- 外币账户约定还款标志 0-无约定 1-约定还款 9-人民币购汇还款帐户 -->
+				<input type="hidden" value="" id="FrnCy_Acc_AptRpy_Ind" name="FrnCy_Acc_AptRpy_Ind">
+
+				<!-- 证件类型 1010/身份证 -->
+				<input type="hidden" name="Aply_Psn_Crdt_TpCd" id="baseIDCardType" value="1010">
+				<!-- 主卡国籍 -->
+				<input type="hidden" name="CN_Nat_Ind" id="CN_Nat_Ind" value="1">
+
+				<!-- 手机短信流水号-->
+				<input type="hidden" name="SMS_FLOWID" id="SMS_FLOWID" value="">
+
+				<!-- 已有卡客户标识 -->
+				<input type="hidden" name="AdyOwnCrd_Cst_Ind" id="AdyOwnCrd_Cst_Ind" value="0">
+				<input type="hidden" name="Ori_CrCrd_CardNo" id="Ori_CrCrd_CardNo" title="原信用卡卡号">
+			</div>
+			<div id="j_apply" class="AcqStep02">
+				<!-- 三要素身份信息 -->
+				<div class="j_step1 AcqStep01">
+					<input type="hidden" acqspecified="cardProvinceSel">
+					<input type="hidden" acqspecified="cardCitySel">
+					<input type="hidden" acqspecified="CrdFace_ID">
+					<input type="hidden" acqspecified="selected_crd">
+					<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+						<span class="span_line">填写身份信息</span>
+					</div>
+					<table id="form1" border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+						<thead>
+							<tr>
+								<th id="custTypeTip" style="display:none;"></th>
+								<td colspan="3">
+									<div id="custTypeTipTxt" style="font-size: 14px; font-weight: bold; text-align: center; line-height:25px;color:black;"></div>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th style="width:137px"><span class="f_red">*</span>中文姓名：</th>
+								<td>
+									<input title="中文姓名" type="text" name="APLY_PSN_NM" id="baseName" maxlength="30" require="1" tit="中文姓名" custom="isChinese(this)" chklen="checkLength(this,1,30)" data-role="hz2pinyin" data-targetid="baseSpell" class="inputText_h30 w_284 dis_text" placeholder="" value="">
+								</td>
+								<td><span class="f_gray mar_L10 lfloat"><a class="edit_a" onclick="javascript:LinkClickFunction(this);editBase(this,'baseName')">修改</a></span></td>
+							</tr>
+							<tr>
+								<th style="width:137px"><span class="f_red">*</span>姓名拼音：</th>
+								<td>
+									<input id="baseSpell" onblur="isToUpperCase(this);" name="Aply_Psn_CPA_FullNm" require="1" maxlength="20" custom="isEnglist(this)" tit="姓名拼音" type="text" class="inputText_h30 w_284 dis_text" placeholder="" value="">
+								</td>
+								<td><span class="f_gray mar_L10 lfloat"></span></td>
+							</tr>
+							<tr>
+								<th style="width:137px"><span class="f_red">*</span>身份证号：</th>
+								<td>
+									<input id="baseIDCardTypeNum" name="Aply_Psn_Crdt_No" maxlength="18" value="" require="1" tit="证件号码" custom="checkIdCardNum('base')" type="text" class="inputText_h30 w_284 dis_text" placeholder="">
+								</td>
+								<td><span class="f_gray mar_L10 lfloat"><a class="edit_a" onclick="javascript:LinkClickFunction(this);editBase(this,'baseIDCardTypeNum')">修改</a></span></td>
+							</tr>
+							<tr id="ebsSel" style="display:none">
+								<th style="width:137px">
+									<span class="f_red">*</span>
+									<label for="onlineClient" style="width:226px;">您是否持有我行网银盾（捷德版除外）：</label>
+								</th>
+								<td>
+									<input class="isEbs" type="radio" value="1" name="onlineClient" id="onlineClient1"><span>是</span>
+									<input class="isEbs" type="radio" value="2" name="onlineClient" id="onlineClient1" checked="checked"><span>否</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 选择卡种 -->
+					<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+						<span class="span_line">选择卡种</span>
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+						<tbody>
+							<tr>
+								<th><span class="f_red">*</span>您所在省市:</th>
+								<td>
+									<div class="select_list w_136 lfloat margin-right-12">
+										<span id="cardProvinceSel" require="1" tit="您所在省" class="select_value" value="1001">北京市</span>
+										<div class="select_ul" style="display: none;">
+											<ul id="cardProvinceSel_ul"><li value="1001">北京市</li><li value="1003">上海市</li><li value="1002">天津市</li><li value="1004">重庆市</li><li value="1020">广东省</li><li value="1011">江苏省</li><li value="1012">浙江省</li><li value="1016">山东省</li><li value="1014">福建省</li><li value="1023">四川省</li><li value="1019">湖南省</li><li value="1018">湖北省</li><li value="1017">河南省</li><li value="1005">河北省</li><li value="1013">安徽省</li><li value="1010">黑龙江省</li><li value="1008">辽宁省</li><li value="1009">吉林省</li><li value="1007">内蒙古自治区</li><li value="1031">新疆自治区</li><li value="1027">陕西省</li><li value="1006">山西省</li><li value="1015">江西省</li><li value="1021">广西自治区</li><li value="1025">云南省</li><li value="1024">贵州省</li><li value="1028">甘肃省</li><li value="1022">海南省</li><li value="1030">宁夏自治区</li><li value="1029">青海省</li><li value="1026">西藏自治区</li><li value="1111">境外</li></ul>
+										</div>
+									</div>
+									<div class="select_list w_136 lfloat">
+										<span name="cardCitySel" id="cardCitySel" require="1" tit="您所在市" value="1" class="select_value">北京市</span>
+										<div class="select_ul" style="display: none;">
+											<ul id="cardCitySel_ul"><li onclick="citySel(this)" value="1">北京市</li></ul>
+										</div>
+									</div>
+								</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<th style="vertical-align:top;"><span class="f_red">*</span>您希望申请的卡种是：</th>
+								<td>
+									<div class="padding-bottom-12">
+										<span id="selected_crd" class="selected_crd" value=""></span>
+										<a id="j_select_card" href="javascript:void(0);" class="j_select_card" onclick="LinkClickFunction(this)">请选择</a>
+									</div>
+								</td>
+								<td><span class="f_gray mar_L10 lfloat"></span></td>
+							</tr>
+							<tr class="hide j_kamian" style="display: none;">
+								<th><span class="f_red">*</span>请选择卡面：</th>
+								<td>
+									<div class="my_scroll2 ">
+										<div class="left_btn" style="top:36%">
+											<a href="javascript:void(0)" onclick="LinkClickFunction(this)"></a></div>
+										<div class="right_btn" style="top:36%">
+											<a href="javascript:void(0)" onclick="LinkClickFunction(this)"></a></div>
+										<div class="index_scroll_box my_scroll_box my_scroll_box2">
+											<div id="j_my_scroll2">
+												<ul></ul>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td></td>
+							</tr>
+							<tr id="accessType_tr" style="display:none;">
+								<th><span class="f_red">*</span>办理类型：</th>
+								<td>
+									<label for="relation02" class="label_radio r_on">
+										<input id="relation02" type="radio" value="0" name="accessType" class="main_card" checked="checked">办理主卡
+									</label>
+									<label for="relation03" class="label_radio" style="display:none;">
+										<input id="relation03" value="1" type="radio" name="accessType">同时办理主附卡
+									</label>
+									<label for="relation04" class="label_radio hidelabel">
+										<input id="relation04" value="1" state="1" type="radio" name="accessType">办理附属卡
+									</label>
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 协议 -->
+					<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+						<span class="span_line">阅读协议</span>
+					</div>
+					<div class="notice_bigbox">
+						<input id="readRules" type="checkbox" value="0" onclick="checkRuleStatus(this.checked)">
+						<label for="checkbox1">本人已阅读全部申请材料，充分了解并清楚知晓该信用卡产品的相关信息，
+							<a target="_blank" href="/cn/creditcard/agreement/standard_form.html" class="f_blue" onclick="LinkClickFunction(this)">《中国建设银行龙卡信用卡领用协议》</a>。
+						</label>
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+						<tbody>
+							<tr>
+								<th width="137">&nbsp;</th>
+								<td colspan="2" style="cursor:pointer;"><a id="nxStep_a_btn" style="background:#D2D1D1;" class="my_btn_blue j_nx_step gray AcqStepClick" acqstep="AcqStep01" onclick="LinkClickFunction(this)">下一步</a></td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+			<!--  新客户信息 -->
+			<div class="j_step2">
+				<!-- 个人资料 -->
+				<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+					<span class="span_line">个人基本资料</span>
+				</div>
+				<table id="form2" border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th class="j_yxqth" width="170px">
+								<span class="f_red">*</span>身份证有效期：
+							</th>
+							<td>
+								<div class="select_list w_284">
+									<span id="baseLimitFlag" require="1" tit="证件有效期" value="1" class="select_value">长期有效</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="1" onclick="$('.j_yxq').addClass('hide');$('.j_yxqth').css('vertical-align','middle')">长期有效</li>
+											<li value="0" onclick="$('.j_yxq').removeClass('hide');$('.j_yxqth').css('vertical-align','top')">非长期有效</li>
+										</ul>
+									</div>
+								</div>
+								<div class="padding-top-12 j_yxq hide"></div>
+								<div class="j_yxq hide">
+									<input type="text" id="j_mydate" onclick="laydate({elem: '#j_mydate'});" class="inputText_h30 w_284" placeholder="">
+								</div>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>婚姻状况：</th>
+							<td><div class="select_list w_284">
+									<span id="baseMarry" name="Mar_Sttn_Cd" require="1" tit="婚姻状况" class="select_value" value="10">未婚</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="10">未婚</li>
+											<li value="20">已婚</li>
+											<li value="40">离婚</li>
+											<li value="90">未说明婚姻关系</li>
+										</ul>
+									</div>
+							</div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>学历：</th>
+							<td><div class="select_list w_284">
+									<span id="baseLoreGrade" name="EdDgr_Cd" require="1" tit="学历" class="select_value" value="">请选择</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="010">博士及以上</li>
+											<li value="020">硕士</li>
+											<li value="030">大学本科</li>
+											<li value="040">大专和专科学校</li>
+											<li value="070">高中</li>
+											<li value="999">初中及以下</li>
+										</ul>
+									</div>
+							</div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>住宅性质：</th>
+							<td><div class="select_list w_284">
+									<span id="baseHouseType" name="Rsdnc_Sttn_Cd" require="1" tit="住宅性质" class="select_value" value="10">自有住房</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="10">自有住房</li>
+											<li value="20">贷款购房</li>
+											<li value="50">租房</li>
+											<li value="99">其他</li>
+										</ul>
+									</div>
+							</div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>住宅地址:</th>
+							<td><div class="select_list w_136 lfloat margin-right-12">
+									<span id="baseProvinceSel" value="1001" class="select_value">北京市</span>
+									<div class="select_ul" style="display: none;">
+										<ul id="baseProvinceSel_ul"></ul>
+									</div>
+								</div>
+								<div class="select_list w_136 lfloat">
+									<span id="baseCitySel" value="1" class="select_value">北京市</span>
+									<div class="select_ul" style="display: none;">
+										<ul id="baseCitySel_ul"></ul>
+									</div>
+							</div></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>详细住宅地址：</th>
+							<td><input type="text" id="baseCountyAll" require="1" maxlength="80" tit="详细住宅地址" custom="isSbcCase(this)" class="inputText_h30 w_284" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th>是否将该地址设为邮寄地址：</th>
+							<td><input type="radio" name="mailingAddress" id="baseMailingAddress" value="01" onclick="checkMailingAddress(this,this.checked)">
+								<label for="i_or_no"> 是</label></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>住宅邮编：</th>
+							<td><input type="text" class="inputText_h30 w_284" id="basePostcode" name="AplyPsnRsdncAdrZipEC" value="" maxlength="6" require="1" tit="邮政编码" custom="isDigit(this,6,6)"></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>移动电话：</th>
+							<td><input title="请填写11位手机号码，该手机号将作为您接收中国建设银行短信服务的手机号码，请务必准确填写" type="text" class="inputText_h30 w_284" id="baseMobile" name="Aply_Psn_MblPh_No" value="" maxlength="11" require="1" tit="移动电话" custom="isMobile(this)"></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>住宅电话</th>
+							<td>
+								<label for="baseHouseTelephone1" class="label_radio r_on">
+									<input id="baseHouseTelephone1" class="baseHouseTelephone" value="10" type="radio" disabled="disabled">
+									固定住宅电话</label>
+								<label for="baseHouseTelephone2" class="label_radio">
+									<input id="baseHouseTelephone2" class="baseHouseTelephone" value="20" type="radio" disabled="disabled">
+									本人其他手机号</label>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th></th>
+							<td><div>
+									<input type="text" id="baseHouseTelephoneAreaNum" maxlength="4" class="inputText_h30 w_60 margin-right-12" value="" require="1" tit="住宅电话区号" custom="isDigit(this,3,4)" placeholder="区号">
+									<input style="width:206px" type="text" id="baseHouseTelephoneNum" maxlength="8" class="inputText_h30" value="" require="1" tit="住宅电话电话号" custom="isDigit(this,7,8)" placeholder="电话号">
+							</div></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr style="display:none;">
+							<th></th>
+							<td><input style="display:none;" title="请填写11位手机号码" type="text" class="inputText_h30 w_284" id="baseHouseMobile" value="***" maxlength="11" require="1" tit="其他移动电话" custom="isMobile(this)" placeholder="请输入本人其他手机号"></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>电子邮箱：</th>
+							<td>
+								<input title="该邮箱将作为您接收中国建设银行电子账单的邮箱，请务必准确填写" type="text" class="inputText_h30 w_284" style="width:160px" id="baseEmailTop" value="" maxlength="16" require="1" tit="电子邮件" custom="isEmail('baseEmailTop','baseEmailBack','电子邮件')">
+								<span class="tips f_red">@</span>
+								<input type="text" class="inputText_h30 w_284" id="baseEmailBack" value="" maxlength="16" style="width:100px">
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- 单位资料 -->
+				<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+					<span class="span_line">单位资料</span>
+				</div>
+				<table id="form3" border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th width="170px"><span class="f_red">*</span>职业：</th>
+							<td><div class="select_list w_284">
+									<span id="workCCrdCstOcpCd" name="CCrdCst_Ocp_Cd" require="1" tit="职业状况" value="04" class="select_value">国家公务员</span>
+									<div class="select_ul" style="display: none;">
+										<ul id="workCCrdCstOcpCd_ul">
+											<li value="04">国家公务员</li>
+											<li value="05">国有企业职员</li>
+											<li value="06">行政事业单位从业人员</li>
+											<li value="07">民营企业职员</li>
+											<li value="11">三资企业职员</li>
+											<li value="12">私企企业职员</li>
+											<li value="09">其他</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+							<td style="display:none">
+								<input type="text" id="workOtherCCrdCstOcpCd" name="Othr_Ocp_Dsc" value="" class="inputText_h30 w_284" require="1" custom="isChinese(this)" style="width:80px;" maxlength="22" tit="其他职业" onblur="addInforMations()">
+								<span>请填写收入来源(例如家庭主妇、淘宝店主等)</span>
+							</td>
+						</tr>
+						<tr>
+							<th width="137" style="vertical-align:top;padding-top:12px;">
+								<span class="f_red">*</span>职务：
+							</th>
+							<td>
+								<div class="select_list w_284 lfloat">
+									<span name="Post_TpCd" id="workDuty" require="1" tit="职务" value="240" class="select_value">一般员工</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="110">厅局级以上</li>
+											<li value="140">处级</li>
+											<li value="150">科级</li>
+											<li value="190">一般干部</li>
+											<li value="223">总经理</li>
+											<li value="231">部门经理</li>
+											<li value="240">一般员工</li>
+											<li value="999">其他</li>
+										</ul>
+									</div>
+							</div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>工作年限：</th>
+							<td><input type="text" class="inputText_h30 w_284" id="workAge" name="IdCstCurUnitWrk_YrLm" maxlength="2" max="80" min="0" value="" tit="工作年限" require="1" custom="isDecimalNum(this,2,0)" placeholder="">
+								年</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th width="137"><span class="f_red">*</span>单位全称(收入来源)：</th>
+							<td><input type="text" id="workCompanyName" name="Wrk_Unit_Nm" maxlength="28" value="" require="1" tit="单位全称" chklen="checkLength(this,1,28)" class="inputText_h30 w_284" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>年收入：</th>
+							<td>
+								<div class="select_list w_284 lfloat">
+									<span id="workInMoney" name="workInMoney" require="1" tit="年收入" value="1.5" class="select_value">2万以下</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="1.5">2万以下</li>
+											<li value="3.5">2-5万</li>
+											<li value="7.5">5-10万</li>
+											<li value="15">10-20万</li>
+											<li value="35">20-50万</li>
+											<li value="50">50万以上</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr class="workTr" style="display: none;">
+							<th width="137" style="vertical-align:top;padding-top:12px;"><span class="f_red">*</span>单位地址：</th>
+							<td>
+								<input type="checkbox" checked="checked" id="workProvinceOther">使用住宅住址</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr class="workTr">
+							<th width="137" style="vertical-align:top;padding-top:12px;"><span class="f_red">*</span>单位地址：</th>
+							<td><div class="select_list w_136 lfloat margin-right-12">
+									<span id="workProvinceSel" tit="工作地址(省)" value="1001" require="1" class="select_value">北京市</span>
+									<div class="select_ul" style="display: none;">
+										<ul id="workProvinceSel_ul"></ul>
+									</div>
+								</div>
+								<div class="select_list w_136 lfloat">
+									<span id="workCitySel" tit="工作地址(市)" require="1" value="1" class="select_value">北京市</span>
+									<div class="select_ul" style="display: none;">
+										<ul id="workCitySel_ul"></ul>
+									</div>
+							</div></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr class="workTr">
+							<th><span class="f_red">*</span>详细单位地址：</th>
+							<td>
+								<input type="text" id="workCountyAll" require="1" tit="详细单位地址" maxlength="80" custom="isSbcCase(this)" class="inputText_h30 w_284" value=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th>是否将该地址设为邮寄地址：</th>
+							<td><input type="radio" value="02" name="mailingAddress" id="workMailingAddress" onclick="checkMailingAddress(this,this.checked)">
+								<label for="i_or_no"> 是</label></td>
+							<td></td>
+						</tr>
+						<tr class="workTr">
+							<th><span class="f_red">*</span>单位邮编：</th>
+							<td><input type="text" class="inputText_h30 w_284" id="workPostcode" name="Wrk_Unit_ZipECD" value="" maxlength="6" require="1" tit="单位邮政编码" custom="isDigit(this,6,6)" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr class="workTr">
+							<th style="vertical-align:top;padding-top:12px;"><span class="f_red">*</span>单位电话：</th>
+							<td>
+								<div>
+									<input type="text" class="inputText_h30 w_60" id="workHouseTelephoneAreaNum" value="" maxlength="4" require="1" tit="单位电话区号" custom="isDigit(this,3,4)" placeholder="区号">
+									<input type="text" class="inputText_h30" style="width:150px;" id="workHouseTelephoneNum" value="" maxlength="8" require="1" tit="单位电话电话号" custom="isDigit(this,7,8)" placeholder="电话号">
+									<input type="text" id="workExtensionNum" value="" maxlength="4" custom="isDigit(this,1,4)" tit="单位电话分机号" class="inputText_h30 w_60" placeholder="分机号">
+								</div>
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- 联系人资料 -->
+				<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+					<span class="span_line">联系人资料</span>
+				</div>
+				<table id="form4" border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th width="170px"><span class="f_red">*</span>姓名：</th>
+							<td><input type="text" id="directFamilyName" name="CCApl_CtcPsn_Nm" maxlength="30" value="" require="1" tit="联系人姓名" custom="isChinese(this)" chklen="checkLength(this,1,30)" class="inputText_h30 w_284 lfloat" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>关系：</th>
+							<td><div class="select_list w_284 lfloat ">
+									<span id="directFamilynexus" name="AndHstCrdCrdHlrReTpC" value="0133010" p_require="1" tit="联系人关系" class="select_value">配偶</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="0133010">配偶</li>
+											<li value="0133011">儿子</li>
+											<li value="0133012">女儿</li>
+											<li value="0133015">父亲</li>
+											<li value="0133016">母亲</li>
+											<li value="0135027">其他</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>移动电话：</th>
+							<td><input type="text" id="directFamilyMobile" name="CCApl_CtcPsn_MblPh_N" value="" maxlength="11" require="1" tit="联系人移动电话" custom="isMobile(this)" class="inputText_h30 w_284" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- 其他资料 -->
+				<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+					<span class="span_line">其他资料</span>
+				</div>
+				<table id="form5" border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th width="170px"><span class="f_red"></span>是否同意接受银行推荐的其他等级信用卡：</th>
+							<td><input type="checkbox" onclick="checkIsArgeeOtherCard(this,this.checked)" id="Acpt_Othr_CrCrd_Ind" name="Acpt_Othr_CrCrd_Ind" value="1" checked="">
+								<label for="Acpt_Othr_CrCrd_Ind"> 是</label></td>
+							<td></td>
+						</tr>
+						<tr class="repay">
+							<th colspan="3"> <strong class="g_froms_font">约定账户还款授权（约定后可每月由约定账户自动转账还款）</strong> </th>
+						</tr>
+						<tr class="repay">
+							<th><span class="f_red"></span>还款方式：</th>
+							<td colspan="2">
+								<label for="RMBgiveBankType2" class="label_radio">
+									<input id="RMBgiveBankType2" name="CNYApntAcRepyPctgTpC" value="2" type="radio">
+									最低还款额还款
+								</label>
+								<label for="RMBgiveBankType1" class="label_radio">
+									<input id="RMBgiveBankType1" name="CNYApntAcRepyPctgTpC" value="1" type="radio">
+									全额还款</label>
+								<label for="clearRMB" class="label_radio r_on">
+									<input id="clearRMB" name="clearRMB" type="radio">
+									不做约定还款</label></td>
+						</tr>
+						<tr class="repay defrepay" style="display:none">
+							<th style="vertical-align:top;padding-top:6px;">
+								<span class="f_red"></span>还款账户：
+							</th>
+							<td colspan="2">
+								<input type="text" id="RMBGiveBackAccount" name="CNY_Acc_AptRpy_AccNo" maxlength="19" custom="isDigitFix(this,16,19)" tit="人民币存款账户账号" class="inputText_h30 w_284" placeholder="">
+								<div class="f_gray mar_L10 lfloat">（以上账户将同时作为人民币及人民币购汇还款的签约账户，且人民币购汇还款只以"全额还款"方式还款）</div>
+							</td>
+						</tr>
+						<tr class="repay defrepay" style="display:none">
+							<th style="vertical-align:top;padding-top:6px;">
+								<span class="f_red"></span>已开账户类型：
+							</th>
+							<td colspan="2">
+								<!--
+								<label for="accountType1" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType1" value="1" />个人贷款账户</label>
+								<label for="accountType2" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType2" value="2" />住房贷款账户</label>
+								<label for="accountType3" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType3" value="3" />大额储蓄账户（8万以上）</label>
+								<label for="accountType4" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType4" value="4" />信用卡</label>
+								<label for="accountType5" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType5" value="5" />理财账户</label>
+								-->
+								<label for="accountType8" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType8" value="8">存款账户</label>
+								<label for="accountType7" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType7" value="7">代发工资账户</label>
+								<label for="accountType9" class="label_radio">
+									<input type="radio" name="Alrdy_OpnAcc_Sttn_Cd" id="accountType9" value="9" checked="">其他</label>
+								<div style="color:#DC2C14;">（提供在我行开立账户情况将有助于加快对您申请的审批）</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 已有卡客户 -->
+			<div id="form6" class="j_step2-1">
+				<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+					<span class="span_line">基本资料</span>
+				</div>
+				<table border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th width="170px"><span class="f_red">*</span>已有信用卡主卡卡号：</th>
+							<td>
+								<input type="text" id="myCardNo" maxlength="22" tit="已有信用卡主卡卡号" require="1" custom="isDigit(this,16,16)" onkeyup="myCardNoFromMat(this)" onblur="myCardNoFromMat(this)" class="inputText_h30 w_284 lfloat" value="" placeholder="">
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th class="j_yxqth2"><span class="f_red">*</span>身份证有效期：</th>
+							<td>
+								<div class="select_list w_284 lfloat">
+									<span class="select_value" value="" name="Crdt_LongTrm_Vld_In" id="mybaseLimitFlag" tit="证件有效期" require="1">请选择</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="1" onclick="$('.j_yxq2').addClass('hide');$('.j_yxqth2').css('vertical-align','middle')">长期有效</li>
+											<li value="0" onclick="$('.j_yxq2').removeClass('hide');$('.j_yxqth2').css('vertical-align','top')">非长期有效</li>
+										</ul>
+									</div>
+								</div>
+								<div class="padding-top-12 j_yxq2 hide" style="height:15px;margin-top:15px;"></div>
+								<div class="j_yxq2 hide">
+									<input type="text" id="j_mydate2" onclick="laydate({elem: '#j_mydate2'});" class="inputText_h30 w_284" value="" placeholder="">
+								</div>
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>手机号码后4位：</th>
+							<td><input type="text" id="mobileLast" maxlength="4" tit="手机号码后4位" require="1" custom="isDigit(this,4,4)" class="inputText_h30 w_284" value="" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th>
+								<span class="f_red"></span>是否同意接受银行推荐的其他等级信用卡
+							</th>
+							<td>
+								<input type="checkbox" onclick="checkIsArgeeOtherCard(this,this.checked)" id="Acpt_Othr_CrCrd_Ind2" name="Acpt_Othr_CrCrd_Ind2" value="1" checked="">
+								<label for="i_or_no"> 是</label></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 附属卡信息 -->
+			<div id="pertain_div" class="fkrxx hide">
+				<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+					<span class="span_line">附属卡申请人资料</span>
+				</div>
+				<table border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th width="170px"><span class="f_red">*</span>中文姓名：</th>
+							<td><input type="text" id="pertainName" name="APLY_PSN_NM2" p_require="1" maxlength="30" tit="附属卡中文姓名" p_custom="isChinese(this)" chklen="checkLength(this,1,30)" data-role="hz2pinyin" data-targetid="pertainSpell" class="inputText_h30 w_284 lfloat" value="" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>姓名拼音：</th>
+							<td><input type="text" class="inputText_h30 w_284 lfloat" onblur="isToUpperCase(this);" name="Aply_Psn_CPA_FullNm2" id="pertainSpell" value="" p_require="1" maxlength="20" p_custom="isEnglist(this)" tit="附属卡姓名拼音" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>身份证号：</th>
+							<td><input type="text" class="inputText_h30 w_284 lfloat" id="pertainIDCardTypeNum" name="Aply_Psn_Crdt_No2" p_require="1" maxlength="18" tit="附属卡证件号码" value="" p_custom="checkIdCardNum('pertain')" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th class="j_yxqth3"><span class="f_red">*</span>身份证有效期：</th>
+							<td>
+								<div class="select_list w_284 lfloat">
+									<span value="" class="select_value" name="Crdt_LongTrm_Vld_In2" id="pertainLimitFlag" tit="附属卡证件有效期" p_require="1">请选择</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="1" onclick="$('.j_yxq3').addClass('hide');$('.j_yxqth3').css('vertical-align','middle')">长期有效</li>
+											<li value="0" onclick="$('.j_yxq3').removeClass('hide');$('.j_yxqth3').css('vertical-align','top')">非长期有效</li>
+										</ul>
+									</div>
+								</div>
+								<div class="padding-top-12 j_yxq3 hide" style="height:15px;margin-top:15px;"></div>
+								<div class="j_yxq3 hide">
+									<input type="text" id="j_mydate3" onclick="laydate({elem: '#j_mydate3'});" class="inputText_h30 w_284" value="" placeholder="">
+								</div>
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>与主卡持卡人的关系：</th>
+							<td>
+								<div class="select_list w_284 lfloat ">
+									<span value="0133010" class="select_value" id="andMainNexus" name="AndHstCrdCrdHlrReTp2" tit="与主卡持卡人的关系" p_require="1">配偶</span>
+									<div class="select_ul" style="display: none;">
+										<ul>
+											<li value="0133010">配偶</li>
+											<li value="0133011">儿子</li>
+											<li value="0133012">女儿</li>
+											<li value="0133015">父亲</li>
+											<li value="0133016">母亲</li>
+											<li value="0135027">其他</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th width="137"><span class="f_red">*</span>职业：</th>
+							<td>
+								<div class="select_list w_284">
+									<span id="pertainCCrdCstOcpCd" name="CCrdCst_Ocp_Cd2" p_require="1" tit="附属卡职业状况" value="04" class="select_value">国家公务员</span>
+									<div class="select_ul" style="display: none;">
+										<ul id="pertainCCrdCstOcpCd_ul">
+											<li value="04">国家公务员</li>
+											<li value="05">国有企业职员</li>
+											<li value="06">行政事业单位从业人员</li>
+											<li value="07">民营企业职员</li>
+											<li value="11">三资企业职员</li>
+											<li value="12">私企企业职员</li>
+											<li value="09">其他</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+							<td>
+								<input type="text" id="pertainOtherCCrdCstOcpCd" name="Othr_Ocp_Dsc2" value="" class="inputText_h30 w_284" p_require="1" p_custom="isChinese(this)" style="display:none;width:80px;" maxlength="22" tit="其他职业"></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>移动电话：</th>
+							<td><input type="text" class="inputText_h30 w_284" maxlength="11" p_require="1" id="pertainMobile" name="Aply_Psn_MblPh_No2" tit="附属卡移动电话" p_custom="isMobile(this)" placeholder=""></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr>
+							<th><span class="f_red"></span>附属卡申请额度：</th>
+							<td>
+								<input type="radio" name="pertainApplyMoneyType" id="pertainApplyMoneyType1" value="1" p_require="1" checked="checked" tit="附属卡申请额度">
+								<label for="i_or_no1"> 与主卡相同</label>
+								<input type="radio" name="pertainApplyMoneyType" id="pertainApplyMoneyType2" value="2">
+								<label for="i_or_no2">指定额度</label>
+								<font id="pertainApplyMoney_font" class="hide">
+									<span>
+										<input type="text" class="inputText_h30 w_284" value="" id="pertainApplyMoney" name="Aply_CNY_CrLine2" maxlength="8" p_require="1" style="width:75px;" p_custom="isDecimal(this,8,2)" tit="指定额度">
+										不超过主卡额度
+									</span>
+								</font>
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 个性化信息 -->
+			<!-- 营销人员信息
+			sales_div-该元素控制是否选中营销员指导 不可删除value属性-->
+			<div id="sales_div_main" class="j_step2_public hide">
+				<div id="sales_div" value="1" class="fillBox_mainTitle fillBox_mainTitle_bg bank_exh">
+					<span class="span_line">营销人员信息</span>
+					<span class="j_arrow" style="background-image: url(http://creditcard.ccb.com/cn/v3/images/up_icon.png);"></span>
+				</div>
+				<table border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr class="bank_ex"><th colspan="3">
+								<strong class="g_froms_font">若您在网点营销员指导下填写，验证码将发到该营销员手机上</strong><br>
+								<strong class="g_froms_font">您需要在我行营销员现场指导下填写：</strong>
+						</th></tr>
+						<tr class="bank_ex">
+							<th width="170px"><span class="f_red"></span> 来源码：</th>
+							<td><div class="clear padding-top-12"></div>
+								<div>
+									<input type="text" class="inputText_h30 w_284" tit="来源码 " custom="isEnglishAndNum(this)" length="4" maxlength="4" require="1" value="" name="sourceNo" id="sourceNo" placeholder=""></div></td>
+							<td><span class="f_gray mar_L10 lfloat"></span></td>
+						</tr>
+						<tr class="bank_ex">
+							<th width="137"><span class="f_red"></span>营销机构代码：</th>
+							<td><input type="text" class="inputText_h30  w_284 lfloat" tit="营销机构代码 " custom="isDigitFix(this,9,9)" length="9" maxlength="9" require="1" value="" id="sellBankNum" placeholder="">
+
+							</td>
+							<td></td>
+						</tr>
+						<tr class="bank_ex">
+							<th width="137"><span class="f_red"></span>营销人员号码：</th>
+							<td>
+								<input type="text" tit="营销人员号码 " custom="isEnglishAndNum(this)" length="8" maxlength="8" require="1" value="" id="salesNo" class="inputText_h30  w_284 lfloat" placeholder="">
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 验证码 表单提交区域 -->
+			<div id="submit_div" class="j_step2_public hide">
+				<div class="fillBox_mainTitle fillBox_mainTitle_bg">
+					<span class="span_line">手机号码确认信息</span>
+				</div>
+				<table border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th width="170px"><span class="f_red"></span>推荐码：</th>
+							<td>
+								<input type="text" id="rcmdStffId" maxlength="6" class="inputText_h30 w_284 lfloat" value="" placeholder="">
+								<span>
+									&nbsp;&nbsp;如您是被推荐用户,请填写推荐码。如不是可不填写。
+								</span>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red"></span>您与推荐人的关系：</th>
+							<td>
+								<div class="select_list w_284">
+									<span id="rcmdStffNum" tit="您与推荐人的关系" value="" class="select_value">请选择</span>
+									<div class="select_ul" style="display: none;">
+										<ul id="rcmdStffNum_ul">
+											<li value="">请选择</li>
+											<li value="04">同学</li>
+											<li value="05">同事</li>
+											<li value="06">亲属</li>
+											<li value="09">其他</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>验证码：</th>
+							<td><input type="text" id="validationCode" name="PT_CONFIRM_PWD" maxlength="5" class="inputText_h30  w_160 lfloat" value="" placeholder="">
+								<div class="lfloat checkcode" style="">
+									<img onclick="refreshValImg('valImg')" style="cursor:pointer;" id="valImg" src="images/code.png" class="lfloat" alt="">
+									<!-- <span class="tishi yzm yzm2" style="background: rgb(0, 102, 179);">点击刷新验证码</span> -->
+							</div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th><span class="f_red">*</span>手机验证码：</th>
+							<td><div class="i_box">
+									<input type="text" id="smsCode" name="CHECK_CODE" maxlength="6" class=" inputText_h30  w_160" state="1">
+									<p class="err" style="display: none;">请输入手机号码后四位</p>
+								</div>
+								<input class="tishi yzm yzm1 j_check1" id="getByCode" onclick="javascript:LinkClickFunction(this);sendSaleValCode()" value="获取短信验证码" type="button" style="background: rgb(0, 102, 179);"><span style="padding-left:10px;" id="smsTip"></span></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<table border="0" cellspacing="0" cellpadding="0" class="fill_tb">
+					<tbody>
+						<tr>
+							<th width="170px">&nbsp;</th>
+							<td colspan="2"><a href="#" id="j_before_step" class="my_btn_blue j_before_step AcqStepClick" acqstep="AcqStep02" onclick="LinkClickFunction(this)">上一步</a>
+								<a href="javascript:void(0);" id="a_btn_submit" class="my_btn_blue j_submit AcqStepClick" acqstep="AcqStep02" onclick="LinkClickFunction(this)">提交申请</a></td>
+							<td>&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 申请成功提示区域 -->
+			<div class="j_step3" style="margin-top:30px;">
+				<h3><img src="/cn/creditcard/v3/images/sure_message.png" class="lfloat" alt="" style="position:relative;left:140px;top:-10px;width:45px;">
+					您编号 <span id="success_showid" style="color:#0066b3;"></span>
+					的申请已成功提交，我行将立即为您处理，敬请留意相关短信<br>
+					您也可以通过<a href="/cn/creditcard/apply_process2.html" style="color:#0066b3" onclick="LinkClickFunction(this)">申请进度查询</a>了解进度。
+					<div class="clear"></div>
+				</h3>
+				<img src="/cn/creditcard/v3/images/adv-20150813.jpg" alt="">
+			</div>
+		</form>
+</body>
+</html>

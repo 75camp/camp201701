@@ -1,0 +1,124 @@
+@import '../../main';
+@import '../common/main';
+
+.height-750 {
+    min-height: 750px;
+}
+.password-container-padding {
+    padding: 20px 0;
+}
+.trade-password-input-container-margin-top-11 {
+    margin: 11px 0 0;
+}
+.figcaption-container-padding-top-11 {
+    padding-top: 11px;
+}
+.submit-button-container-padding-top-32 {
+    padding-top: 32px;
+}
+.error-tips {
+    font-size: 16px;
+    color: #e93030;
+    font-family: 'STXihei';
+    line-height: 1;
+    text-indent: 10px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+section {
+    &#login {
+        background-color: #fff;
+        .login-heart-tips {
+            font-size: 20px;
+            line-height: 1;
+            color: #000;
+            font-weight: normal;
+            width: 300px;
+        }
+        .trade-password-heart-tips {
+            font-family: 'STXihei';
+            font-size: 16px;
+            color: #3d84f1;
+            line-height: 1;
+        }
+        form {
+            width: 300px;
+            font-size: 16px;
+            padding: 30px 0 0;
+            input {
+                width: 100%;
+                height: 44px;
+                &:not(.submit-button) {
+                    text-indent: 10px;
+                }
+	            @include media("<=tablet") {
+                    &:not(.submit-button) {
+                        text-indent: 54px;
+                    }
+                }
+                outline: none;
+                font-size: 16px;
+                color: #999;
+                font-family: 'STXihei';
+                border: 1px solid #999;
+                border-radius: 6px;
+                background-color: transparent;
+                @include placeholder(#999, '16px');
+            }
+            label {
+                display: inline-block;
+                width: 300px;
+                position: relative;
+	            @include media("<=tablet") {
+                    &[for="telephone"] {
+                        background: url('#{$path-prefix}../../../img/inmoney/icon-2.png') 15.5px center no-repeat;
+                        background-size: 13px auto;
+                    }
+                    &[for="password"] {
+                        background: url('#{$path-prefix}../../../img/inmoney/icon-1.png') 13px center no-repeat;
+                        background-size: 18px auto;
+                    }
+                    &[for="trade-password"] {
+                        background: url('#{$path-prefix}../../../img/inmoney/icon-1.png') 13px center no-repeat;
+                        background-size: 18px auto;
+                    }
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 1px;
+                        height: 100%;
+                        background-color: #999;
+                        position: absolute;
+                        top: 0;
+                        left: 44px;
+                    }
+                }
+            }
+            .submit-button {
+                background-color: #e93030;
+                color: #fff;
+                font-size: 18px;
+                width: 300px;
+                text-align: center;
+            }
+        }
+        .app-download-details {
+            padding: 70px 28px 0;
+            width: 300px;
+            text-align: center;
+        }
+        .app-download-details-title {
+            font-weight: normal;
+            font-size: 18px;
+            color: #000;
+            text-align: center;
+        }
+        .app-download-details-content {
+            font-size: 14px;
+            color: rgba(0, 0, 0, .7);
+            line-height: 1;
+            padding-top: 22px;
+        }
+    }
+}
