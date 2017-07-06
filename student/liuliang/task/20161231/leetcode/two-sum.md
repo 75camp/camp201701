@@ -30,44 +30,99 @@ var twoSum = function(nums, target) {
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    var i,j,arr = [],numsCopy = nums.slice().sort(function(v1,v2){return v1-v2;});
-    var isAllowNumberPushToArray = function(x,y,arr){
+
+    var i;
+    var j;
+    var arr = [];
+    var numsCopy = nums.slice().sort(function(v1, v2){return v1-v2;});
+
+    var isAllowNumberPushToArray = function(x, y, arr) {
         return x === -1 || y === -1 || x + 1 !== y || arr.length === 0;
     };
 
-    var findArrayIndexByIndexofMethod = function(arr,val){
+    var findArrayIndexByIndexofMethod = function(arr, val) {
         return arr.indexOf(val);
     };
 
-    var findArrayValue = function(i,j,arr){
-        var m = 0,n = 0,x = 0,y = 0;
-        for(m=i,n=j;m<n;){
-            if(numsCopy[m] + numsCopy[n] === target) {
+    var findArrayValue = function(i, j, arr) {
+
+        var m = 0;
+        var n = 0;
+        var x = 0;
+        var y = 0;
+
+        for (m = i, n = j; m < n;) {
+
+            if (numsCopy[m] + numsCopy[n] === target) {
+
                 x = findArrayIndexByIndexofMethod(arr,numsCopy[m]);
                 y = findArrayIndexByIndexofMethod(arr,numsCopy[n]);
                 if(isAllowNumberPushToArray(x,y,arr)) arr.push(numsCopy[m],numsCopy[n]);
                 m++;
                 n--;
-            }else if(numsCopy[m] + numsCopy[n] < target) {
+
+            }
+            else if (numsCopy[m] + numsCopy[n] < target) {
                 m++;
-            }else{
+            }
+            else {
                 n--;
             }
         }     
     };
 
-    var findArrayIndex = function(arr){
+    var findArrayIndex = function(arr) {
       var result = [];
-      for(var i = 0;i < nums.length; i++){
+      for (var i = 0; i < nums.length; i++) {
           findArrayIndexByIndexofMethod(arr,nums[i]) >= 0 && result.push(i);
       }
       return result;
     };
+
     findArrayValue(0,numsCopy.length-1,arr);
+
     return findArrayIndex(arr);
 };
 ```
 
+**解法一更新**
 
+```
+var twoSum = function(nums, target) {
 
+  var result = [];
+  var match = 0;
+  for (var i = 0, length = nums.length; i < length; i++) {
 
+    match = target - nums[i];
+
+    for (var j = i + 1; j < length; j++) {
+      if (match === nums[j]) {
+        result.push([i, j]);
+      }
+    }
+  }
+
+}
+```
+
+**解法二更新**
+
+```
+```
+var twoSum = function(nums, target) {
+  
+  var hash = {};
+  var result = [];
+
+  for (var i = 0, length = nums.length; i < length; i++) {
+    
+    if (hash[i] !== void 0) {
+      result.push([i, hash[i]]);
+    }
+    else {
+      hash[target - nums[i]] = i;
+    }
+  }
+}
+```
